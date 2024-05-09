@@ -10,7 +10,8 @@
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <div id="navbar" class="fixed sm:block bg-white w-full z-10 hidden duration-300">
+    <!-- onscroll navbar -->
+    <div id="navbar" class="fixed sm:block bg-white w-full hidden duration-300">
         <div class="flex justify-between px-3 drop-shadow-lg bg-white">
             <span>Cart</span>
             <div class="flex gap-3 items-center">
@@ -114,7 +115,7 @@
                     </div>
 
                     <!-- box -->
-                    <div id="sticky-element" class="sticky top-0 flex flex-col items-center min-w-96 max-w-full px-5">
+                    <div id="sticky-element" class="flex flex-col items-center min-w-96 max-w-full px-5">
 
                         <!-- upper box -->
                         <div class="flex flex-col bg-gray-100 p-3 w-full h-fit">
