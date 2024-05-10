@@ -60,13 +60,9 @@ btnTradeIn.addEventListener('click', btnTradeInHandler)
 const btnPreSlideReview = document.getElementById('pre-slide-review')
 const btnNextSlideReview = document.getElementById('next-slide-review')
 const reviewImageContainer = document.querySelector('.review-image-container')
-console.log(reviewImageContainer);
 let currentX = 0
 const nextSlideReviewHandler = () =>{
     
-    console.log(currentX);
-    console.log(reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth);   
-    console.log(reviewImageContainer.clientWidth);
     remainScrollWidth = reviewImageContainer.scrollWidth - reviewImageContainer.clientWidth
     if (currentX< remainScrollWidth){
         currentX += 300
