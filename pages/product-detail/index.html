@@ -18,6 +18,7 @@
       type="image/x-icon"
       href="../../assets/images/logo/fav-icon.ico"
     />
+    <script src="./components/index.js" defer></script>
   </head>
 
   <body class="flex flex-col items-center">
@@ -407,36 +408,10 @@
               <div
                 class="colors-container flex flex-wrap w-full justify-between pb-1"
               >
-                <button
-                  id="bud-black"
-                  class="color-card flex flex-col justify-center items-center border-2 w-[49%] border-blue-500 rounded-md mt-2 p-3"
-                >
-                  <span
-                    class="w-8 h-8 rounded-full border block border-black bg-slate-700"
-                  ></span>
-                  <p>Graphite</p>
-                  <p>$189.99</p>
-                </button>
-                <button
-                  id="bud-white"
-                  class="color-card flex flex-col justify-center items-center border-2 w-[49%] border-[#ddd] rounded-md mt-2 p-3"
-                >
-                  <span
-                    class="w-8 h-8 rounded-full border block border-black bg-slate-50"
-                  ></span>
-                  <p>White</p>
-                  <p>$189.99</p>
-                </button>
-                <button
-                  id="bud-bora"
-                  class="color-card flex flex-col justify-center items-center border-2 w-[49%] border-[#ddd] rounded-md mt-2 p-3"
-                >
-                  <span
-                    class="w-8 h-8 rounded-full border block border-black bg-purple-200"
-                  ></span>
-                  <p>Bora Purple</p>
-                  <p>$189.99</p>
-                </button>
+                <color-button id="bud-black" data-title="Graphite" data-color="slate-700"></color-button>
+                <color-button id="bud-white" data-title="White" data-color="slate-50"></color-button>
+                <color-button id="bud-bora" data-title="Bora Purple" data-color="purple-200"></color-button>
+               
               </div>
             </div>
             <!-- Trade-In -->
