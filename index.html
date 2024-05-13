@@ -17,7 +17,7 @@
 
             <div class="card-container flex overflow-hidden  relative ">
                 <div class=" flex">
-                    <ul id="container-img" class=" flex  transition-transform delay-300 ">
+                    <ul id="hero-container" class=" flex  transition-transform duration-300  ">
                         <li class="object-cover w-screen relative">
                             <img class="rounded-2xl object-cover  w-[640px]" src="assets/images/home/hero/img-1-small.webp" alt="">
                             <dsm:iv
@@ -83,25 +83,25 @@
                 </div>
 
                 <div class="absolute bottom-0  left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hero-btn-container flex bg-white  opacity-80 rounded-full">
+                    <div id="hero-btn-container" class=" flex bg-white  opacity-80 rounded-full">
                         <button class="btn-1 py-2 ">
                             <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                         <button class="btn-2 py-2">
-                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                         <button class="btn-3 py-2">
-                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                         <button class="btn-4 py-2">
-                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                         <button class="btn-5 py-2">
-                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" onclick="colorTransform(this)">
+                            <div class="hero-btn size-4 bg-gray-500 rounded-full mx-4" >
                             </div>
                         </button>
                     </div>
@@ -1107,16 +1107,12 @@
         const tvContainer = document.getElementById('tv-container')
         const homeContainer = document.getElementById('home-container')
         const susContainer = document.getElementById('sus-container')
-        const container = document.getElementById('container-img')
+        const heroContainer = document.getElementById('hero-container')
         const imgExplor = document.getElementById('img-explore')
-        const btn1 = document.querySelector('.btn-1');
-        const btn2 = document.querySelector('.btn-2');
-        const btn3 = document.querySelector('.btn-3');
-        const btn4 = document.querySelector('.btn-4');
-        const btn5 = document.querySelector('.btn-5');
+        // const heroSmallScreenBtn = document.querySelectorAll('hero-btn-container button')
         const tvHeader = document.getElementById('tv-header')
         const heroBtn = document.querySelectorAll('.hero-btn');
-        const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
+        const heroBtnContainer = document.querySelectorAll('#hero-btn-container button')
         const btnExploreContainer = document.querySelectorAll('.explore-btn-container button')
         const heroBtnLeft = document.querySelector('#left')
         const heroBtnRight = document.querySelector('#right')
@@ -1131,24 +1127,33 @@
         const btnSus = document.querySelectorAll('.btn-sus')
 
         let positonExplore = 0
+        let postionHero = 0
 
-        btnExploreContainer.forEach((e, i) => {
-            console.log(positonExplore);
-            btnMoving(e, positonExplore)
-            positonExplore+=90
+        function btnStyle(btn,color, border) {
+            btn.style.backgroundColor = `${color}`;
+            btn.style.border = `${border}`;
+        }
 
-        })
-
-        function btnMoving(btn,pos){
+        function btnMoving(btn,pos,container){
             btn.addEventListener("click",()=>{
-                exploreContainer.style.transform = `translateX(-${pos}%)`
+                container.style.transform = `translateX(-${pos}%)`
             })
         }
 
-        console.log(exploreContainer[1]);
 
-        console.log(btnHome);
+        btnExploreContainer.forEach((e, i) => {
+            btnMoving(e, positonExplore, exploreContainer)
+            positonExplore+=90
+        })
 
+        heroBtnContainer.forEach((e, i) => {
+            
+            btnMoving(e, postionHero, heroContainer)
+            postionHero += 20
+        })
+
+
+        // console.log(heroBtnContainer);
 
 
         const imgExplorPath = [
@@ -1159,7 +1164,6 @@
         'assets/images/home/explore/img-4.jpg',
         ]
         let position = 0;
-
 
 
         // Hero Section Carousel
@@ -1179,29 +1183,14 @@
         heroBtnRight.addEventListener('click', () => transitionHeroPage('right'))
 
 
+//         document.querySelectorAll('.color-button').forEach(button {
+//     button.addEventListener('click', function() {
+//       const color = this.getAttribute('data-color');
+//       document.body.className = color + ' transition-colors duration-500';
+//     });
+//   });
 
-        const transition = (percentage) => {
-            container.classList.remove(container.classList[4])
-            container.classList.add(`translate-x-[${percentage}%]`)
-        }
 
-        const colorTransform = (e) => {
-            for (let i = 0; i < heroBtn.length; i++) {
-                heroBtn[i].classList.remove('bg-black')
-                heroBtn[i].classList.add('bg-gray-500')
-                heroBtnContainer[i].classList.remove('border-2', 'border-black', 'border-dotted')
-                console.log(heroBtnContainer[i]);
-            }
-            e.classList.remove('bg-gray-500');
-            e.classList.add('bg-black');
-            e.parentNode.classList.add('border-2', 'border-black', 'border-dotted');
-        }
-
-        btn1.addEventListener('click', () => transition(0))
-        btn2.addEventListener('click', () => transition(-20))
-        btn3.addEventListener('click', () => transition(-40))
-        btn4.addEventListener('click', () => transition(-60))
-        btn5.addEventListener('click', () => transition(-80))
 
         function caroselTab(container, btn) {
             btn.forEach((btn, i) => {
