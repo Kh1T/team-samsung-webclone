@@ -265,17 +265,27 @@ budBora.addEventListener('click', changeBudColorsHandler)
 // Rotate SVG Script
 // function rotateSVG(duration) 
 
-function myFunctionChangeText() {
-    var x = document.getElementById("show-all-spec");
-    if (x.innerHTML === "SEE ALL SPECS") {
-        x.innerHTML = "HIDE ALL SPECS";
-    } else {
-        x.innerHTML = "SEE ALL SPECS";
-    }
+window.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with the class "show-all-spec"
+    const btnChangeTexts = document.querySelectorAll('.change-text');
 
-    const svgElement = document.querySelectorAll('.rotate-svg');
-    svgElement.forEach(svgElement =>{
-    svgElement.classList.add('transition-transform', 'duration-[1800ms]', );
-    svgElement.classList.toggle('rotate-180');
+    // Loop through each button and toggle the text
+    btnChangeTexts.forEach(function(button) {
+        button.addEventListener('click', function() {
+            console.log(button.textContent);
+            if (button.textContent === 'SEE ALL SPECS') {
+                button.textContent = 'HIDE ALL SPECS';
+            } else {
+                button.textContent = 'SEE ALL SPECS';
+            }
+
+            // Select SVG elements related to this button
+            var svgElements = button.parentElement.querySelectorAll('#rotate-svg');
+            svgElements.forEach(function(svgElement) {
+                svgElement.classList.add('transition-transform', 'duration-[1800ms]');
+                svgElement.classList.toggle('rotate-180');
+            });
+        });
     });
-}
+});
+

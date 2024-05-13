@@ -47,3 +47,8 @@
   scrollbar-width: none;
  }
   
+
+.grid-max-content{
+    display: grid;
+    grid-template-rows: max-content;
+}
