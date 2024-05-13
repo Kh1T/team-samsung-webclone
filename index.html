@@ -1115,7 +1115,6 @@
         const btn4 = document.querySelector('.btn-4');
         const btn5 = document.querySelector('.btn-5');
         const tvHeader = document.getElementById('tv-header')
-        console.log(tvContainer);
         const heroBtn = document.querySelectorAll('.hero-btn');
         const heroBtnContainer = document.querySelectorAll('.hero-btn-container button')
         const btnExploreContainer = document.querySelectorAll('.explore-btn-container button')
@@ -1137,18 +1136,9 @@
             console.log(positonExplore);
             btnMoving(e, positonExplore)
             positonExplore+=90
-            // e.addEventListener('click', () => {
 
-            //     exploreContainer.style.transform = `translateX(-${positonExplore}%)`
-            //     positonExplore += 90
-            // })
         })
 
-        // for (let i =0 ; i<btnExploreContainer.length;i++){
-        //     test(btnExploreContainer[i],positonExplore)
-        //     console.log(positonExplore);
-        //     positonExplore+=90
-        // }
         function btnMoving(btn,pos){
             btn.addEventListener("click",()=>{
                 exploreContainer.style.transform = `translateX(-${pos}%)`
@@ -1159,7 +1149,7 @@
 
         console.log(btnHome);
 
-        // console.log(heroBtnLeft);
+
 
         const imgExplorPath = [
         'assets/images/home/explore/explore.png',
@@ -1171,7 +1161,10 @@
         let position = 0;
 
 
-        const transitionPage = (condition) => {
+
+        // Hero Section Carousel
+
+        const transitionHeroPage = (condition) => {
             heroImgContainer.classList.remove(`translate-x-[${position}%]`)
             if (condition == 'right' && position > -80) {
                 position += -20
@@ -1182,9 +1175,8 @@
             console.log(heroImgContainer);
         }
 
-        heroBtnLeft.addEventListener('click', () => transitionPage('left'))
-
-        heroBtnRight.addEventListener('click', () => transitionPage('right'))
+        heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'))
+        heroBtnRight.addEventListener('click', () => transitionHeroPage('right'))
 
 
 
@@ -1235,24 +1227,6 @@
         caroselTab(homeContainer, btnHome)
         caroselTab(susContainer, btnSus)
         
-
-
-
-
-
-        // function btnLocate(e) {
-        //     let postion = 0
-        //     console.log(e.classList[0]);
-        //     if (e.classList[0] == 'btn-1') {
-        //         console.log('h');
-        //         foryouContainer.classList.add(`translate-x-[-100%]`)
-        //     }
-        // }
-
-        // function transformTo(position, container) {
-        //     container.classList.add(`translate-x-[${position}]`)
-        // }
-
 
 
     
