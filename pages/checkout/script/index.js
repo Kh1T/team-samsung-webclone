@@ -1,7 +1,9 @@
 
-div = document.getElementById('paymentOption')
+const div = document.getElementById('paymentOption')
 
-defaultPayment = ` <section class="flex flex-col w-full py-6 gap-4">
+
+const defaultPayment = ` 
+<section class="flex flex-col w-full py-6 gap-4">
 <div class="hidden md:flex justify-between">
     <h1 class="text-2xl font-bold">Choose your payment method</h1>
     <a class="text-sm font-light text-blue-400" href="#">Promo code?</a>
@@ -69,15 +71,7 @@ defaultPayment = ` <section class="flex flex-col w-full py-6 gap-4">
         <h1 class="text-lg font-medium">Financing</h1>
         <p class="text-xs font-light text-gray-500">12,18 and 24 month plans available</p>
     </div>
-    <div class="flex gap-6 items-center p-6 border border-gray-500 rounded-md w-full lg:w-1/2 transition ease-in-out hover:delay-100 hover:border-blue-500 hover:border-2">
-        <img class="w-10 h-10"
-            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-samsung-finance.png.045976e.webp"
-            alt="">
-        <div>
-            <h3 class="font-medium text-sm">Samsung Financing</h3>
-            <p class="text-sm font-light">Starting from $8.62/mo <br>for 24 months</p>
-        </div>
-    </div>
+    <payment-card-component data-single="true" data-callback="changeContentToSamsung()" data-title="Samsung Financing" data-description="Starting from $8.62/mo <br>for 24 months" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-samsung-finance.png.045976e.webp"></payment-card-component>
 </section>
 <section class="flex flex-col py-6 gap-4">
     <div>
@@ -85,29 +79,15 @@ defaultPayment = ` <section class="flex flex-col w-full py-6 gap-4">
         <p class="text-xs font-light text-gray-500">No fees | No impact to credit score</p>
     </div>
     <div class="flex flex-col lg:flex-row gap-4">
-        <button onclick="changeContentToKlarna()"
-            class="flex flex-1 border border-gray-400 p-10 gap-6 items-center rounded-md transition ease-in-out hover:delay-100 hover:border-blue-500 hover:border-2">
-            <img class="h-4 w-fit object-cover"
-                src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-klarna-black.7dcdc1e.svg"
-                alt="">
-            <div class="text-sm text-start font-light">
-                <p>$51.71 every two weeks</p>
-                <p>$206.85 total</p>
-            </div>
-        </button>
-        <button onclick="changeContentToAffirm()"
-            class="flex flex-1 border border-gray-500 p-10 gap-6 rounded-md items-center transition ease-in-out hover:delay-100 hover:border-blue-500 hover:border-2">
-            <img class="w-fit h-8 object-cover"
-                src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-affirm.png.9226201.webp"
-                alt="">
-            <div class="text-sm text-start font-light">
-                <p>$51.71 every two weeks</p>
-                <p>$206.85 total</p>
-            </div>
-        </button>
+        <payment-card-component data-callback="changeContentToKlarna()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-klarna-black.7dcdc1e.svg"></payment-card-component>
+        <payment-card-component data-callback="changeContentToAffirm()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-affirm.png.9226201.webp"></payment-card-component>
     </div>
 </section>
 </section>`
+
+const html = `<script src="./components/payment-card-component.js"></script>`
+const scriptEl = document.createRange().createContextualFragment(html);
+div.append(scriptEl)
 
 
 function setDefaultPayment(){
