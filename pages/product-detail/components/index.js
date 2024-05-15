@@ -92,7 +92,7 @@ function dashBar(){
             <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400"></div>
         `
         dashContainer.innerHTML += contentHtml
-        // dashContainer.classList = "flex gap-0.5"
+        dashContainer.classList = "flex gap-0.5"
     }
     for (let i = 0; i <=3; i++){
 
