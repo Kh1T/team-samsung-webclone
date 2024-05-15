@@ -892,7 +892,7 @@
       </div>
     </section>
 
-    <section class="max-w-screen-2xl w-screen"  id="product-container">
+    <section class="max-w-screen-2xl w-screen"  >
       <!-- Feature 1 code -->
       <div class="grid grid-cols-1 md:grid-cols-2 pt-12 md:pt-16">
         <img class="grid w-full h-full" src="/assets/images/product-detail/f1-buds2-pro.png"/>
@@ -985,261 +985,26 @@
         </div>
       </div>
 
-      <!-- Feature 4 code -->
-      <div class="flex flex-col pt-12">
-            <div
-            class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-            <div
-                class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0 " >
-                <h2
-                class="col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2">
-                Every moment now sounds epic
-                </h2>
-
-                <h4
-                class="col-span-12    font-light pb-[3.2%] leading-tight md:mx-[15%] lg:pb-7 lg:mx-[144px] lg:mb-7">
-                Studio-quality sound isn’t just for the pros. Feel every note like
-                you’re there with Galaxy Buds2 Pro.³ Now everyone can have a
-                next-level listening experience , whether you’re rocking out to
-                your playlist or staying informed with podcast.
-                </h4>
-
-                <h6 class="col-span-12 text-[9px] pb-4 font-medium" >
-                ³Requires a Galaxy smartphone with Android 8.0 and One UI 4.0 or
-                later with 1.5GB RAM or above.
-                </h6>
-            </div>
-            </div>
-            <picture>
-                <source
-                    srcset="/assets/images/product-detail/f4-buds2-pro-small.png"
-                    media="(max-width:768px)"/>
-                <source srcset="/assets/images/product-detail/f4-buds2-pro.png" />
-                <img
-                    class="grid w-full h-auto"
-                    src="/assets/images/product-detail/f4-buds2-pro.png"/>
-            </picture>
-      </div>
-
-    <section id="overview-template">
-        <div class="overview-component flex flex-col pt-12">
-        <div class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
-        <div class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0 " >
-            <h2 
-            class="overview-title col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2">
-            </h2>
-
-            <h4
-            class="overview-description col-span-12  font-light pb-[3.2%] leading-tight md:mx-[15%] lg:pb-7 lg:mx-[144px] lg:mb-7">
-            </h4>
-
-            <h6 class="overview-additional col-span-12 text-[9px] pb-4 font-medium" >
-            </h6>
-        </div>
-        </div>
-        <picture >
-            <source class="overview-image-set"
-                srcset=""
-                media="(max-width:768px)"/>
-            <source srcset="" />
-            <img class="overview-image"
-                class="grid w-full h-auto"
-                src=""/>
-        </picture>
-        </div>
-    </section>
-
-      <!-- Feature 5 code  -->
-      <div class="flex flex-col pt-16">
-        <div
-          class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]"
-        >
-          <div
-          class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0"
-          >
-            <h2
-              class="col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2"
-              
-            >
-              Hear only what you want
-            </h2>
-
-            <h4
-              class="col-span-12    font-light pb-[3.2%] leading-tight md:mx-[15%] lg:pb-7 lg:mx-[144px] lg:mb-7"
-              
-            >
-              Reduce unwanted noise with Galaxy Buds2 Pro. They use Intelligent
-              Active Noise Cancellation⁴ to quiet even the loudest outside
-              sounds. Tune in to what matters most without being bothered by
-              distracting sounds around you.
-            </h4>
-
-            <h6 class="col-span-12 text-[9px] pb-4 font-medium" >
-              ⁴Features including Intelligent Active Noise Cancellation and
-              Ambient sound require a Bluetooth connection to a compatible
-              device.
-            </h6>
-          </div>
+      <!-- Overview-Image-Bottom -->
+        <div id="overview-container">
+            <template id="overview-template">
+                <div class="overview-component flex flex-col pt-12">
+                    <div class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]">
+                        <div class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0">
+                            <h2 class="overview-title col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2"></h2>
+                            <h4 class="overview-description col-span-12 font-light pb-[3.2%] leading-tight md:mx-[15%] lg:pb-7 lg:mx-[144px] lg:mb-7"></h4>
+                            <h6 class="overview-additional col-span-12 text-[9px] pb-4 font-medium"></h6>
+                        </div>
+                    </div>
+                    <picture>
+                        <img class="overview-image hidden md:grid "/>
+                        <img class="overview-image-set grid  md:hidden" />
+                    </picture>
+                </div>
+            </template>
         </div>
 
-        <picture>
-          <source
-            srcset="/assets/images/product-detail/f5-buds2-pro-small.png"
-            media="(max-width:768px)"
-          />
-          <source srcset="/assets/images/product-detail/f5-buds2-pro.png" />
-          <img
-            class="grid w-full h-auto"
-            src="/assets/images/product-detail/f5-buds2-pro.png"
-          />
-        </picture>
-      </div>
 
-      <!-- Feature 6 code  -->
-      <div class="flex flex-col pt-[5.75%]">
-        <div
-          class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]"
-        >
-          <div
-            class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0">
-            <h2
-              class="col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2"
-              
-            >
-              Surround sound that’s all about you
-            </h2>
-
-            <h4
-              class="col-span-12  font-light pb-[3.2%] leading-tight md:mx-[15%]"
-              
-            >
-              Go beyond just listening and surround yourself with the sounds you
-              love — and nothing else. Amplify what you like. Minimize what you
-              don’t. Enhanced 360-degree audio⁵ brings out the tones you love
-              from every angle for a surround-sound experience every time you
-              pop them in.
-            </h4>
-
-            <h6 class="col-span-12 text-[9px] pb-4 font-medium" >
-              ⁵Requires a Galaxy smartphone with Android 8.0 and One UI 4.1 or
-              later with 1.5GB RAM or above.
-            </h6>
-          </div>
-        </div>
-
-        <picture>
-          <source
-            srcset="/assets/images/product-detail/f6-buds2-pro-small.png"
-            media="(max-width:768px)"
-          />
-          <source srcset="/assets/images/product-detail/f6-buds2-pro.png" />
-          <img
-            class="w-full h-auto"
-            src="/assets/images/product-detail/f6-buds2-pro.png"
-          />
-        </picture>
-      </div>
-
-      <!-- Feature 7 code  -->
-      <div class="flex flex-col pt-[5.75%]">
-        <div
-          class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]"
-        >
-          <div
-            class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0">
-            <h2
-              class="col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2"
-              
-            >
-              Don’t miss a word
-            </h2>
-
-            <h4
-              class="col-span-12    font-light pb-[3.2%] leading-tight md:mx-[15%]"
-              
-            >
-              Keep the conversation going without taking out your Galaxy Buds2
-              Pro. When your voice is detected, Intelligent Conversation Mode
-              turns off Active Noise Cancellation, turns down the volume and
-              puts your Buds in Ambient Mode.⁶ This helps you hear the other
-              person’s voice loud and clear. When the conversation is over, your
-              Buds shift back to their previous settings automatically. Now you
-              can catch every word without having to lift a finger.
-            </h4>
-
-            <h6 class="col-span-12 text-[9px] pb-4 font-medium" >
-              ⁶Requires a Galaxy smartphone with Android 8.0 later and 1.5GB RAM
-              or above. Feature only can be enabled and controlled through the
-              Galaxy Wearable app on Android, available on the Google Play
-              Store.
-            </h6>
-          </div>
-        </div>
-
-        <picture>
-          <source
-            srcset="/assets/images/product-detail/f7-buds2-pro-small.png"
-            media="(max-width:768px)"
-          />
-          <source srcset="/assets/images/product-detail/f7-buds2-pro.png" />
-          <img
-            class="grid w-full h-auto"
-            src="/assets/images/product-detail/f7-buds2-pro.png"
-          />
-        </picture>
-      </div>
-
-      <!-- Feature 8 code  -->
-      <div class="pt-12">
-        <div
-          class="flex flex-col justify-center items-center text-center px-0 md:text-start md:px-[8.33%] md:pt-0 mx-4 md:mx-[16.6%]"
-        >
-          <div
-            class="grid grid-cols-12 text-center md:text-center mx-4 md:mx-0">
-            <h2
-              class="col-span-12 text-3xl md:text-5xl font-semibold leading-tight md:leading-tight pb-2"
-              
-            >
-              A Galaxy in perfect sync
-            </h2>
-
-            <h4
-              class="col-span-12    font-light pb-[3.2%] leading-tight md:mx-[15%]"
-              
-            >
-              These Buds play well with others. Galaxy Buds2 Pro pair easily
-              with your Galaxy devices.⁷ Simply open the case and tap connect to
-              pair with your Galaxy devices quickly. Whether you’re pairing with
-              your tablet, phone or Watch, Buds2 Pro syncs in a cinch and
-              automatically switches audio sources when an alert or call comes
-              in to keep you in the know.⁸
-            </h4>
-
-            <h6 class="col-span-12 text-[9px] pb-4 font-medium" >
-              ⁷Easy Pair only supported on mobile devices running One UI 1.0 or
-              later and Galaxy Book series PCs launched 2020 or later.
-              <br />
-              ⁸Auto Switch only supported on mobile devices (smartphones and
-              tablets) running One UI 3.1 or later and watches that are Galaxy
-              Watch4 Series or later. Devices must be logged in to the same
-              Samsung account and have Bluetooth and Wi-Fi turned on. Earbuds
-              must be paired with both your phone and tablet at least once.
-            </h6>
-          </div>
-        </div>
-
-        <picture>
-          <source
-            srcset="/assets/images/product-detail/f8-buds2-pro-small.png"
-            media="(max-width:768px)"
-          />
-          <source srcset="/assets/images/product-detail/f8-buds2-pro.png" />
-          <img
-            class="grid w-full h-auto"
-            src="/assets/images/product-detail/f8-buds2-pro.png"
-          />
-        </picture>
-      </div>
 
       <!-- Feature 9 code -->
       <div class="grid grid-cols-1 md:grid-cols-2 pt-12 md:pt-0">
