@@ -1,4 +1,4 @@
-export default class PaymentCardComponent extends HTMLElement {
+class PaymentCardComponent extends HTMLElement {
     
     constructor() {
         super()
