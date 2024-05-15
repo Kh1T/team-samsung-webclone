@@ -1348,63 +1348,18 @@
           <p class="mb-4">Rating Snapshot</p>
           <p class="mb-4">Select a row below to filter reviews.</p>
           <div class="w-full pt-2 pl-2 flex flex-col gap-2">
-            <div class="flex items-center relative">
-              <p>5 stars</p>
-              <div
-                class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"
-              ></div>
-              <div
-                class="left-16 absolute h-3 w-[45%] rounded-l-md bg-orange-400"
-              ></div>
-              <p class="ml-4">3580</p>
-            </div>
-            <div class="flex items-center relative">
-              <p>4 stars</p>
-              <div
-                class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"
-              ></div>
-              <div
-                class="left-16 absolute h-3 w-[25%] rounded-l-md bg-orange-400"
-              ></div>
-              <p class="ml-4">953</p>
-            </div>
-            <div class="flex items-center relative">
-              <p>3 stars</p>
-              <div
-                class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"
-              ></div>
-              <div
-                class="left-16 absolute h-3 w-[15%] rounded-l-md bg-orange-400"
-              ></div>
-              <p class="ml-4">202</p>
-            </div>
-            <div class="flex items-center relative">
-              <p>2 stars</p>
-              <div
-                class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"
-              ></div>
-              <div
-                class="left-16 absolute h-3 w-[10%] rounded-l-md bg-orange-400"
-              ></div>
-              <p class="ml-4">106</p>
-            </div>
-            <div class="flex items-center relative">
-              <p>1 stars</p>
-              <div
-                class="ml-8 relative h-3 w-[60%] rounded-md bg-gray-400"
-              ></div>
-              <div
-                class="left-16 absolute h-3 w-[10%] rounded-l-md bg-orange-400"
-              ></div>
-              <p class="ml-4">122</p>
-            </div>
+            <review-bar data-title="5 stars" data-percent="75" data-count="3580"></review-bar>
+            <review-bar data-title="4 stars" data-percent="55" data-count="953"></review-bar>
+            <review-bar data-title="3 stars" data-percent="35" data-count="202"></review-bar>
+            <review-bar data-title="2 stars" data-percent="15" data-count="106"></review-bar>
+            <review-bar data-title="1 star" data-percent="15" data-count="122"></review-bar>
           </div>
         </div>
         <!-- 2 Overall Rating -->
         <div class="w-full ml-2">
           <h3 class="mb-5 mt-6">Overall Rating</h3>
           <div class="flex gap-4 mb-3">
-            <p class="  xl font-bold pb-4">4.6</p>
+            <p class="  text-5xl font-bold pb-4">4.6</p>
             <div>
               <div class="flex pt-1">
                 <img src="/assets/images/product-detail/star-icon.svg" alt="star">
@@ -1425,31 +1380,11 @@
         <div class="w-full mt-4">
           <h3 class="mb-4">Review this Product</h3>
           <div class="flex gap-4 mb-7">
-            <div
-              class="rate-star size-12 border-2 border-orange-300 rounded-lg"
-            >
-              <img class="h-full w-6 m-auto" src="/assets/images/product-detail/star-no-fill.svg" alt="star">
-            </div>
-            <div
-              class="rate-star size-12 border-2 border-orange-300 rounded-lg"
-            >
-            <img class="h-full w-6 m-auto" src="/assets/images/product-detail/star-no-fill.svg" alt="star">
-            </div>
-            <div
-              class="rate-star size-12 border-2 border-orange-300 rounded-lg"
-            >
-            <img class="h-full w-6 m-auto" src="/assets/images/product-detail/star-no-fill.svg" alt="star">
-            </div>
-            <div
-              class="rate-star size-12 border-2 border-orange-300 rounded-lg"
-            >
-            <img class="h-full w-6 m-auto" src="/assets/images/product-detail/star-no-fill.svg" alt="star">
-            </div>
-            <div
-              class="rate-star size-12 border-2 border-orange-300 rounded-lg"
-            >
-            <img class="h-full w-6 m-auto" src="/assets/images/product-detail/star-no-fill.svg" alt="star">
-            </div>
+            <star-box></star-box>
+            <star-box></star-box>
+            <star-box></star-box>
+            <star-box></star-box>
+            <star-box></star-box>
           </div>
           <span
             >Adding a review will require a valid email for verification</span
@@ -1463,6 +1398,8 @@
       >
         <h3 class="mb-5 text-base">Average Customer Ratings</h3>
         <div class="flex flex-col md:flex-row gap-4 pb-5">
+          <dash-bar></dash-bar>
+          <div id="dash-container">Hello</div>
           <div class="part">
             <p class="mb-2">Feature</p>
             <div class="flex gap-1 items-center">
@@ -2424,7 +2361,7 @@
     <footer-component></footer-component>
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
-    <script src="./script/index.js"></script>
+    <script src="./script/index.js" defer></script>
     <script src="/pages/product-detail/components/overview.js"></script>
   </body>
 </html>
