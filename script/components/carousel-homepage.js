@@ -150,5 +150,28 @@ customElements.define('carousel-tab', CarouselTab);
 const test = document.getElementById('mobile')
 
 const mobileData = [
-{"title": "Galaxy S24 Ultra", "description": "Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.", "largeImage": "assets/images/home/mobile/s24_ultra_big.avif", "smallImage": "assets/images/home/mobile/s24_small.jpeg"},
-{"title": "Galaxy S24+", "description": "Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.", "largeImage": "assets/images/home/mobile/s24_big.jpeg", "smallImage": "path/to/small-image2.jpg"}]
+    {
+        "title": "Galaxy S24 Ultra",
+        "description": "Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.",
+        "largeImage": "..assets/images/home/mobile/s24_ultra_big.avif",
+        "smallImage": "assets/images/home/mobile/s24_small.jpeg"
+    },
+    {
+        "title": "Galaxy S24+",
+        "description": "Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.",
+        "largeImage": "../assets/images/home/mobile/s24_big.jpeg",
+        "smallImage": "path/to/small-image2.jpg"
+    }
+];
+const t1 = test.getAttribute('items')
+
+const curent = t1 + JSON.stringify(mobileData)
+
+test.setAttribute('items', curent)
+
+console.log(t1);
+
+
+// mobileData.forEach(item => {
+//     mobile.setAttribute("items", JSON.stringify(item));
+// });
