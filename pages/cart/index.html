@@ -35,7 +35,7 @@
 
             <div class="grid grid-cols-12 mb-10">
                 <!-- left col -->
-                <div class="col-span-full md:col-span-8">
+                <div  class="col-span-full md:col-span-8">
                     <div class="flex justify-between my-3">
                         <h1 class="font-medium text-xl text-start hidden md:block">Cart</h1>
                         <p>Zip code: <a class="text-blue-500">96928</a></p>
@@ -47,12 +47,12 @@
                         <!-- upper left col -->
                         <img class="h-16 mx-12 mt-5" src="../../assets/images/cart/buds2.webp"
                             alt="galaxy buds2 pro">
-                        <div class="flex w-full flex-col ">
+                        <div class="flex w-full flex-col">
                             <div class="flex border-b justify-between">
                                 <div class="flex flex-col md:flex-row md:w-[70%] font-semibold md:justify-between mt-7">
                                     <p>Galaxy Buds2 Pro, Graphite</p>
                                     <div>
-                                        <select>
+                                        <select class="cursor-pointer">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -63,15 +63,14 @@
                                             <option value="8">8</option>
                                             <option value="9">9</option>
                                             <option value="10">10</option>
-                                            </select>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="flex flex-col items-end w-5/12">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-3">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M6 18 18 6M6 6l12 12" />
+                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mt-3 cursor-pointer">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
                                     </svg>
                                     <p>$189.99</p>
                                     <p class="font-thin text-xs line-through">$229.99</p>
@@ -195,7 +194,7 @@
                 <div>
                     <div class="flex text-center justify-evenly text-sm">
                         <div>
-                            <a href="#"><img class="w-[200px] h-[150px]" src="../../assets/images/cart/watch6.webp" alt="galaxy watch6 classic"></a>
+                            <a href="#"><img class="w-[200px] h-[150px] object-cover" src="../../assets/images/cart/watch6.webp" alt="galaxy watch6 classic"></a>
                             <a class="font-semibold" href="#">Galaxy Watch6 Classic, 47mm,...</a>
                             <div class="flex justify-center gap-1 mb-5 mt-3">
                                 <p class="font-light">$399.99</p>
@@ -205,7 +204,7 @@
                             <a class="font-bold underline" href="#">Add to cart</a>
                         </div>
                         <div>
-                            <a href="#"><img class="w-[200px] h-[150px]" src="../../assets/images/cart/watch6-2.webp" alt="Galaxy Watch6, 40mm, Gold, BT"></a>
+                            <a href="#"><img class="w-[200px] h-[150px] object-cover" src="../../assets/images/cart/watch6-2.webp" alt="Galaxy Watch6, 40mm, Gold, BT"></a>
                             <a class="font-semibold" href="#">Galaxy Watch6, 40mm, Gold, BT</a>
                             <div class="flex justify-center gap-1 mb-5 mt-3">
                                 <p class="font-light">$239.99</p>
@@ -214,7 +213,7 @@
                             <a class="font-bold underline" href="#">Add to cart</a>
                         </div>
                         <div>
-                            <a href="#"><img class="w-[200px] h-[150px]" src="../../assets/images/cart/charger.webp" alt="wireless charger"></a>
+                            <a href="#"><img class="w-[200px] h-[150px] object-cover" src="../../assets/images/cart/charger.webp" alt="wireless charger"></a>
                             <a class="font-semibold" href="#">12W Wireless Charger Duo wit...</a>
                             <p class="font-light mb-6 mt-3">$89.99</p>
                             <a class="font-bold underline" href="#">Add to cart</a>
@@ -334,7 +333,7 @@
                 </div>
                 <p class="text-blue-500 font-light">Promo code?</p>
             </div>
-            <a class="self-center" href="pages/checkout/index.html">
+            <a class="self-center" href="../checkout/index.html">
                 <button class="w-52 h-fit py-2 mt-5 bg-blue-500 text-white text-sm tracking-wider rounded-full">Checkout</button>
             </a>
             <button class="flex justify-center self-center w-52 h-fit bg-yellow-400 hover:bg-yellow-500 rounded-full font-bold text-lg italic mb-5 mt-3"><p class=" text-blue-900 mt-1">Pay</p><p class="text-blue-400 mt-1">Pal</p></button>
@@ -342,42 +341,12 @@
     </section>
 
 
-    <script>
-        // When the user scrolls down 850px from the top of the document, slide down the navbar
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-        }
 
-        const orderSummary = document.getElementById("order-summary");
-        const chevron = document.getElementById("chevron");
-        const expandButton = document.getElementById("expand-button");
-
-        const chevron2 = document.getElementById("chevron-2");
-
-        const toggleSummaryHandle = () => {
-            orderSummary.classList.toggle("hidden");
-            expandButton.classList.toggle("bg-gray-50");
-            chevron.classList.toggle("rotate-180");
-        }
-        chevron.addEventListener("click", toggleSummaryHandle)
-
-        const toggleSummaryHandle2 = () => {
-            chevron2.classList.toggle("rotate-180")
-        }
-
-        chevron2.addEventListener("click", toggleSummaryHandle2)
-        
-    </script>
 
     
     
     <script src="../../script/index.js" type="module"></script>
+    <script src="../cart/script/script.js"></script>
 </body>
 
 </html>
