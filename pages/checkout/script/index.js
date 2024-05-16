@@ -17,26 +17,26 @@ const defaultPayment = `
             <button-checkout 
                 data-callback="changeContentToSamsung()" 
                 data-color="bg-black"
-                data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/btn-samsung-pay.png.548e554.webp">
+                data-image="../../assets/images/checkout/images/samsung-pay.webp">
             </button-checkout>
             <p class="text-xs font-light text-gray-500"> Require Samsung Pay enabled <br class="hidden md:block"> mobile device </p>
     </div>
     <div class="w-full h-fit space-y-2 md:w-1/2">
             <button-checkout 
                 data-color="bg-yellow-400"
-                data-image="https://www.edigitalagency.com.au/wp-content/uploads/new-PayPal-Logo-horizontal-full-color-png.png">
+                data-image="../../assets/images/checkout/images/paypal.png">
             </button-checkout>
             <p class="text-xs font-light text-gray-500">Now accepting crypto and credit <br class="hidden md:block">card reward</p>
     </div>
             <button-checkout 
                 data-breakpoint="md:w-1/5"
                 data-color="bg-yellow-300"
-                data-image="https://d2ldlvi1yef00y.cloudfront.net/default/us/live/lwa/lightgray/large/PwA.png">
+                data-image="../../assets/images/checkout/images/amazon-pay.png">
             </button-checkout>
             <button-checkout 
                 data-breakpoint='md:w-1/4'
                 data-color="bg-black"
-                data-image="https://www.gstatic.com/instantbuy/svg/dark_gpay.svg">
+                data-image="../../assets/images/checkout/images/google-pay.svg">
             </button-checkout>
 </div>
 
@@ -55,7 +55,7 @@ const defaultPayment = `
             <p class="text-sm font-light">Credit/debit card</p>
         </div>
         <img data-v-daed2594=""
-            src="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-sprite-hori-v2.png.16d6c4c.webp"
+            src="../../assets/images/checkout/images/card-payment-option.webp"
             alt="" class="ml10">
     </button>
 </section>
@@ -64,7 +64,7 @@ const defaultPayment = `
         <h1 class="text-lg font-medium">Financing</h1>
         <p class="text-xs font-light text-gray-500">12,18 and 24 month plans available</p>
     </div>
-    <payment-card-component data-single="true" data-callback="changeContentToSamsung()" data-title="Samsung Financing" data-description="Starting from $8.62/mo <br>for 24 months" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-samsung-finance.png.045976e.webp"></payment-card-component>
+    <payment-card-component data-single="true" data-callback="changeContentToSamsung()" data-title="Samsung Financing" data-description="Starting from $8.62/mo <br>for 24 months" data-image="../../assets/images/checkout/images/samsung-finance.webp"></payment-card-component>
 </section>
 <section class="flex flex-col py-6 gap-4">
     <div>
@@ -72,8 +72,8 @@ const defaultPayment = `
         <p class="text-xs font-light text-gray-500">No fees | No impact to credit score</p>
     </div>
     <div class="flex flex-col lg:flex-row gap-4">
-        <payment-card-component data-callback="changeContentToKlarna()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-klarna-black.7dcdc1e.svg"></payment-card-component>
-        <payment-card-component data-callback="changeContentToAffirm()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-affirm.png.9226201.webp"></payment-card-component>
+        <payment-card-component data-callback="changeContentToKlarna()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="../../assets/images/checkout/images/klarna-pay.svg"></payment-card-component>
+        <payment-card-component data-callback="changeContentToAffirm()" data-title="$51.71 every two weeks" data-description="$206.85 total" data-image="../../assets/images/checkout/images/affirm-pay.webp"></payment-card-component>
     </div>
 </section>
 </section>`
@@ -98,7 +98,7 @@ function changeContentToSamsung() {
         <hr>
         <div class="flex pt-6 gap-4 items-center">
             <img class="h-8 w-fit"
-                src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-samsung-pay-stacked.e848acd.webp"
+                src="../../assets/images/checkout/images/samsung-pay-stack.webp"
                 alt="">
             <p class="text-sm">Pay <strong>$206.85</strong> with <br> Samsung Pay</p>
         </div>
@@ -163,8 +163,8 @@ function changeContentToCard() {
             <hr>
             <div class="flex pt-8 items-center gap-4">
                 <p class="text-sm font-medium">Credit / debit card</p>
-                <img class="h-8 w-fit"
-                    src="https://www.samsung.com/us/web/express-checkout/static/dist/img/payment-type-sprite-hori-v1.png.bdd8fde.webp"
+                <img class="h-6 w-fit"
+                    src="../../assets/images/checkout/images/card-payment-option.webp"
                     alt="">
             </div>
         </div>
@@ -212,7 +212,7 @@ function changeContentToKlarna() {
 
             <div class="flex pt-6 gap-4 items-center">
                 <img class="h-4 w-fit"
-                    src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-klarna-black.7dcdc1e.svg"
+                    src="../../assets/images/checkout/images/klarna-pay.svg"
                     alt="">
                 <p class="text-sm">Pay in 4 with Klarna
                     <br>$51.71 every two weeks <sup>π</sup>
@@ -271,7 +271,6 @@ function changeContentToKlarna() {
 }
 
 function changeContentToAffirm() {
-  console.log('Hi')
   div.innerHTML = `     <section class="flex flex-col w-full py-6 gap-4">
         <div class="hidden md:flex justify-between">
             <h1 class="text-2xl font-bold">Choose your delivery option</h1>
@@ -285,7 +284,7 @@ function changeContentToAffirm() {
             <hr>
             <div class="flex pt-6 gap-4 items-center">
                 <img class="h-4 w-fit"
-                    src="https://www.samsung.com/us/web/express-checkout/static/dist/img/logo-affirm.png.9226201.webp"
+                    src="../../assets/images/checkout/images/affirm-pay.webp"
                     alt="">
                 <p class="text-sm">Pay in 4 with Klarna
                     <br>$51.71 every two weeks <sup>π</sup>
