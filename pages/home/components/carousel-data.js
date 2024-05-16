@@ -101,3 +101,25 @@ export const homeData = {
         "Bespoke Laundry"
     ]
 };
+
+export const susData = {
+    headerText: "Sustainability",
+    items: [
+        {
+            "title": "Save more, do more for the planet",
+            "description": "Lower your environmental impact with a Certified Re-Newed phone.",
+            "largeImage": "../../assets/images/home/sus/sus-big.png",
+            "smallImage": "../../assets/images/home/sus/sus-small.png"
+        },
+        {
+            "title": "Recycling electronics today, for tommorrow",
+            "description": "Learn more about how our partners can help you recycle your e-waste.",
+            "largeImage": "../../assets/images/home/sus/sus-2-big.jpeg",
+            "smallImage": "../../assets/images/home/sus/sus-2-small.jpeg"
+        },
+    ],
+    buttons: [
+        "Certified Re-Newed",
+        "How to recycle"
+    ]
+};

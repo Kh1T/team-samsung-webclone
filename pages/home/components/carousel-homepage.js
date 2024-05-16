@@ -2,6 +2,7 @@
 import { mobileData } from './carousel-data.js';
 import { tvData } from './carousel-data.js';
 import { homeData } from './carousel-data.js';
+import { susData } from './carousel-data.js';
 
 
 
@@ -19,13 +20,12 @@ export class CarouselTab extends HTMLElement {
                 data = tvData;
             } else if (dataType === 'home') {
                 data = homeData;
+            } else if (dataType === 'sus') {
+                data = susData;
             }
         
-
         const { items, headerText, buttons } = data;
         
-
-
         this.innerHTML = `
             <section class="mobile max-w-screen-2xl w-screen">
                 <div class="mobile-container relative">
