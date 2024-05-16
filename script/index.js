@@ -2,7 +2,7 @@
 // import { Footer } from './components/footer.js';
 // import { Chat } from './components/chat.js';
 // import { Feedback } from './components/feedback.js'
-import { CarouselTab } from './components/carousel-homepage.js';
+import { CarouselTab } from '../pages/home/components/carousel-homepage.js';
 
 // customElements.define("navbar-component", NavBar);
 // customElements.define("footer-component", Footer);
