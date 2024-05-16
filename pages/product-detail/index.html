@@ -18,13 +18,13 @@
       type="image/x-icon"
       href="../../assets/images/logo/fav-icon.ico"
     />
-    <script src="./components/index.js" defer></script>
+    <script src="./components/index.js" type="module" defer></script>
   </head>
 
   <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
     <!-- Product Detail -->
-
+    <!-- <div id="dash-container"></div> -->
     <!-- modal -->
     <div class="modal-container">
       <div
@@ -1127,54 +1127,30 @@
         <div class="flex flex-col md:flex-row gap-4 pb-5">
           <div class="part">
             <p class="mb-2">Feature</p>
-            <div class="flex gap-1 items-center">
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400 relative">
-                <div class="bar-present h-2.5 w-4 bg-orange-400 absolute"></div>
-              </div>
-              <p class="pl-2">4.2</p>
+            <div class="flex items-center">
+              <dash-bar data-rate="4"></dash-bar>              
+              <p class="pl-2">4</p>
             </div>
           </div>
           <div class="part">
-            <p class="mb-2">Performance</p>
-            <div class="flex gap-1 items-center">
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400 relative">
-                <div class="bar-present h-2.5 w-4 bg-orange-400 absolute"></div>
-              </div>
-              <p class="pl-2">4.2</p>
+            <p class="mb-2">Performance</p>            
+            <div class="flex items-center">
+              <dash-bar data-rate="4"></dash-bar>
+              <p class="pl-2">4</p>
             </div>
           </div>
           <div class="part">
             <p class="mb-2">Design</p>
-            <div class="flex gap-1 items-center">
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400 relative">
-                <div class="bar-present h-2.5 w-4 bg-orange-400 absolute"></div>
-              </div>
-              <p class="pl-2">4.2</p>
+            <div class="flex items-center">
+              <dash-bar data-rate="3"></dash-bar>              
+              <p class="pl-2">3</p>
             </div>
           </div>
           <div class="part">
-            <p class="mb-2">Value</p>
-            <div class="flex gap-1 items-center">
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400 relative">
-                <div class="bar-present h-2.5 w-4 bg-orange-400 absolute"></div>
-              </div>
-              <p class="pl-2">4.2</p>
+            <p class="mb-2">Value</p>            
+            <div class="flex items-center">
+              <dash-bar data-rate="5"></dash-bar>
+              <p class="pl-2">5</p>
             </div>
           </div>
         </div>
@@ -1702,14 +1678,8 @@
           <div class="mt-2">
             <p class="mb-0">Value</p>
             <div class="flex gap-1 items-center">
-              <div class="bar-present h-2.5 md:w-14 w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 md:w-14 w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 md:w-14 w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 md:w-14 w-8 bg-orange-400"></div>
-              <div class="bar-present h-2.5 md:w-14 w-8 bg-gray-400 relative">
-                <div class="bar-present h-2.5 w-4 bg-orange-400 absolute"></div>
-              </div>
-              <p class="pl-2">4.2</p>
+              <dash-bar data-rate="3"></dash-bar>
+              <p class="pl-2">3</p>
             </div>
           </div>
         </div>
