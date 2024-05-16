@@ -53,7 +53,7 @@ function createOverviewImageBottom(item) {
 
 
 // Data for each overview group
-const dataGroup1 = [
+const dataOverview1 = [
     {
         imgSrc: '/assets/images/product-detail/f1-buds2-pro.png',
         title: 'They say "hola," you hear "hello."',
@@ -75,15 +75,15 @@ const dataGroup1 = [
     // Add more data objects as needed
 ];
 
-const container1 = document.getElementById('first-component-overview');
-dataGroup1.forEach((item, index) => {
+const overviewContainer1 = document.getElementById('first-component-overview');
+dataOverview1.forEach((item, index) => {
     const component = new OverviewImageSideComponent(item.imgSrc, item.title, item.description, item.moreInfo, index);
     
-    container1.appendChild(component);
+    overviewContainer1.appendChild(component);
 });
 
 
-const dataGroup2 = [
+const dataOverview2 = [
     {
         imgSrc: '/assets/images/product-detail/f4-buds2-pro.png',
         imgSrcset: '/assets/images/product-detail/f4-buds2-pro-small.png',
@@ -121,11 +121,11 @@ const dataGroup2 = [
     },
 ];
 
-const container2 = document.getElementById('second-component-overview');
-dataGroup2.forEach(item => container2.appendChild(createOverviewImageBottom(item)));
+const overvieWOvervoverviewContainer2 = document.getElementById('second-component-overview');
+dataOverview2.forEach(item => overvieWOvervoverviewContainer2.appendChild(createOverviewImageBottom(item)));
 
 
-const dataGroup3 = [
+const dataOverview3 = [
     {
         imgSrc: '/assets/images/product-detail/f9-buds2-pro.png',
         title:'Look out for your Buds ',
@@ -159,11 +159,11 @@ const dataGroup3 = [
 
 ];
 
-const container = document.getElementById('third-component-overview');
-dataGroup3.forEach((item, index) => {
+const overviewContainer = document.getElementById('third-component-overview');
+dataOverview3.forEach((item, index) => {
     const component = new OverviewImageSideComponent(item.imgSrc, item.title, item.description, item.moreInfo, index);
     
-    container.appendChild(component);
+    overviewContainer.appendChild(component);
 });
 
 
