@@ -72,7 +72,7 @@ const dataOverview1 = [
         description: "Hearing is believing. Galaxy Buds2 Pro pack a studio-worthy listening experience into our most comfortable design yet — wear them as long as you want.",
         moreInfo: ''
     },
-    // Add more data objects as needed
+
 ];
 
 const overviewContainer1 = document.getElementById('first-component-overview');
@@ -121,8 +121,8 @@ const dataOverview2 = [
     },
 ];
 
-const overvieWOvervoverviewContainer2 = document.getElementById('second-component-overview');
-dataOverview2.forEach(item => overvieWOvervoverviewContainer2.appendChild(createOverviewImageBottom(item)));
+const overviewContainer2 = document.getElementById('second-component-overview');
+dataOverview2.forEach(item => overviewContainer2.appendChild(createOverviewImageBottom(item)));
 
 
 const dataOverview3 = [
@@ -159,11 +159,11 @@ const dataOverview3 = [
 
 ];
 
-const overviewContainer = document.getElementById('third-component-overview');
+const overviewContainer3 = document.getElementById('third-component-overview');
 dataOverview3.forEach((item, index) => {
     const component = new OverviewImageSideComponent(item.imgSrc, item.title, item.description, item.moreInfo, index);
     
-    overviewContainer.appendChild(component);
+    overviewContainer3.appendChild(component);
 });
 
 
