@@ -1,6 +1,7 @@
 
 import { mobileData } from './carousel-data.js';
 import { tvData } from './carousel-data.js';
+import { homeData } from './carousel-data.js';
 
 
 
@@ -16,6 +17,8 @@ export class CarouselTab extends HTMLElement {
                 data = mobileData;
             } else if (dataType === 'tv'){
                 data = tvData;
+            } else if (dataType === 'home') {
+                data = homeData;
             }
         
 

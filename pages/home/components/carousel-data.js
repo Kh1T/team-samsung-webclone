@@ -62,12 +62,42 @@ export const tvData = {
             "title": "Compact design, captivating sound",
             "description": "Powerful Dolby Atmos sound in an impressively slender package. Shop our Ultra Slim Soundbar.",
             "largeImage": "../../assets/images/home/tv/sound-big.jpeg",
-            "smallImage": "../../assets/images/home/tv/sound-big.jpeg"
+            "smallImage": "../../assets/images/home/tv/sound-small.avif"
         }
     ],
     buttons: [
         "The Frame LS03D 75",
         "43 LS05 Sero",
         "Ultra Slim Soundbar"
+    ]
+};
+
+
+export const homeData = {
+    headerText: "Home Appliances",
+    items: [
+        {
+            "title": "Refresh with your dream kitchen",
+            "description": "Bundle and save up to $1,500 - or more. Plus, get 2 yours of Samsung Care+ for $1 with select purchase.",
+            "largeImage": "../../assets/images/home/home_appliances/home-big-1.webp",
+            "smallImage": "../../assets/images/home/home_appliances/home-small-1.jpeg"
+        },
+        {
+            "title": "Cool deals on cooler fridges",
+            "description": "Get up to $1,200 off Bespoke Refrigerator. Plus, enjoy free installation and 2 years of Samsung Care+ for $1 with select purchase.",
+            "largeImage": "../../assets/images/home/home_appliances/home-big-2.jpeg",
+            "smallImage": "../../assets/images/home/home_appliances/home-small-2.jpeg"
+        },
+        {
+            "title": "Freshen up your laundry",
+            "description": "Get up to $1,000 off laundry sets. plus, enjoy free installation and 2 years of Samsung Care+ for $1 with select purchase.",
+            "largeImage": "../../assets/images/home/home_appliances/home-big-3.jpeg",
+            "smallImage": "../../assets/images/home/home_appliances/home-small-3.jpeg"
+        }
+    ],
+    buttons: [
+        "Bundle deals",
+        "Bespoke Refrigerators",
+        "Bespoke Laundry"
     ]
 };
