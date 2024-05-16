@@ -9,7 +9,7 @@ export class ColorButton extends HTMLElement{
 
         this.innerHTML = `
             <span
-                class="w-8 h-8 rounded-full border block border-black bg-${textColor}"
+                class="w-8 h-8 rounded-full border block border-black ${textColor}"
                 ></span>
                 <p>${title}</p>
                 <p>$189.99</p> 
