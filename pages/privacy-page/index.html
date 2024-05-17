@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>privacy-page</title>
+    
 
 </head>
 
 <body>
+<navbar-component></navbar-component>
 
-
-<section class=" flex justify-center">
+<section class=" flex flex-col items-center">
         
     <!-- Privacy pages -->
     <section class="flex flex-col max-w-screen-lg" >
         <div class="flex justify-between pb-2 ">
-            <div class="flex">
+            <div class="flex pl-1">
                 <h1 class="">Privacy</h1>
-                <img src="../../assets/images/privacy/flg.jpg" class="w-10 ">
+                <img src="../../assets/images/privacy/flg.jpg" class=" w-12 h-6 pl-2 pt-1 ">
             </div>
             <div class="flex ">
             <h1 >Privacy Policy</h1>
@@ -27,7 +28,7 @@
             
         </div>
         <div class="relative flex flex-col items-center ">
-            <img src="../../assets/images/privacy/p1.png" alt="" class="w-400 ">
+            <img src="../../assets/images/privacy/p1.png" alt="" class="w-400 rounded-2xl">
             <h2 class="absolute inset-0 flex items-center justify-center text-white text-7xl font-bold">
                 knowing your privacy right
             </h2>
@@ -41,14 +42,14 @@
             <div class="pt-24 w-full flex justify-center">
                 <img src="../../assets/images/privacy/p2.png" alt="">
             </div>
-            <!-- Your Privacy section -->
+<!-- carousel Your Privacy section -->
             <div class="text-center  ">
                 <h2 class="text-4xl font-bold py-12">Your Privacy Rights</h2>
                 <!-- Text div1 -->
                 <div class="">
-                    <div class="flex justify-center">
+                    <div class="flex justify-center carousel ">
 
-                        <div >
+                        <div class="carousel-item ">
                             <h3 class="text-3xl font-bold text-center mb-8"> Access</h3>
                             <p class="text-center text-gray-700">You can request access to the personal <br> information
                                 that Samsung has collected <br> about you.</p>
@@ -95,26 +96,26 @@
                 </div>
                 <!-- 2 border with blue-button  -->
                 <div class="pt-12 text-center ">
-                    <div class="w-full flex justify-center px-16 gap-5">
+                    <div class="w-full flex justify-center px-16 gap-4">
                        
                         <!--  request button -->
-                        <div class="border w-full items-center rounded-3xl bg-[#f3f3f3] py-10 ">
-                            <h3 class="font-bold pt-12 text-3xl py-12"> Create New Request</h3>
+                        <div class="border  w-screen items-center rounded-3xl bg-[#f3f3f3] py-10 ">
+                            <h3 class="font-bold pt-12 text-3xl "> Create New Request</h3>
                             <div class="flex justify-center py-10">
                                 <img src="../../assets/images/privacy/createNew02.png" >
                             </div>
-                            <button class="bg-blue-900 text-white font-bold py-4 px-16  rounded-full hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                            <button class="bg-blue-900 text-white font-bold py-4 px-16  rounded-full hover:bg-black focus:outline-none focus:ring-2 ">
                                 CREATE REQUEST
                             </button>
                         </div>
                         <!-- submit button with enter text  --> 
-                        <div class="border w-full px-12 rounded-3xl bg-[#f3f3f3] py-8">
+                        <div class="border w-screen  rounded-3xl bg-[#f3f3f3] ">
                             <h3 class="font-bold pt-12 text-3xl py-12"> Review Prior Request <br>Or Submit an Appeal</h3>
                             <div class="container mx-auto p-6">
                                 <div >
                                 <div class=" relative">
-                                    <input  placeholder="Please Enter Your Number Here"   class="w-full focus:outline-none focus:ring-1 peer text-center pb-1">
-                                    <div class="absolute inset-x-0 bottom-0 h-px bg-blue-500"></div>
+                                    <input  placeholder="Please Enter Your Number Here"   class="  bg-transparent w-full focus:outline-none  peer text-center pb-1 ">
+                                    <div class="absolute inset-x-0 bottom-0 "></div>
                                     
                                 </div class>
                                 <a href="#" class=" pb-2 text-sm mt-4 text-gray-500 underline">Can't locate your ticket number?</a>
@@ -129,11 +130,11 @@
                 </div>
             </div>
             <!--  -->
-            <div class="pt-16 text-center p-12">
+            <div class="pt-16 text-center p-12 ">
                 <p> For requests from California residents in ther roles as employees, applicants,independent contractors, and other work-related roles, <a class="underline">click here.</a><br>For requests frome California residents who are personnel of a business customer,partner or vendor,<a class="underline" href="#">click here.</a></p>
             </div>
 <!-- bottom boder -->
-            <div class="border w-full px-20 text-center rounded-3xl bg-[#f3f3f3] py-8 ">
+            <div class="  border w-full px-20 text-center rounded-3xl bg-[#f3f3f3] py-2">
                 <p class=" ">
                    If you require assistance to submit your request contact our Customer Care Center at 1-800-SAMSUNG, when prompted, <br>
                    Say "Privacy Rights"
@@ -146,8 +147,15 @@
         </div>
 
     </section>
+    <footer-component></footer-component>
 </section>
 
+
+
+
+<script src="../../script/index.js" type="module"></script>
+
+<!-- test -->
 
 
 
