@@ -48,7 +48,7 @@ export class Hero extends HTMLElement {
             <div class="hero-big-screen hidden sm:block">
                 <div class="card-container flex overflow-hidden relative">
                     <div class="flex">
-                        <ul class="img-container flex transition-transform duration-500">
+                        <ul id="hero-big-container" class="img-container flex transition-transform duration-500">
                             ${items.map(item => `
                             <li class="object-cover w-screen relative">
                                 <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="">
@@ -78,6 +78,30 @@ export class Hero extends HTMLElement {
             </div>
         </section>
         `;
+
+        this.initCarousel();
+    }
+
+    initCarousel() {
+        let position = 0;
+        const heroImgContainer = this.querySelector('#hero-big-container');
+        const heroBtnLeft = this.querySelector('#left');
+        const heroBtnRight = this.querySelector('#right');
+
+        const transitionHeroPage = (condition) => {
+            heroImgContainer.classList.remove(`translate-x-[${position}%]`);
+            if (condition == 'right' && position > -80) {
+                position -= 20;
+            } else if (condition == 'left' && position < 0) {
+                position += 20;
+            }
+            heroImgContainer.classList.add(`translate-x-[${position}%]`);
+        };
+
+        heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'));
+        heroBtnRight.addEventListener('click', () => transitionHeroPage('right'));
+
+        
     }
 }
 
