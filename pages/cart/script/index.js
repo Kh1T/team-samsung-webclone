@@ -36,26 +36,26 @@ const products = [
     {
         name: "Galaxy Watch6 Classic, 47mm",
         image: "../../assets/images/cart/watch6.webp",
-        price1: "$299.99",
-        price2: "$1000",
+        discount: "$399.99",
+        fullprice: "$479.99",
     },
     {
         name: "Galaxy Watch6, 40mm, Gold, BT",
         image: "../../assets/images/cart/watch6-2.webp",
-        price1: "$399.99",
-        price2: "$1000",
+        discount: "$239.99",
+        fullprice: "$299.99",
     },
     {
         name: "12W Wireless Charger Duo wit",
         image: "../../assets/images/cart/charger.webp",
-        price1: "$89.99",
-        price2: "$1280",
+        discount: "$89.99",
+        fullprice: "",
     },
     {
         name: "Galaxy SmartTag2, White",
         image: "../../assets/images/cart/tag.webp",
-        price1: "$29.99",
-        price2: "$160",
+        discount: "$29.99",
+        fullprice: "",
     }
 ]
 const productList = document.getElementById("productList")
@@ -69,11 +69,81 @@ products.forEach(product => {
     <img class="object-cover" src="${product.image}" alt="galaxy watch6 classic">
             <a class="font-semibold" href="#">${product.name}</a>
             <div class="flex justify-center gap-1 mb-5 mt-3">
-                <p class="font-light">${product.price1}</p>
-                <p class="text-gray-500 line-through font-light">${product.price2}</p>
+                <p class="font-light">${product.discount}</p>
+                <p class="text-gray-500 line-through font-light">${product.fullprice}</p>
             </div>
         <a class="font-bold underline" href="#">Add to cart</a>
     </div>
     `
     productList.appendChild(productItem)
 })
+
+
+// buttons
+function createButton(containerID, text, url, bgColor, additionalClass) {
+    const container = document.getElementById(containerID);
+
+    const button = document.createElement("button");
+    button.className = `w-full ${additionalClass}`;
+
+    const anchor = document.createElement("a");
+    anchor.className = `flex items-center justify-center h-10 rounded-3xl ${bgColor}`
+    anchor.href = url;
+
+    text.forEach(part => {
+        const span = document.createElement('span');
+        span.textContent = part.text;
+        span.className = part.className;
+        anchor.appendChild(span);
+    });
+
+    button.appendChild(anchor);
+
+    container.appendChild(button);
+}
+
+createButton(
+    "button1",
+    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+    "../checkout/index.html",
+    "bg-blue-500",
+    ""
+)
+
+createButton(
+    "button2",
+    [
+        {text: 'Pay', className: 'text-blue-900'},
+        {text: 'Pal', className: 'text-blue-400'}
+    ],
+    "#",
+    "bg-yellow-400 hover:bg-yellow-500",
+    "h-10 font-bold text-lg italic"
+)
+
+createButton(
+    "button3",
+    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+    "../checkout/index.html",
+    "bg-blue-500",
+    ""
+)
+
+createButton(
+    "button4",
+    [
+        {text: 'Pay', className: 'text-blue-900'},
+        {text: 'Pal', className: 'text-blue-400'}
+    ],
+    "#",
+    "bg-yellow-400 hover:bg-yellow-500",
+    "h-10 font-bold text-lg italic"
+)
+
+createButton(
+    "button5",
+    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+    "../checkout/index.html",
+    "bg-blue-500",
+    ""
+)
