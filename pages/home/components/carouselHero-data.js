@@ -1,4 +1,4 @@
-export const mobileData = {
+export const homepage = {
     items: [
         {
             "title": "Intelligent design, <br> smart savings",
@@ -29,9 +29,9 @@ export const mobileData = {
             "smallImage": "../../assets/images/home/hero/img-4-small.webp"
         },
         {
-            "title": "Galaxy Watch6 Series",
+            "title": "New Bespoke AI Laundry <br> Combo<sup>TM</sup>",
             "description": "Get up to $750 trade-in credit and $75 instant Samsung Credit with participating carriers. Try it for 30 Days or get a full refund.",
-            "par": "Save up to ",
+            "par": "Save $800 ",
             "largeImage": "../../assets/images/home/hero/img-5-big.webp",
             "smallImage": "../../assets/images/home/hero/img-5-small.webp"
         },
