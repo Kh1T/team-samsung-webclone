@@ -14,6 +14,6 @@ export class ColorButton extends HTMLElement{
                 <p>${title}</p>
                 <p>$189.99</p> 
         `
-        this.classList = "flex flex-col justify-center items-center border-2 w-[49%] border-[#ddd] rounded-md mt-2 p-3 cursor-pointer"
+        this.classList = "flex flex-col justify-center items-center border-2 w-[49%] border-slate-300 rounded-md mt-2 p-3 cursor-pointer"
     }
 }
