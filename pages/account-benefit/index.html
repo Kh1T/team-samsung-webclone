@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <navbar-component></navbar-component>
+    <section></section>
+    <section class="max-w-screen-2xl w-screen border border-sky-500">       
+        <div class="flex spae-y-5 text-center relative justify-center items-center">
+            <img class="md:hidden" src="../../assets/images/account-benefit/header-mobile.jpg"></img>
+            <img class="hidden md:flex" src="../../assets/images/account-benefit/header-desktop.jpg">
+            <div class="flex flex-col items-center absolute top-10 md:top-[40%]  text-white w-[414px] md:w-full">
+                <h1 class="mb-4 text-3xl">One account. Everything Samsung.</h1>
+                <p class="font-[50] py-5">Get product support, order tracking, exclusive rewards and offers, and more with one single sign-on.</p>
+                <button class="w-40 my-7 py-4 px-8 border-[1.5px] border-white rounded-full">
+                    <div class="font-[50] text-xs ">Sign Up</div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-screen-2xl w-screen border border-red-500 text-center">
+        <h3>
+            Access exclusive apps and services, all with one Samsung account.
+        </h3>
+        <div class="flex flex-col w-full justify-center items-center p-10  ">
+            <img class="w-40" src="../../assets/images/account-benefit/rewards-icon.png">
+            <p>Samsung Rewards</p>
+            <p>Earn rewards for the things you do every day.</p>
+            <ul>
+                <button class="bg-slate-500 h-2"></button>
+            </ul>
+            <p>Learn more</p>
+        </div>
+    </section>
+
+    <section class="max-w-screen-2xl w-screen border border-lime-400 text-center">
+        <div class="flex relative justify-center text-center h-[350px]" >
+            
+            <img class="object-cover md:hidden" src="../../assets/images/account-benefit/TVPlus-Module-Text-Mobile.jpg">
+            <img class="object-cover hidden md:flex" src="../../assets/images/account-benefit/TVPlus-Module-Text-Desktop.jpg">
+            <div class="absolute top-[40%] md:top-[60%] md:w-2/3">
+                <h2 class="font-semibold text-4xl md:text-[2.7vw]">Free TV. No strings attached.</h2>
+                <h3 class="font-[100] py-5">Samsung TV Plus delivers instant access to 135 channels and growing, in news, sports, entertainment, and more. Available on your Samsung TV and mobile devices. No subscriptions. No credit cards. Just free TV.</h3>
+                <button><a href="#">
+                    <div>Learn more</div>
+                </a></button>
+            </div>
+            
+        </div>
+
+        
+        <div>
+            <img class="w-screen" src="../../assets/images/account-benefit/TVPlus-Animation-Mobile.gif">
+        </div>
+    </section>
+
+    <section class="max-w-screen-2xl w-screen border border-purple-500 text-center">
+        Same as the log and app above.(do the reusable component)
+        <p>Connect your Samsung Account with your TV.</p>
+        <p>Enhance your TV viewing experience with Samsung account benefits.</p>
+        
+    </section>
+
+    <section class="max-w-screen-2xl w-screen border border-yellow-500 text-center">
+        <img src="../../assets/images/account-benefit/signup.jpg">
+        <div>
+            <h2>Sign up now.</h2>
+            <p>Do more and reap the benefits of a Samsung Single ID sign-on.</p>
+            <button><a href="#">
+                <div>SIGN UP</div>
+            </a></button>
+        </div>
+    </section>
+
+    <div class="grid grid-flow-col justify-center w-[83.3%] md:border-l-[24px] border-transparent md:ml-[8.3%]">
+        <benefit-app id="samsung-rewards"></benefit-app>
+        <benefit-app id = 'galaxy-store'></benefit-app>
+        <benefit-app id = 'samsung-pay'></benefit-app>
+    </div>
+
+    <footer-component></footer-component>
+    <script src="./script/index.js"></script>
+    <!-- DO NOT REMOVE THIS SCRIPT TAG -->
+    <script src="../../script/index.js" type="module"></script>
+    <script src="../../pages/account-benefit/components/benefit-app.js"></script>
+</body>
+</html>
