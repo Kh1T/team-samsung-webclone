@@ -147,3 +147,26 @@ createButton(
     "bg-blue-500",
     ""
 )
+
+
+const checkoutButton = `
+<div>
+    <cart-button>
+        data-color="bg-blue-500"
+        data-text="Checkout"
+    </cart-button>
+</div>
+<div>
+    <cart-button>
+        data-color="bg-blue-500"
+        data-text="Checkout"
+    </cart-button>
+</div>
+`
+
+
+
+const html = `
+<script src="./components/button.js" type="module"></script>`
+const scriptEl = document.createRange().createContextualFragment(html);
+div.append(scriptEl)
