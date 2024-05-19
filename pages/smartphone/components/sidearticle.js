@@ -13,7 +13,7 @@ export class SideArticle extends HTMLElement{
                 <h1 class="font-bold text-lg">${listNumber}</h1>
                 <div class="">
                 <h2 class="text-3xl font-semibold">${title}</h2>
-                <div class="info border-b h-0 overflow-hidden transition-all delay-300">
+                <div class="info border-b max-h-0 overflow-hidden transition-all duration-1000">
                 <p class="my-5">${desc}</p>
                         <button class="font-semibold underline underline-offset-8 border-black pb-8">Learn
                             More</button>

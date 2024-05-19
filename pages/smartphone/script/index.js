@@ -25,7 +25,7 @@ const smartphoneFeatureData = [
 const sideContainer = document.querySelector(".side-container")
 smartphoneFeatureData.forEach((data,i)=>{
     const innerHTML =  `
-        <side-article listNumber="0${i+1}" desc="${data.desc}" title=${data.title}></side-article>
+        <side-article listNumber="0${i+1}" desc="${data.desc}" title="${data.title}"></side-article>
     `
     sideContainer.innerHTML += innerHTML
     // const sideArticle = document.createElement('side-article');
@@ -44,20 +44,23 @@ function articleHoverHandler(info){
     articles.forEach(article=>{
         const info = article.querySelector(".info")
         info.classList.add('h-0')
+        info.classList.add('max-h-0')
+        info.classList.remove('max-h-96')
     })
     info.classList.remove('h-0')
+    info.classList.remove('max-h-0')
     info.classList.add('max-h-96')
 }
 
 
 articles.forEach(article=>{
-    // info.classList.add("h-0")
+    // info.classList.add("max-h-0")
     const info = article.querySelector(".info")
     article.addEventListener('mouseover', articleHoverHandler.bind(null, info))
 })
 const firstInfo = articles[0].querySelector(".info")
 console.log(firstInfo);
-firstInfo.classList.remove("h-0")
-firstInfo.classList.add("max-h-[300px]")
+firstInfo.classList.remove("max-max-h-0")
+firstInfo.classList.add("max-h-96")
 
 
