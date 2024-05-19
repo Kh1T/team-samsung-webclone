@@ -38,19 +38,57 @@
     <!-- hero section -->
 
     <!-- explore galaxy -->
-    <section>
+    <section class="w-full max-w-screen-2xl">
       <div class="relative text-center">
-        <div class="absolute">
-          <h2 class="text-6xl font-bold">Give it a try. Explore Galaxy AI.</h2>
-          <p class="text-3xl">
+        <!-- <div class="absolute p-10 size-full md:w-1/2 ">
+          <h2 class="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mt-8 mb-10 md:mb-5">Give it a try. Explore Galaxy AI.</h2>
+          <p class="text-lg sm:text-xl md:text-xs lg:text-sm mb-10 md:mb-5 px-4">
             Try Galaxy AI, now available on even more Galaxy Phones from
             participating carriers. Buy it now, try it for 30 days, then keep it
             or get a full refund.⋈
           </p>
-          <custom-button>Buy Now</custom-button>
+          <custom-button theme="bg-black" class="">Buy Now</custom-button>
         </div>
         <img class="md:hidden" src="../../assets/images/smartphone/banner-small.png" alt="banner" />
-        <img class="hidden md:block" src="../../assets/images/smartphone/banner-big.png" alt="banner" />
+        <img class="hidden md:block" src="../../assets/images/smartphone/banner-big.png" alt="banner" /> -->
+        <div
+          class="h-[730px] flex w-full flex-col bg-zinc-100 md:h-[390px] md:flex-row"
+        >
+          <div class="size-full p-10 md:w-1/2 md:text-left">
+            <h2
+              class="mb-10 mt-8 text-2xl font-bold sm:text-3xl md:mb-5 lg:text-5xl xl:w-10/12"
+            >
+              Give it a try. Explore Galaxy AI.
+            </h2>
+            <p
+              class="mb-10 px-4 text-lg sm:text-xl md:mb-5 md:p-0 md:text-base lg:text-xl"
+            >
+              Try Galaxy AI, now available on even more Galaxy Phones from
+              participating carriers. Buy it now, try it for 30 days, then keep
+              it or get a full refund.⋈
+            </p>
+            <custom-button theme="bg-black" class="">Buy Now</custom-button>
+          </div>
+          <div
+            class="flex justify-center gap-2 pb-8 md:w-1/2 md:items-center md:gap-8 md:pb-0"
+          >
+            <img
+              class="h-11 md:h-[50px]"
+              src="../../assets/images/smartphone/tmobile-logo.png"
+              alt=""
+            />
+            <img
+              class="h-11 md:h-[50px]"
+              src="../../assets/images/smartphone/atnt-logo.png"
+              alt=""
+            />
+            <img
+              class="h-8 md:h-[30px]"
+              src="../../assets/images/smartphone/verizon-logo.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
 
       <!-- discover galaxy -->
@@ -152,8 +190,10 @@
       </div>
     </section>
     <footer-component></footer-component>
-    <script src="./script/index.js" type="module"></script>
+
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>
+    <script src="./script/index.js" type="module"></script>
+    <script src="./components/index.js" type="module"></script>
   </body>
 </html>

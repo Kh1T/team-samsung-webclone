@@ -1,12 +1,26 @@
 
-export class CustomButton {
+export class CustomButton extends HTMLElement{
     constructor(){
         super()
     }
     connectedCallback(){
-        this.classList += "text-3xl px-8 py-4 bg-black text-white font-semibold hover:opacity-80 rounded-full"        
+        const chlidText = this.textContent
+
+        let bgColor = "bg-black"
+        let textColor = "text-white"
+        const bgTheme = this.getAttribute("theme")
+        console.log(bgTheme);
+        if (bgTheme === "bg-white"){
+            bgColor = bgTheme
+            textColor = "text-black"
+        }
+
         this.innerHTML = `
-            <button>Buy now</button>
+            <button class="${bgColor} ${textColor} text-base sm:text-3xl cursor-pointer px-8 py-4 md:text-sm font-semibold hover:opacity-80 rounded-full">
+                ${chlidText}
+            </button>
         `
+        this.classList.add("block")
+        
     }
 }
