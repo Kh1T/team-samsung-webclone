@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+<<<<<<< HEAD
+    "prettier": "^3.2.5",
+=======
+>>>>>>> feature/feat-homepage
     "prettier-plugin-tailwindcss": "^0.5.14"
   }
 }
