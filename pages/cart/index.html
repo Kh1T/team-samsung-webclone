@@ -20,8 +20,10 @@
                     <p class="text-sm">Starting from $7.09 / mo for 24 mo <sup>⊕σ</sup></p>
                 </div>
                 <a href="../../pages/checkout/index.html">
-                    <div id="button5" class="flex flex-col items-center w-52">
-                    </div>
+                    <cart-button class=""
+                        data-text="Checkout"
+                        data-color="bg-blue-500"
+                    ></cart-button>
                 </a>
             </div>
         </div>
@@ -192,12 +194,23 @@
                         </details>
                     </div>
 
-                    <cart-button>
-                        data-color="bg-blue-500"
-                        data-text="Checkout"
-                    </cart-button>
+                    <div class="flex flex-col gap-3 pt-3">
+                        <a href="../checkout/index.html">
+                            <cart-button
+                                data-text="Checkout"
+                                data-color="bg-blue-500"
+                                data-image=""
+                            ></cart-button>
+                        </a>
+
+                        <cart-button
+                            data-text=""
+                            data-image="../../assets/images/cart/paypal.svg"
+                            data-color="bg-yellow-400 hover:bg-yellow-500"
+                        ></cart-button>
+                    </div>
                     
-                    <div class="flex flex-col items-center w-full gap-y-3 py-10">
+                    <div class="flex flex-col items-center w-full gap-y-3">
                         <div id="button1" class="flex flex-col items-center w-full px-10">
                         </div>
                         <div id="button2" class="flex flex-col items-center w-full px-10">
@@ -337,16 +350,26 @@
                 
             </details>
             <div id="order-summary">
-                <div class="flex justify-between py-5">
+                <div class="flex justify-between py-2">
                     <p class="text-xl font-medium">Order Summary</p>
                     <p class="text-sm font-medium ">Est. total: $169.99</p>
                 </div>
                 <p class="text-blue-500 font-light">Promo code?</p>
             </div>
             <div class="w-full flex flex-col items-center gap-y-2 py-3">
-                <div id="button3" class="flex flex-col items-center w-52">
-                </div>
-                <div id="button4" class="flex flex-col items-center w-52">
+                <div class="flex flex-col gap-3 pt-3">
+                    <a href="../checkout/index.html">
+                        <cart-button
+                            data-text="Checkout"
+                            data-color="bg-blue-500"
+                            data-image=""
+                        ></cart-button>
+                    </a>
+                    <cart-button
+                        data-text=""
+                        data-image="../../assets/images/cart/paypal.svg"
+                        data-color="bg-yellow-400 hover:bg-yellow-500"
+                    ></cart-button>
                 </div>
             </div>
                 
@@ -358,7 +381,8 @@
  
 
     <script src="../../script/index.js" type="module"></script>
-    <script src="../cart/script/index.js"></script>
+    <script src="../cart/components/cartbutton.js"></script>
+    <script src="../cart/script/index.js" type="module"></script>
 </body>
 
 </html>

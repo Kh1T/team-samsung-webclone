@@ -80,89 +80,73 @@ products.forEach(product => {
 
 
 // buttons
-function createButton(containerID, text, url, bgColor, additionalClass) {
-    const container = document.getElementById(containerID);
+// function createButton(containerID, text, url, bgColor, additionalClass) {
+//     const container = document.getElementById(containerID);
 
-    const button = document.createElement("button");
-    button.className = `w-full ${additionalClass}`;
+//     const button = document.createElement("button");
+//     button.className = `w-full ${additionalClass}`;
 
-    const anchor = document.createElement("a");
-    anchor.className = `flex items-center justify-center h-10 rounded-3xl ${bgColor}`
-    anchor.href = url;
+//     const anchor = document.createElement("a");
+//     anchor.className = `flex items-center justify-center h-10 rounded-3xl ${bgColor}`
+//     anchor.href = url;
 
-    text.forEach(part => {
-        const span = document.createElement('span');
-        span.textContent = part.text;
-        span.className = part.className;
-        anchor.appendChild(span);
-    });
+//     text.forEach(part => {
+//         const span = document.createElement('span');
+//         span.textContent = part.text;
+//         span.className = part.className;
+//         anchor.appendChild(span);
+//     });
 
-    button.appendChild(anchor);
+//     button.appendChild(anchor);
 
-    container.appendChild(button);
-}
+//     container.appendChild(button);
+// }
 
-createButton(
-    "button1",
-    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
-    "../checkout/index.html",
-    "bg-blue-500",
-    ""
-)
+// createButton(
+//     "button1",
+//     [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+//     "../checkout/index.html",
+//     "bg-blue-500",
+//     ""
+// )
 
-createButton(
-    "button2",
-    [
-        {text: 'Pay', className: 'text-blue-900'},
-        {text: 'Pal', className: 'text-blue-400'}
-    ],
-    "#",
-    "bg-yellow-400 hover:bg-yellow-500",
-    "h-10 font-bold text-lg italic"
-)
+// createButton(
+//     "button2",
+//     [
+//         {text: 'Pay', className: 'text-blue-900'},
+//         {text: 'Pal', className: 'text-blue-400'}
+//     ],
+//     "#",
+//     "bg-yellow-400 hover:bg-yellow-500",
+//     "h-10 font-bold text-lg italic"
+// )
 
-createButton(
-    "button3",
-    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
-    "../checkout/index.html",
-    "bg-blue-500",
-    ""
-)
+// createButton(
+//     "button3",
+//     [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+//     "../checkout/index.html",
+//     "bg-blue-500",
+//     ""
+// )
 
-createButton(
-    "button4",
-    [
-        {text: 'Pay', className: 'text-blue-900'},
-        {text: 'Pal', className: 'text-blue-400'}
-    ],
-    "#",
-    "bg-yellow-400 hover:bg-yellow-500",
-    "h-10 font-bold text-lg italic"
-)
+// createButton(
+//     "button4",
+//     [
+//         {text: 'Pay', className: 'text-blue-900'},
+//         {text: 'Pal', className: 'text-blue-400'}
+//     ],
+//     "#",
+//     "bg-yellow-400 hover:bg-yellow-500",
+//     "h-10 font-bold text-lg italic"
+// )
 
-createButton(
-    "button5",
-    [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
-    "../checkout/index.html",
-    "bg-blue-500",
-    ""
-)
-
-
-const checkoutButton = `
-<div>
-    <cart-button>
-        data-color="bg-blue-500"
-        data-text="Checkout"
-    </cart-button>
-</div>
-<div>
-    <cart-button>
-        data-color="bg-blue-500"
-        data-text="Checkout"
-    </cart-button>
-</div>
-`
+// createButton(
+//     "button5",
+//     [{text: 'Checkout', className:'text-white tracking-widest text-xs font-semibold'}],
+//     "../checkout/index.html",
+//     "bg-blue-500",
+//     ""
+// )
 
 
 
