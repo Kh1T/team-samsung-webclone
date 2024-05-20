@@ -6,6 +6,7 @@ const imgExplor = document.getElementById('img-explore')
 
 const heroBtn = document.querySelectorAll('.hero-btn');
 const heroBtnContainer = document.querySelectorAll('#hero-btn-container button')
+console.log(heroBtnContainer);
 const btnExploreContainer = document.querySelectorAll('.explore-btn-container button')
 const heroBtnLeft = document.querySelector('#left')
 const heroBtnRight = document.querySelector('#right')
@@ -71,22 +72,10 @@ const imgExplorPath = [
 
 
         // Hero Section Carousel
-        let position = 0;
-        const transitionHeroPage = (condition) => {
-            heroImgContainer.classList.remove(`translate-x-[${position}%]`)
-            if (condition == 'right' && position > -80) {
-                position += -20
-            } else if (condition == "left" && position < 0) {
-                position += 20
-            }
-            heroImgContainer.classList.add(`translate-x-[${position}%]`)
-            console.log(heroImgContainer);
-        }
-
-        heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'))
-        heroBtnRight.addEventListener('click', () => transitionHeroPage('right'))
+    
 
         function caroselTab(container, btn) {
+            console.log('hi');
             btn.forEach((btn, i) => {
                 btn.addEventListener('click', () => {
                     container.style.transform = `translateX(-${i}00%)`
@@ -106,3 +95,19 @@ const imgExplorPath = [
 caroselTab(foryouContainer, btnForYou)
 
         
+const exploreItemLinks = document.querySelectorAll(".explore-item-link");
+exploreItemLinks.forEach((link,i )=> {
+    link.addEventListener('mouseenter', ()=>onItemHover(i));
+    link.addEventListener('mouseleave', ()=>onItemHover(i));
+});
+
+function onItemHover(i) {            
+    imgExplor.src = imgExplorPath[i]
+    exploreItemLinks[i].classList.toggle("border-t-4");
+    const element = exploreItemLinks[i].lastElementChild.lastElementChild;
+    if (element.hasAttribute('hidden')) {
+        element.removeAttribute('hidden');
+    } else {
+        element.setAttribute('hidden', '');
+    }
+}

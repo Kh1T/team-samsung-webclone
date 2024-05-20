@@ -631,6 +631,7 @@
 
     <script>
         const exploreItemLinks = document.querySelectorAll(".explore-item-link");
+        console.log(exploreItemLinks);
         exploreItemLinks.forEach((link,i )=> {
             link.addEventListener('mouseenter', ()=>onItemHover(i));
             link.addEventListener('mouseleave', ()=>onItemHover(i));

@@ -80,6 +80,7 @@ export class Hero extends HTMLElement {
         `;
 
         this.initCarousel();
+        this.carouselSmall();  // Call the carouselSmall method here
     }
 
     initCarousel() {
@@ -100,8 +101,23 @@ export class Hero extends HTMLElement {
 
         heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'));
         heroBtnRight.addEventListener('click', () => transitionHeroPage('right'));
+    }
 
-        
+    carouselSmall() {
+        const heroContainer = this.querySelector('#hero-container');
+        const heroBtn = this.querySelectorAll('.hero-btn');
+        const heroBtnContainer = this.querySelectorAll('#hero-btn-container button');
+        console.log(heroBtn);
+
+        function carouselTab(container, btn) {
+            btn.forEach((button, i) => {
+                button.addEventListener('click', () => {
+                    container.style.transform = `translateX(-${i * 20}%)`;  // Adjust the transformation value
+                });
+            });
+        }
+
+        carouselTab(heroContainer, heroBtnContainer);
     }
 }
 
