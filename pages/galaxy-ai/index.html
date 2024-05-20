@@ -1,26 +1,112 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Galaxy AI | Samsung DEV</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../../assets/images/logo/fav-icon.ico"
-    />
-   
-  </head>
 
-  <body class="flex flex-col items-center">
-    <navbar-component></navbar-component>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Galaxy AI | Samsung DEV</title>
+  <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico" />
 
-    <influencer-card></influencer-card>
-    <product-series-card></product-series-card>
-    <featured-card></featured-card>
-    <script src="./script/index.js" type="module"></script>
+</head>
 
-    <footer-component></footer-component>
-    <script src="../../script/index.js" type="module"></script>
-  </body>
+<body class="flex flex-col items-center">
+  <navbar-component></navbar-component>
+  <section class="flex w-full justify-between p-6">
+    <p class="font-bold">Galaxy AI</p>
+    <div class="space-x-6 text-sm">
+      <a href="#">TeamGalaxy</a>
+      <a href="#"> Features</a>
+      <a href="#">All Devices</a>
+      <a href="#">FAQ</a>
+    </div>
+  </section>
+  <section class="border-t">
+    <img src="../../assets/images/galaxy-ai/welcome-to-galaxy-ai.png" alt="">
+  </section>
+  <section class="flex relative justify-center">
+    <div class="absolute top-10 flex flex-col items-center justify-center gap-8 text-center max-w-lg w-fit">
+      <img src="../../assets/images/galaxy-ai/what-is-galaxy-ai.png" alt="">
+      <p class="grow-0">Galaxy AI is a suite of built-in and cloud-based AI features that unleash creativity, increase
+        productivity and
+        unlock a world of possibilities across the Galaxy family. Life opens up with Galaxy AI.</p>
+    </div>
+    <img src="../../assets/images/galaxy-ai/galaxy-ai-hero-bg.png" alt="">
+  </section>
+  <section class="flex w-full bg-gray-50 px-12 py-16 justify-between">
+    <div class="flex flex-col gap-6">
+      <div class="space-y-4">
+        <p class="text-3xl font-bold">
+          Give it a try <br>
+          Explore Galaxy AI.
+        </p>
+        <p class="text-xs">Try Galaxy AI, now available on even more Galaxy Phones from participating carriers.
+          <br>
+          Buy it now, try it for 30
+          days, then keep it or get a full refund.
+        </p>
+      </div>
+      <a href="#" class="bg-black w-fit text-white px-4 py-2 rounded-full text-sm">Buy now</a>
+    </div>
+    <img class="h-20" src="../../assets/images/galaxy-ai/refund-agent.png" alt="">
+  </section>
+  <section class="flex flex-col items-center gap-12 py-12">
+    <div class="flex flex-col items-center gap-6 text-center font-bold text-4xl">
+      <img class="h-12 w-fit" src="../../assets/images/galaxy-ai/team-galaxy.png" alt="">
+      <h1>See how influencers are using Galaxy AI</h1>
+    </div>
+    <div class="flex gap-3">
+      <influencer-card data-image="../../assets/images/galaxy-ai/team-galaxy-01.png"></influencer-card>
+      <influencer-card data-image="../../assets/images/galaxy-ai/team-galaxy-02.png"></influencer-card>
+      <influencer-card data-image="../../assets/images/galaxy-ai/team-galaxy-03.png"></influencer-card>
+    </div>
+  </section>
+  <section class="space-y-12 py-12">
+    <div class="flex flex-col items-center text-center gap-4">
+      <h1 class="font-bold text-4xl">In-ear translations, in-person conversations</h1>
+      <p class="max-w-2xl">No need to pass your phone back and forth. Get translations right in your ear while using
+        features
+        like Interpreter when you connect Buds to your Galaxy device</p>
+    </div>
+    <img src="../../assets/images/galaxy-ai/bud-ai.png" alt="">
+  </section>
+  <section class="flex flex-col justify-center items-center py-12 w-full max-w-screen-xl">
+    <featured-card data-subheading="circle to search" data-image="../../assets/images/galaxy-ai/product-featured-01.png"
+      data-heading="Search made simple"
+      data-description="A new way to search is here: Circle to Search with Google.1,2 While scrolling or watching videos, use your finger to circle items and get Google Search results."></featured-card>
+
+    <featured-card data-reverse="flex-row-reverse" data-subheading="photo assist"
+      data-image="../../assets/images/galaxy-ai/product-featured-02.png"
+      data-heading="Take a great photo.<br>Then make it better."
+      data-description="For effortless editing, leave it to Photo Assist. Take a photo and open it in the Gallery to see AI suggestions that help you polish your pics in just a few taps."></featured-card>
+
+    <featured-card data-subheading="photo assist" data-image="../../assets/images/galaxy-ai/product-featured-04.png"
+      data-heading="They say “hola,”<br>you hear “hello”"
+      data-description="Wish you could speak like a local, no matter where you go? Now its easy to communicate freely with someone in another language. Simply use Interpreter with Galaxy AI for real-time translations during face-to-face conversations."></featured-card>
+
+    <featured-card data-subheading="live translate" data-reverse="flex-row-reverse"
+      data-image="../../assets/images/galaxy-ai/product-featured-03.png"
+      data-heading="Be lost in conversation,<br>not in translation"
+      data-description="Break down language barriers over the phone with Live Translate.1,3 Combine your device with Buds for rapid, hands-free translations."></featured-card>
+  </section>
+  <section class="py-4">
+    <img src="../../assets/images/galaxy-ai/meet-galaxy-ai-family.png" alt="">
+  </section>
+  <section class="flex flex-col items-center max-w-4xl text-center py-12 gap-6">
+      <h1 class="text-5xl font-bold">Smartphones</h1>
+      <p>Bring Galaxy AI with you on the device that matters most. Snap low-light pics from afar with Nightography Zoom,
+        edit them with ease using Photo Assist and get real-time translations with Live Translate.</p>
+  </section>
+  <section class="max-w-screen-lg flex flex-col items-center gap-6 py-12">
+    <h2 class="text-4xl font-bold">Galaxy S Series</h2>
+    <div id="productList"
+    class="product-list flex md:overflow-hidden overflow-x-scroll text-center space-x-2 text-sm py-6">
+</div>
+  </section>
+  <product-series-card></product-series-card>
+  <footer-component></footer-component>
+  <script src="./script/index.js" type="module"></script>
+  <script src="../../script/index.js" type="module"></script>
+  <script src="./script/components/galaxy-s-list.js"></script>
+</body>
+
 </html>
