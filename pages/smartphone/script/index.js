@@ -98,9 +98,22 @@ btnSlides[0].addEventListener('click', ()=>{ galaxyAiHandler(0) } )
 btnSlides[1].addEventListener('click', ()=>{ galaxyAiHandler(1) })
 btnSlides[0].classList.add('bg-white')
 
-// Windows Resize
-// const heightOutput = document.querySelector("#height");
-// const widthOutput = document.querySelector("#width");
+// favbutton
+const favContainer = document.querySelector('.fav-container-mobile')
+const indicatorContainer = document.querySelector('.indicator-container')
+
+function createButtonIndicator(indicatorContainer){
+    const slideLength = favContainer.querySelectorAll('.slide').length
+    
+    for (let i = 0; i < slideLength; i++){
+        const btnIndicator = document.createElement('button')
+        btnIndicator.classList += ` btn-slide mx-4 size-4 rounded-full bg-gray-500`
+        indicatorContainer.append(btnIndicator)
+    }
+    indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
+    
+}
+createButtonIndicator(indicatorContainer)
 
 function windowResizeHandleer() {
     if (window.innerWidth >= 768){
