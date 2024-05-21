@@ -6,40 +6,42 @@
     <title>Track-Order</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
-    <section class="max-w-screen-xl mx-auto">
+    <section class="max-w-screen-xl justify-between px-24">
         <nav aria-label="breadcrumb" class="text-gray-800">
             <ul class="flex h-8 space-x-2 text-gray-800">
                 <li class="text-gray-300 flex items-center pl-5 text-xs">
-                    <p class="flex items-center">My Account</p>
+                    <p class="flex">My Account</p>
                 </li>
                 <li class="flex items-center space-x-1">
                     <span class="text-black text-xs">/</span>
-                    <p class="flex items-center text-xs text-gray-500">Search Orders</p>
+                    <p class="flex text-xs text-gray-500">Search Orders</p>
                 </li>
             </ul>
+            </div>
         </nav>  
-       
     </section>
- 
+  <div class="max-w-full border-b"></div>
+
 
    <section class="max-w-screen w-screen">
     <div class="text-center p-10 text-xl md:text-2xl font-semibold mt-3">
-        <p>Search Orders</p>
+        <h1>Search Orders</h1>
         <div class="text-sm font-light">
         <p>If you have a SAMSUNG account please sign in to track you order.</p>
         <p>Guests user can view your orders using the form below.</p>
         <p>Do you have questions about your order? Please visit our FAQs page for answers.</p>
         </div>
-    </div>
-    </section>
+    </div> 
 
+    </section>
+   
 
     <section class="flex justify-center my-9">
         <div class="flex flex-col items-center space-y-4">
-            <p class="text-center font-bold text-xl">Sign in with SAMSUNG Account</p>
+            <h2 class="text-center font-bold text-xl">Sign in with SAMSUNG Account</h2>
             <button class="bg-blue-900 rounded-full w-44 h-8 text-white">
                 <div class="flex gap-3 justify-center items-center">
                     <span class="text-xs font-extralight">SIGN IN</span>
@@ -47,34 +49,52 @@
             </button>
         </div>
         
-        <div class="flex flex-col items-center justify-center mx-24">
-            <div class="absolute bg-gray-200 px-3 text-gray-800 text-2xl">or</div>
+        <div class="border-t rotate-90 mr-36">
+            <div class="flex flex-col items-center justify-center mx-24">
+                <div class="absolute bg-gray-200 px-3 text-gray-800 text-xl -rotate-90">or</div>
+            </div>
         </div>
 
 
+
         <div class="flex flex-col items-center space-y-4">
-            <p class="text-center font-bold text-xl">Find Order as Guest</p>
-            <ol class="text-xs"> 
-                <li class="flex flex-row items-center space-x-28 text-gray-500">
-                    <p>Product Order</p>
-                    <p>Subscription Order</p>
-                </li>
-                <li class="flex flex-row items-center space-x-36 my-8 border-b text-gray-500">
-                    <p class="mb-5">Order ID</p>
-                    <p class="mb-5">Email ID</p>
-                </li>
-                <li class="flex flex-row mt-5 text-gray-500">
-                    <p>Enter one of the following</p>
-                </li>
-                <li class="flex flex-row items-center space-x-36 mt-5 border-b text-gray-400">
-                    <p class="mb-5">Shipping Zip Code</p>
-                    <p class="mb-5">Billing Zip Code</p>
-                </li>
-                <li class="flex flex-row mt-5 border-b text-gray-500">
-                    <p class="mb-5">Phone Number</p>
-                </li>
-            </ol>
-            <button class="bg-gray-400 rounded-full w-44 h-10 text-white">
+            <h2 class="text-center font-bold text-xl">Find Order as Guest</h2>
+            <div class="flex items-center">
+                <div class="bg-white p-10 md:w-2/3 lg:w-1/2 mx-auto rounded">
+                    <form>
+                        
+                        <div class="flex justify-between mb-5">
+                            <label class="w-20 inline-block text-right mr-4"></label>
+                            <input id="product" type="text" placeholder="Product orders">
+                            <label class="w-20 inline-block text-right mr-4"></label>
+                            <input type="text" id="subscription" placeholder="Subscription orders">
+                        </div>
+
+                        <div class="flex justify-between mb-5">
+                            <label class="inline-block text-right mr-4 text-gray-500"></label>
+                            <input id="order ID" type="text" placeholder="Order ID" class="border-b-2 border-gray-400 flex-1 py-2 placeholder-gray-300">
+                            <label class="inline-block text-right mr-4 text-gray-500"></label>
+                            <input type="text" id="Email ID" placeholder="Email ID" class="border-b-2 border-gray-400 flex-1 py-2 placeholder-gray-300">
+                        </div>
+
+                        <p class="font-extralight my-7 mx-4">Enter one of the following</p>
+                        
+                        <div class="flex mb-5">
+                            <label class=" inline-block text-right mr-4 text-gray-500"></label>
+                            <input id="zip code" type="text" placeholder="Shipping Zip Code" class="border-b-2 border-gray-400 flex-1 py-2 placeholder-gray-300">
+                            <label class="inline-block text-right mr-4 text-gray-500"></label>
+                            <input type="text" id="zip code" placeholder="Billing Zip Code" class="border-b-2 border-gray-400 flex-1 py-2 placeholder-gray-300">
+                        </div>
+
+                        <div class="flex ml-4">
+                            <label class="inline-block text-right text-gray-500"></label>
+                            <input id="zip code" type="text" placeholder="Phone Number" class="border-b-2 border-gray-400 flex-1 py-2 placeholder-gray-300">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+              <button class="bg-gray-400 rounded-full w-44 h-10 text-white">
                 <div class="flex gap-3 justify-center items-center">
                     <span class="text-xs font-thin">View Your Order</span>
                 </div>
@@ -82,10 +102,9 @@
         </div>
     </section>
 
- <section class="max-w-screen w-screen flex justify-center">
+ 
         <footer-component></footer-component>
- </section>
-   
+
 
    
    
