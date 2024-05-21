@@ -78,10 +78,36 @@ firstInfo.classList.add("max-h-96")
 
 
 // Galaxy AI
-const galaxyAiHandler = () => {
-    galaxyAiContainer.classList.toggle('-translate-x-full')
+const galaxyAiHandler = (n) => {
+    // const translate = '-translate-x-full' ? n === 0 ? ''
+    console.log(n);
+    if (n === 0) {
+        galaxyAiContainer.classList.remove('-translate-x-full')
+        btnSlides[n].classList.add('bg-white')
+        btnSlides[1].classList.remove('bg-white')
+    }
+    else {
+        galaxyAiContainer.classList.add('-translate-x-full') 
+        btnSlides[n].classList.add('bg-white')
+        btnSlides[0].classList.remove('bg-white')
+    }
 };
 const galaxyAiContainer = document.querySelector('.galaxy-ai-container');
 const btnSlides = document.querySelectorAll('.btn-slide')
-btnSlides[0].addEventListener('click', galaxyAiHandler)
-btnSlides[1].addEventListener('click', galaxyAiHandler)
+btnSlides[0].addEventListener('click', ()=>{ galaxyAiHandler(0) } )
+btnSlides[1].addEventListener('click', ()=>{ galaxyAiHandler(1) })
+btnSlides[0].classList.add('bg-white')
+
+// Windows Resize
+// const heightOutput = document.querySelector("#height");
+// const widthOutput = document.querySelector("#width");
+
+function windowResizeHandleer() {
+    if (window.innerWidth >= 768){
+        galaxyAiHandler(0)
+    }
+//   heightOutput.textContent = window.innerHeight;
+//   widthOutput.textContent = window.innerWidth;
+}
+
+window.onresize = windowResizeHandleer;
