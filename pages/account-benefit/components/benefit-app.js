@@ -18,12 +18,10 @@ class MyElement extends HTMLElement {
             element.classList.add('carousel__item', 'flex', 'flex-col', 'w-screen', 'md:w-[60%]', 'md:border-l-[24px]', 'border-transparent', 'justify-center', 'items-center', 'p-10', 'space-y-2');
             element.innerHTML = `
                 <img class="image w-80 md:w-40 my-20" src="${data.src}" alt="Dynamic Image">
-                <h3 class="title text-2xl font-medium h-14">${data.title}</h3>
-                <p class="text text-center mb-9 h-14">${data.text}</p>
-                    <ul class="flex pb-11">
-                        <button class="bg-slate-500 h-2"></button>
-                    </ul>
-                <p class="flex align-self-end pb-1 border-b-[3px] border-black"><a href='#'>LEARN MORE</a></p>
+                <h3 class="title text-2xl font-medium h-16">${data.title}</h3>
+                <p class="text text-center mb-10 h-16 pb-11">${data.text}</p>
+                    
+                <p class="flex align-self-end pb-1 border-b-[3px] pt-16 border-black"><a href='#'>LEARN MORE</a></p>
             `;
             this.carouselItems.appendChild(element);
         });
@@ -31,7 +29,7 @@ class MyElement extends HTMLElement {
         this.appendChild(this.carouselItems);
 
         const nav = document.createElement('div');
-        nav.className = 'carousel__nav w-full p-5 absolute bottom-[30%] -left-[33.3%] text-center';
+        nav.className = 'carousel__nav w-full p-5 absolute bottom-[33.3%] -left-[33.3%] text-center';
         dataArray.forEach((_, index) => {
             const button = document.createElement('span');
             button.classList.add('carousel__button', 'md:hidden', 'w-2.5', 'h-2.5', 'inline-block', 'bg-black', 'bg-opacity-20', 'rounded-full', 'mx-3', 'cursor-pointer');
@@ -42,7 +40,8 @@ class MyElement extends HTMLElement {
 
         window.addEventListener('resize', () => {
             const screenWidth = window.innerWidth;
-            if (screenWidth <= 768) {
+            if (screenWidth >= 768) {
+                console.log('catch')
                 this.carouselItems.style.transform = 'translateX(0)';
                 
                 buttons.forEach(btn => btn.classList.remove('bg-opacity-50'));
@@ -70,7 +69,7 @@ class MyElement extends HTMLElement {
         const initialOffset = 0; // Start from the first slide
         this.carouselItems.style.transform = `translateX(${initialOffset}%)`;
         console.log(initialOffset);
-        this.button.classList.add('bg-opacity-50');
+        // this.button.classList.add('bg-opacity-50');
     }
 }
 
