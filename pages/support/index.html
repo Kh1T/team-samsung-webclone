@@ -7,44 +7,63 @@
     <title>Support | Samsung DEV</title>
     <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
 </head>
-<body >
+<body>
     <navbar-component></navbar-component>
     
     <!-- support navbar -->
-    <section class="border">
-        <p>Support</p>
-        <div>
-            <span>Search</span>
-            <span>Find resources</span>
-            <span>Contact us</span>
+    <section class="border px-5">
+        <div class="flex flex-col md:flex-row md:justify-between gap-y-5">
+            <p class="text-2xl font-semibold py-2">Support</p>
+            <div class="flex gap-5 text-base sm:text-xl font-light py-2">
+                <a>Search</a>
+                <a>Find resources</a>
+                <a>Contact us</a>
+            </div>
         </div>
     </section>
 
     <!-- hero -->
     <section class="border relative flex flex-col items-center">
-        <img class="md:hidden w-screen" src="../../assets/images/support/Image23 (1).png" alt="">
-        <img class="hidden md:block" src="../../assets/images/support/Image23.png" alt="">
-        <div class="flex flex-col items-center">
-            <p class="absolute top-16">We're here for you</p>
-            <p class="absolute top-24">Search Samsung Support</p>
-            <form class="absolute top-32">
-                <input class="text-sm w-80" type="text" placeholder="Search Samsung Support"></input>
+        <img class="md:hidden w-screen object-cover h-[450px]" src="../../assets/images/support/Image23 (1).png" alt="">
+        <img class="hidden md:block object-cover h-[500px]" src="../../assets/images/support/Image23.png" alt="">
+        <div class="absolute top-32 flex flex-col gap-y-5 items-center text-white text-center">
+            <p class="text-xl font-bold">We're here for you</p>
+            <p class="text-4xl md:text-5xl font-bold">Search Samsung Support</p>
+            <form class="relative flex">
+                <input class="rounded-full py-2 px-3 text-sm w-96 sm:w-[500px]" type="text" placeholder="Search Samsung Support"></input>
+                <img class="absolute w-5 h-5 right-3 top-1.5" src="../../assets/images/support/icon-search.svg" alt="">
             </form>
+            <div class=" hidden min-[535px]:block w-[500px]">
+                <div id="hero-button-lg" class="hero-button flex flex-wrap justify-center gap-3">
+                </div>
+            </div>
         </div>
-        <div>
-            <button>Replace TV Remote</button>
-            <button>Find My Device</button>
-            <button>Software/Firmware</button>
-            <button>TV Screen Mirroring</button>
+        <div class="block min-[534px]:hidden">
+            <div class=" w-screen flex justify-center bg-gray-50">
+                <div id="hero-button-sm" class="max-w-96 flex flex-wrap justify-center gap-2 py-3">
+        
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- get product help -->
-    <section class="border">
-        <span>Get product help</span>
-        <div>search bar</div>
-        <p>How to find my model number</p>
-        <div>Search by product category</div>
+    <section class="border w-screen flex flex-col items-center gap-10 py-16">
+        <span class="font-semibold text-4xl">Get product help</span>
+        <div class="w-screen flex flex-col items-center min-[534px]:flex-row min-[534px]:justify-center gap-5">
+            <form class="relative flex">
+                <input class="bg-gray-100 rounded-full py-5 min-[534px]:py-3 pl-5 text w-96" type="text" placeholder="Search by model number or product name"></input>
+                <img class="absolute w-5 h-5 right-4 top-5 min-[534px]:top-3" src="../../assets/images/support/icon-search.svg" alt="">
+            </form>
+            <p class="min-[534px]:text-sm underline font-bold">How to find my model number</p>
+        </div>
+        <div class="flex items-center gap-2 rounded-full border border-black px-3 py-2">
+            <span class="font-semibold text-sm">Search by product category</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>                  
+        </div>
+
     </section>
 
     <section class="border relative">
@@ -172,5 +191,6 @@
     <footer-component></footer-component>
     <script src="../../script/index.js" type="module"></script>
     <script src="../support/components/do-more.js" type="module"></script>
+    <script src="../support/script/index.js"></script>
 </body>
 </html>
