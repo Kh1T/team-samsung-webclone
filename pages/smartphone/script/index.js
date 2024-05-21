@@ -107,7 +107,7 @@ function createButtonIndicator(indicatorContainer){
     
     for (let i = 0; i < slideLength; i++){
         const btnIndicator = document.createElement('button')
-        btnIndicator.classList += ` btn-slide mx-4 size-4 rounded-full bg-gray-500`
+        btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full bg-gray-500`
         indicatorContainer.append(btnIndicator)
     }
     indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
