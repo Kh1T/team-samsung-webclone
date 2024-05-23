@@ -18,6 +18,6 @@ class DoMore extends HTMLElement {
         `
     }
 }
-const
 
-customElements.define('grid-item', DoMore);
+
+customElements.define('grid-item', DoMore)
