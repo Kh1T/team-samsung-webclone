@@ -11,8 +11,8 @@ export class FeaturedCard extends HTMLElement {
 
         this.classList.add("w-full")
         this.innerHTML = `
-        <div class="flex py-12 justify-between ${reverse} items-center">
-            <div class="max-w-lg w-1/2 space-y-4">
+        <div class="flex flex-col md:flex-row gap-12 py-12 justify-between md:${reverse} text-center md:text-start items-center">
+            <div class="w-full md:max-w-lg md:w-1/2 space-y-4">
                 <p class="font-medium text-sm">${subheading.toUpperCase()}</p>
                 <h2 class="text-4xl font-bold">${heading}</h2>
                 <p>${description}</p>

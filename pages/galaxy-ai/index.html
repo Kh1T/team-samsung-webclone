@@ -13,37 +13,24 @@
 
   <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
-    <section class="flex w-full max-w-screen-2xl justify-between p-6">
-      <p class="font-bold">Galaxy AI</p>
-      <div class="space-x-6 text-sm">
+    <section
+      class="sticky top-0 z-20 flex w-full max-w-screen-2xl flex-col justify-between gap-8 border-b bg-white p-6 md:flex-row md:gap-0"
+    >
+      <p class="text-2xl font-bold md:text-base">Galaxy AI</p>
+      <div
+        class="flex items-center justify-between space-x-6 text-lg md:justify-start md:text-sm"
+      >
         <a href="#">#TeamGalaxy</a>
         <a href="#"> Features</a>
         <a href="#">All Devices</a>
         <a href="#">FAQ</a>
       </div>
     </section>
-    <section class="border-t w-full max-w-screen-2xl">
-      <img
-      class="w-full"
-        src="../../assets/images/galaxy-ai/welcome-to-galaxy-ai.png"
-        alt=""
-      />
-    </section>
-    <section class="bg-yellow-300 relative flex justify-center w-full max-w-screen-2xl">
-      <div
-        class="absolute top-10 flex w-fit max-w-lg flex-col items-center justify-center gap-8 text-center"
-      >
-        <img class="w-full" src="../../assets/images/galaxy-ai/what-is-galaxy-ai.png" alt="what is galaxy ai?" />
-        <p class="grow-0">
-          Galaxy AI is a suite of built-in and cloud-based AI features that
-          unleash creativity, increase productivity and unlock a world of
-          possibilities across the Galaxy family. Life opens up with Galaxy AI.
-        </p>
-      </div>
-      <img class="w-full" src="../../assets/images/galaxy-ai/galaxy-ai-hero-bg.png" alt="" />
-    </section>
-    <section class="flex w-full max-w-screen-2xl justify-between bg-gray-50 px-12 py-16">
-      <div class="flex flex-col gap-6">
+    <hero-component></hero-component>
+    <section
+      class="flex w-full max-w-screen-2xl flex-col items-center justify-between gap-12 bg-gray-50 px-12 py-16 text-center md:flex-row md:gap-0 md:text-start"
+    >
+      <div class="flex flex-col items-center gap-6 md:items-start">
         <div class="space-y-4">
           <p class="text-3xl font-bold">
             Give it a try <br />
@@ -52,7 +39,7 @@
           <p class="text-xs">
             Try Galaxy AI, now available on even more Galaxy Phones from
             participating carriers.
-            <br />
+            <br class="hidden md:block" />
             Buy it now, try it for 30 days, then keep it or get a full refund.
           </p>
         </div>
@@ -73,13 +60,13 @@
         class="flex flex-col items-center gap-6 text-center text-4xl font-bold"
       >
         <img
-          class="h-12 w-fit"
+          class="h-8 w-fit md:h-12"
           src="../../assets/images/galaxy-ai/team-galaxy.png"
           alt=""
         />
         <h1>See how influencers are using Galaxy AI</h1>
       </div>
-      <div class="flex gap-3">
+      <div class="flex w-full flex-col gap-8 px-6 md:flex-row md:gap-3">
         <influencer-card
           data-image="../../assets/images/galaxy-ai/team-galaxy-01.png"
         ></influencer-card>
@@ -91,7 +78,7 @@
         ></influencer-card>
       </div>
     </section>
-    <section class="space-y-12 py-12">
+    <section class="space-y-12 px-6 py-12">
       <div class="flex flex-col items-center gap-4 text-center">
         <h1 class="text-4xl font-bold">
           In-ear translations, in-person conversations
@@ -105,7 +92,7 @@
       <img src="../../assets/images/galaxy-ai/bud-ai.png" alt="" />
     </section>
     <section
-      class="flex w-full max-w-screen-xl flex-col items-center justify-center py-12"
+      class="flex w-full max-w-screen-xl flex-col items-center justify-center px-6 py-12"
     >
       <featured-card
         data-subheading="circle to search"
@@ -154,26 +141,26 @@
       </p>
     </section>
     <section
-      class="flex w-full max-w-screen-lg flex-col items-center gap-6  pt-12"
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
     >
       <h2 class="text-4xl font-bold">Galaxy S Series</h2>
       <div
         id="galaxySList"
-        class="flex w-full space-x-2 overflow-x-scroll  py-6 text-center text-sm md:overflow-hidden"
+        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
     </section>
     <section
-      class="flex w-full max-w-screen-lg flex-col items-center gap-6  pt-12"
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
     >
       <h2 class="text-4xl font-bold">Galaxy Z Series</h2>
       <div
         id="galaxyZList"
-        class="flex w-full space-x-2 overflow-x-scroll  py-6 text-center text-sm md:overflow-hidden"
+        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
     </section>
 
     <section
-      class="flex w-full max-w-screen-lg flex-col items-center gap-6  pt-12 text-center"
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12 text-center"
     >
       <h2 class="text-4xl font-bold">Tablets</h2>
       <p>
@@ -184,7 +171,7 @@
       </p>
       <div
         id="tabletList"
-        class="flex w-full space-x-2 overflow-x-scroll  py-6 text-center text-sm md:overflow-hidden"
+        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
       <div class="flex flex-col gap-12">
         <p class="text-lg">Not sure what tablet to buy?</p>
@@ -195,7 +182,7 @@
     </section>
 
     <section
-      class="flex w-full max-w-screen-lg flex-col items-center gap-6  pt-12 text-center"
+      class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12 text-center"
     >
       <h2 class="text-4xl font-bold">Galaxy Buds</h2>
       <p>
@@ -205,16 +192,18 @@
       </p>
       <div
         id="budList"
-        class="flex w-full space-x-2 overflow-x-scroll  py-6 text-center text-sm md:overflow-hidden md:px-24"
+        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden md:px-24"
       ></div>
     </section>
 
-    <section class="w-full max-w-screen-2xl bg-orange-50">
+    <section class="w-full max-w-screen-2xl">
       <h2 class="py-2 text-center text-4xl font-bold">FAQS</h2>
       <div id="faqList"></div>
     </section>
     <section class="py-3"></section>
-    <section class="max-w-screen-2xl space-y-6 bg-gray-50 px-20 py-12 text-xs">
+    <section
+      class="max-w-screen-2xl space-y-6 bg-gray-50 px-6 py-12 md:px-20 md:text-xs"
+    >
       <p>
         Images simulated for illustrative purposes. Sequences shortened and
         simulated. Actual UI may be different. All specifications and
@@ -273,7 +262,7 @@
       </p>
     </section>
     <section
-      class="flex w-full max-w-screen-2xl justify-start gap-2 py-4 text-sm border-t"
+      class="flex w-full max-w-screen-2xl justify-start gap-2 border-b border-t px-6 py-4 text-lg md:border-none md:px-0 md:text-sm"
     >
       <a href="#"> Home </a>
       <img src="../../assets/images/galaxy-ai/icon/chevron-right.svg" />
