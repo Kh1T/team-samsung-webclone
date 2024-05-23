@@ -629,25 +629,6 @@
 
 
 
-    <script>
-        const exploreItemLinks = document.querySelectorAll(".explore-item-link");
-        console.log(exploreItemLinks);
-        exploreItemLinks.forEach((link,i )=> {
-            link.addEventListener('mouseenter', ()=>onItemHover(i));
-            link.addEventListener('mouseleave', ()=>onItemHover(i));
-        });
-
-        function onItemHover(i) {            
-            imgExplor.src = imgExplorPath[i]
-            exploreItemLinks[i].classList.toggle("border-t-4");
-            const element = exploreItemLinks[i].lastElementChild.lastElementChild;
-            if (element.hasAttribute('hidden')) {
-                element.removeAttribute('hidden');
-            } else {
-                element.setAttribute('hidden', '');
-            }
-        }
-    </script>
 </body>
 
 </html>
