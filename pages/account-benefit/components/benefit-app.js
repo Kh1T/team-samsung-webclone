@@ -17,11 +17,11 @@ class MyElement extends HTMLElement {
             const element = document.createElement('div');
             element.classList.add('carousel__item', 'flex', 'flex-col', 'w-screen', 'md:w-[60%]', 'md:border-l-[24px]', 'border-transparent', 'justify-center', 'items-center', 'p-10', 'space-y-2');
             element.innerHTML = `
-                <img class="image w-80 md:w-40 my-20" src="${data.src}" alt="Dynamic Image">
-                <h3 class="title text-2xl font-medium h-16">${data.title}</h3>
-                <p class="text text-center mb-10 h-16 pb-11">${data.text}</p>
+                <img class="image w-80 md:w-[250px] my-20" src="${data.src}" alt="Dynamic Image">
+                <h3 class="title text-3xl font-medium ">${data.title}</h3>
+                <p class="text-[18px] font-light text-center mb-10 pb-11 pt-5">${data.text}</p>
                     
-                <p class="flex align-self-end pb-1 border-b-[3px] pt-16 border-black"><a href='#'>LEARN MORE</a></p>
+                <p class="flex align-self-end pb-1 border-b-[1.5px] pt-16 border-black font-semibold text-base md:text-[20px]"><a href='#'>LEARN MORE</a></p>
             `;
             this.carouselItems.appendChild(element);
         });
