@@ -5,6 +5,10 @@ export class CarouselMobile extends HTMLElement{
     }
     connectedCallback(){
         const carosuelData = this.featureData
+
+        const carouselContainer = document.createElement('div')
+        console.log(carosuelData);
+
         console.log(carosuelData);
         carosuelData.forEach(data =>{
             const cardHTML = `
@@ -14,21 +18,20 @@ export class CarouselMobile extends HTMLElement{
                 src="${data.imgSrc}"
                 alt="feature"
                 />
+                
                 <div class="flex flex-col gap-4 items-center mt-8">
                   <h3 class="text-xl font-bold">${data.title}</h3>
-                  <p class="">${data.desc}</p>
+                  <p class="w-10/12 mx-auto text-center">${data.desc}</p>
                   <button class="border-b-2 border-black font-bold">Learn more</button>
                 </div>
             </div>
             `;
 
-            const indicatorHTML = `
-            
-            `
             this.innerHTML += cardHTML;
         })
         
-        this.classList.add("fav-container-mobile", "flex", "md:hidden", "flex")
+
+        this.classList.add("fav-container-mobile", "flex", "md:hidden", "flex", "transition-transform", "duration-500")
         this.classList.add("block")
         
     }
@@ -60,4 +63,18 @@ export class CarouselMobile extends HTMLElement{
         },
     ]
 }
+
+function createButtonIndicator(indicatorContainer){
+    const slideLength = favContainer.querySelectorAll('.slide').length
+    
+    for (let i = 0; i < slideLength; i++){
+        const btnIndicator = document.createElement('button')
+        btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full bg-gray-500`
+        indicatorContainer.append(btnIndicator)
+    }
+    indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
+    
+}
+// createButtonIndicator(indicatorContainer)
+
 customElements.define("carousel-mobile", CarouselMobile);

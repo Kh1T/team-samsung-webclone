@@ -39,5 +39,5 @@ class BuyWithConfidence extends HTMLElement {
 }
 customElements.define('icon-desc' , BuyWithConfidence);
 
-createAndAppendElement(iconInfo, 'icon-description');
+// createAndAppendElement(iconInfo, 'icon-description');
 

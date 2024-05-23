@@ -100,20 +100,37 @@ btnSlides[0].classList.add('bg-white')
 
 // favbutton
 const favContainer = document.querySelector('.fav-container-mobile')
+const carouselContainer = document.querySelector('.carousel-container')
 const indicatorContainer = document.querySelector('.indicator-container')
 
+
 function createButtonIndicator(indicatorContainer){
+    const indicatorHandler = (i) => {
+        const btnIndicators = indicatorContainer.querySelectorAll('button')
+        favContainer.style.transform = `translateX(-${i * 100}%)`
+        btnIndicators.forEach(btnIndicator=>{
+            btnIndicator.classList.remove('bg-black')
+            btnIndicator.classList.add('bg-gray-500')            
+        })
+        btnIndicators[i].classList.remove('bg-gray-500')
+        btnIndicators[i].classList.add('bg-black')
+    }
     const slideLength = favContainer.querySelectorAll('.slide').length
     
     for (let i = 0; i < slideLength; i++){
         const btnIndicator = document.createElement('button')
-        btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full bg-gray-500`
+        btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full`
+        if (i === 0) btnIndicator.classList.add('bg-black')
+        else btnIndicator.classList.add('bg-gray-500')
         indicatorContainer.append(btnIndicator)
+        btnIndicator.addEventListener('click', () => indicatorHandler(i) )
     }
     indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
     
 }
 createButtonIndicator(indicatorContainer)
+
+
 
 function windowResizeHandleer() {
     if (window.innerWidth >= 768){
