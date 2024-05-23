@@ -318,15 +318,19 @@
         <!-- galaxy business -->
 
         <!-- care -->
-        <div>
-          <h3>If the unexpected happens, we’re here</h3>
-          <p>
-            Did you know that Samsung products comes protected with Samsung
-            Care? Choose from convenient service options that work with your
-            schedule and needs. This includes our Walk-in, We Come to You,
-            Mail-in and Self-repair options. We’re here to help. For even more
-            protection, you can add Samsung Care+ for a fee.
-          </p>
+        <div class="flex justify-center items-center">
+          <div class="order-1 flex flex-col mx-10">
+            <h3 class="text-5xl w-[85%]  mb-4  font-semibold">If the unexpected happens, we’re here</h3>
+            <p class="w-[85%]">
+              Did you know that Samsung products comes protected with Samsung
+              Care? Choose from convenient service options that work with your
+              schedule and needs. This includes our Walk-in, We Come to You,
+              Mail-in and Self-repair options. We’re here to help. For even more
+              protection, you can add Samsung Care+ for a fee.
+            </p>
+            <a class="flex w-fit align-self-end pb-1 border-b-[1.5px] pt-16 border-black font-semibold text-base md:text-[20px]" href="#">Learn more</a>
+          </div>
+          <img class="order-2" src="../../assets/images/smartphone/care-banner-big.jpg" alt="">
         </div>
 
         <!-- try -->
@@ -365,8 +369,12 @@
           >
         </div>
 
-        <div>
-          <h4>Buy with confidence</h4>
+
+        
+
+        <div class="flex flex-col  max-w-screen-2xl text-center bg-gray-100 px-[1.66vw] rounded-3xl my-5 md:py-4 mx-5 md:mx-[1.66vw]">
+          <h4 class="font-semibold  pt-2 my-6 md:my-0 text-[min(4.5vw,24px)]">Buy with confidence</h4>
+          <icon-desc></icon-desc>
         </div>
       </section>
     </main>
@@ -377,5 +385,6 @@
     <script src="../../script/index.js" type="module"></script>
     <script src="./components/index.js" type="module"></script>
     <script src="./script/index.js" type="module"></script>
+    <script src="./components/buy.js" type="module"></script>
   </body>
 </html>
