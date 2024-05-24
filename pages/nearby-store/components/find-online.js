@@ -22,6 +22,7 @@ const stocks = [
     }
 ];
 
+document.addEventListener("DOMContentLoaded", function(){
 const stockList = document.getElementById("stockList");
 
 stocks.forEach((stock) => {
@@ -39,4 +40,5 @@ stocks.forEach((stock) => {
 `;
 
     stockList.appendChild(stockItem);
-});
+    });
+})
