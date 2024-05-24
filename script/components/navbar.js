@@ -73,7 +73,7 @@ export class NavBar extends HTMLElement {
             <div class="space-y-6">
                 <h2 class="font-bold">Offers</h2>
                 <ul class="space-y-4 text-sm">
-                    <li><a href="#" class="hover:font-medium">All Offers</a></li>
+                    <li><a href=".../../pages/continue-shopping/index.html" class="hover:font-medium">All Offers</a></li>
                     <li><a href="#" class="hover:font-medium">Phones</a></li>
                     <li><a href="#" class="hover:font-medium">TV & Home Theater</a></li>
                     <li><a href="#" class="hover:font-medium">Appliances</a></li>
