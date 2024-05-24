@@ -31,8 +31,8 @@ export class Footer extends HTMLElement {
                 <div class="flex flex-col gap-4 p-6 border-r">
                     <h3 class="font-bold text-lg">SUPPORT</h3>
                     <ul class="flex flex-col text-sm gap-2">
-                        <li><a href="#">Chat with Us</a></li>
-                        <li><a href="#">Product Support</a></li>
+                        <li><a href="../../pages/track-order/index.html">Track Order</a></li>
+                        <li><a href="../../pages/account-benefit/index.html">Why Create Account?</a></li>
                         <li><a href="#">Order Support</a></li>
                         <li><a href="#">Your Account</a></li>
                         <li><a href="#">Register Your Product</a></li>

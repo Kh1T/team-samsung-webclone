@@ -18,7 +18,7 @@ export class NavBar extends HTMLElement {
             </a>
             <ul  class="hidden shrink-0 xl:flex text-sm font-bold items-center ">
                 <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
-                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">AI</a></li>
+                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/galaxy-ai/index.html">AI</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Mobile</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">TV & Audio</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Appliances</a></li>
@@ -31,7 +31,7 @@ export class NavBar extends HTMLElement {
             <div class="xl:flex gap-12 items-center">
                 <ul class="xl:flex hidden shrink-0  justify-center  text-sm font-bold">
                     <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Explore</a></li>
-                    <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Support</a></li>
+                    <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/support/index.html">Support</a></li>
                     <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">For Business</a></li>
                 </ul>
                 <div class="flex gap-4 items-center">
@@ -73,8 +73,8 @@ export class NavBar extends HTMLElement {
             <div class="space-y-6">
                 <h2 class="font-bold">Offers</h2>
                 <ul class="space-y-4 text-sm">
-                    <li><a href="#" class="hover:font-medium">All Offers</a></li>
-                    <li><a href="#" class="hover:font-medium">Phones</a></li>
+                    <li><a href="../../pages/continue-shopping/index.html" class="hover:font-medium">All Offers</a></li>
+                    <li><a href="../../pages/smartphone/index.html" class="hover:font-medium">Smartphones</a></li>
                     <li><a href="#" class="hover:font-medium">TV & Home Theater</a></li>
                     <li><a href="#" class="hover:font-medium">Appliances</a></li>
                     <li><a href="#" class="hover:font-medium">Watches & Audio</a></li>
