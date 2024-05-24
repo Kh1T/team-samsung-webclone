@@ -36,12 +36,12 @@
               <a href="#">Feature Favorite</a>
             </div>
             <div
-              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold underline underline-offset-[20px]"
+              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold"
             >
               <a href="#">Design Inspiration</a>
             </div>
             <div
-              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold underline underline-offset-[20px]"
+              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold"
             >
               <a href="#">Switch to Galaxy</a>
             </div>
@@ -199,7 +199,7 @@
         <!-- feature faves -->
         <div class="exploremax-w-screen-2xl space-y-14 py-12">
           <div
-            class="header flex items-center justify-center text-4xl font-semibold sm:text-5xl"
+            class="header flex items-center justify-center text-4xl font-semibold md:text-5xl"
           >
             <a href="#">
               <h1 class="">Feature faves⁶</h1>
@@ -207,7 +207,7 @@
           </div>
 
           <!-- desktop screen -->
-          <div class="hidden flex-row-reverse items-center gap-12 px-4 sm:flex">
+          <div class="hidden flex-row-reverse items-center gap-12 px-4 md:flex">
             <img
               id="img-feature"
               class="rounded-3xl"
@@ -228,8 +228,12 @@
         </div>
 
         <!-- epic video -->
-        <h3>Watch epic in action</h3>
-
+        <custom-h2 class="mt-8">Watch epic in action</custom-h2>
+        <div class="flex flex-col md:flex-row gap-4 p-4">
+          <action-image img="../../assets/images/smartphone/action-1.jpg"></action-image>
+          <action-image img="../../assets/images/smartphone/action-2.jpg"></action-image>
+          <action-image img="../../assets/images/smartphone/action-3.jpg"></action-image>          
+        </div>
         <!-- galaxy close up -->
         <div>
           <custom-h2 class="text-center">See your Galaxy up close</custom-h2>
@@ -267,7 +271,7 @@
         </p>
         <button>Learn more</button>
         
-        <div class="text-center">
+        <div class="text-center hidden md:block">
           <img src="../../assets/images/smartphone/connect-1.jpg" alt="" />
           <h4>Call/Text from any device</h4>
           <p>

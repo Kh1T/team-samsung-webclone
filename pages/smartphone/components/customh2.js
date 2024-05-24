@@ -6,7 +6,7 @@ export class CustomH2 extends HTMLElement{
     connectedCallback(){
         const chlidText = this.textContent
         this.innerHTML = `
-            <h2 class="mb-10 mt-8 text-2xl font-bold sm:text-5xl md:mb-5 md:text-3xl lg:text-5xl">
+            <h2 class="mb-10 mt-8 text-center text-2xl font-bold sm:text-5xl md:mb-5 md:text-3xl lg:text-5xl">
                 ${chlidText}
             </h2>
         `
