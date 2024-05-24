@@ -20,7 +20,6 @@ class BuyWithConfidence extends HTMLElement {
         this.iconItems.className = 'flex ';
 
         iconInfo.forEach(data => {
-            console.log(data);
             const element = document.createElement('div');
             element.className = 'flex text-start md:w-[25%] px-5 text-xs md:text-sm space-x-4';
             element.innerHTML = `

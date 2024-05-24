@@ -283,44 +283,120 @@
         <!-- mobile carousel -->
         <carousel-mobile section="connected"></carousel-mobile>
         <!-- galaxy store -->
-        <h3>The Galaxy Store</h3>
-        <p>Powerful apps to help you work smarter and play harder.</p>
-        <div>
-          <img src="../../assets/images/smartphone/galaxy-store-1.jpg" alt="" />
-          <div class="flex">
-            <img src="../../assets/images/smartphone/smart-switch.png" alt="" />
-            <img src="../../assets/images/smartphone/wallet.png" alt="" />
-          </div>
+        <div class="flex flex-col text-center py-10 gap-5">
+            <h3 class="text-6xl font-semibold">The Galaxy Store</h3>
+            <p class="text-lg tracking-wide">Powerful apps to help you work smarter and play harder.</p>
+            <div class="flex">
+              <img class="relative" src="../../assets/images/smartphone/galaxy-store-1.jpg" alt="" />
+              <div class="text-white absolute flex flex-col ">
+                <p class="text-4xl font-semibold">Bixby: Your intelligent assistant</p>
+                <p>With Bixby at your command, you can answer texts, ask questions and control your world without lifting a finger.</p>
+              </div>
+              <div class="">
+                <img src="../../assets/images/smartphone/smart-switch.png" alt="" />
+                <img src="../../assets/images/smartphone/wallet.png" alt="" />
+              </div>
+            </div>
         </div>
+        
       </section>
 
       <!-- beyon smartphones -->
-      <section>
-        <h2>Galaxy goes beyond smartphones</h2>
-
+      <section class="flex flex-col">
+        <h2 class="flex self-center py-16 text-6xl font-semibold">
+          Galaxy goes beyond smartphones
+        </h2>
+        <a href="#"
+          ><div class="flex overflow-x-auto py-20" id="hscroll-container">
+            <catergory-hscroll></catergory-hscroll></div
+        ></a>
         <!-- galaxy business -->
-
+        <div
+          class="mt-20 flex w-full flex-col items-center justify-between bg-[#EFF6FC] text-center md:flex-row"
+        >
+          <div
+            class="order-1 mx-8 my-5 flex w-full flex-col tracking-wide md:ml-20 md:w-1/2 md:text-start"
+          >
+            <h3 class="mb-4 pt-10 text-4xl font-semibold md:pt-5">
+              Galaxy for Business
+            </h3>
+            <p class="mx-10 text-lg md:mx-0">
+              Get exclusive deals, volume pricing, free shipping and flexible
+              financing on a wide range of Samsung technology for your business.
+            </p>
+            <a
+              class="mt-5 flex w-fit justify-center self-center rounded-full bg-black pb-1 text-sm font-semibold text-white hover:bg-zinc-600 md:self-start"
+              href="#"
+            >
+              <button class="mx-10 my-3 pt-1">Learn more</button>
+            </a>
+          </div>
+          <img
+            class="order-2 bg-center md:w-1/2"
+            src="../../assets/images/smartphone/smartphone-banner.jpeg"
+            alt=""
+          />
+        </div>
         <!-- care -->
-        <!-- <div class="flex justify-center items-center">
-          <div class="order-1 flex flex-col mx-10">
-            <h3 class="text-5xl w-[85%]  mb-4  font-semibold">If the unexpected happens, we’re here</h3>
-            <p class="w-[85%]">
+        <div
+          class="flex w-full flex-col items-center justify-center pt-10 text-center md:flex-row"
+        >
+          <div
+            class="order-1 mr-16 my-5 flex flex-col tracking-wide ml-0 md:ml-[10%] md:w-1/2 md:text-start"
+          >
+            <h3 class="mb-4 text-4xl font-semibold">
+              If the unexpected happens, we’re here
+            </h3>
+            <p >
               Did you know that Samsung products comes protected with Samsung
               Care? Choose from convenient service options that work with your
               schedule and needs. This includes our Walk-in, We Come to You,
               Mail-in and Self-repair options. We’re here to help. For even more
               protection, you can add Samsung Care+ for a fee.
             </p>
-            <a class="flex w-fit align-self-end pb-1 border-b-[1.5px] pt-16 border-black font-semibold text-base md:text-[20px]" href="#">Learn more</a>
+            <a
+              class="align-self-end flex w-fit self-center border-black pb-1 pt-10 font-semibold underline underline-offset-8 md:self-start md:text-xs"
+              href="#"
+              >Learn more</a
+            >
           </div>
-          <img class="order-2" src="../../assets/images/smartphone/care-banner-big.jpg" alt="">
-        </div> -->
+          <img
+            class="order-2 h-fit w-full bg-center md:w-1/2"
+            src="../../assets/images/smartphone/care-banner-big.jpg"
+            alt=""
+          />
+        </div>
 
-        <!-- try -->
-        <h3>Try Galaxy on your phone</h3>
-        <p>
-          Experience One UI on your device and learn more about Galaxy AI.15
-        </p>
+        <div
+          class="flex w-full flex-col items-center justify-center pt-10 text-center  md:flex-row md:text-start"
+        >
+          <div
+            class="order-1 mx-8 my-5 flex flex-col items-center tracking-wide ml-0 md:ml-[10%] md:w-1/2"
+          >
+            <h3 class="mb-4 w-full text-4xl font-semibold">
+              Try Galaxy on your phone
+            </h3>
+            <p class="w-full">
+              Experience One UI on your device and learn more about Galaxy
+              AI.<sup>15</sup>
+            </p>
+            <a
+              class="mt-8 flex w-fit items-center justify-center rounded-full bg-black pb-1 text-sm font-semibold text-white hover:bg-zinc-600 md:self-start"
+              href="#"
+            >
+              <button class="my-3 ml-10 pt-1">Try Galaxy</button>
+              <img
+                class="mr-5 size-10 pt-1"
+                src="../../assets/images/smartphone/arrow-upright-white.svg"
+              />
+            </a>
+          </div>
+          <img
+            class="order-2 h-fit bg-center md:w-1/2"
+            src="../../assets/images/smartphone/try-banner.png"
+            alt=""
+          />
+        </div>
       </section>
       <!-- switch to galaxy -->
       <section>
@@ -370,5 +446,6 @@
     <script src="./components/index.js" type="module"></script>
     <script src="./script/index.js" type="module"></script>
     <script src="./components/buy.js" type="module"></script>
+    <script src="./components/hscroll.js" type="module"></script>
   </body>
 </html>
