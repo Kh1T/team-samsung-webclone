@@ -1,4 +1,4 @@
-<html lang="en">
+<html class="scroll-smooth md:scroll-auto" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +20,10 @@
       <div
         class="flex items-center justify-between space-x-6 text-lg md:justify-start md:text-sm"
       >
-        <a href="#">#TeamGalaxy</a>
-        <a href="#"> Features</a>
-        <a href="#">All Devices</a>
-        <a href="#">FAQ</a>
+        <a href="#teamgalaxy">#TeamGalaxy</a>
+        <a href="#features"> Features</a>
+        <a href="#alldevices">All Devices</a>
+        <a href="#faq">FAQ</a>
       </div>
     </section>
     <hero-component></hero-component>
@@ -55,7 +55,7 @@
         alt=""
       />
     </section>
-    <section class="flex flex-col items-center gap-12 py-12">
+    <section id="teamgalaxy" class="flex flex-col items-center gap-12 py-12">
       <div
         class="flex flex-col items-center gap-6 text-center text-4xl font-bold"
       >
@@ -78,7 +78,7 @@
         ></influencer-card>
       </div>
     </section>
-    <section class="space-y-12 px-6 py-12">
+    <section id="features" class="space-y-12 px-6 py-12">
       <div class="flex flex-col items-center gap-4 text-center">
         <h1 class="text-4xl font-bold">
           In-ear translations, in-person conversations
@@ -125,7 +125,7 @@
       ></featured-card>
     </section>
     <galaxy-ai-tablet></galaxy-ai-tablet>
-    <section class="py-4">
+    <section  id="alldevices"  class="p-12">
       <img
         src="../../assets/images/galaxy-ai/meet-galaxy-ai-family.png"
         alt=""
@@ -201,7 +201,7 @@
       <carousel-mobile section="bud-product"></carousel-mobile>
     </section>
 
-    <section class="w-full max-w-screen-2xl pt-12">
+    <section id="faq" class="w-full max-w-screen-2xl pt-12">
       <h2 class="py-2 text-center text-4xl font-bold">FAQS</h2>
       <div id="faqList"></div>
     </section>
