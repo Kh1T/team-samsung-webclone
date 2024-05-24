@@ -125,7 +125,7 @@
       ></featured-card>
     </section>
     <galaxy-ai-tablet></galaxy-ai-tablet>
-    <section  id="alldevices"  class="p-12">
+    <section id="alldevices" class="p-12">
       <img
         src="../../assets/images/galaxy-ai/meet-galaxy-ai-family.png"
         alt=""
@@ -146,10 +146,10 @@
     >
       <h2 class="text-4xl font-bold">Galaxy S Series</h2>
       <div
-      id="galaxySList"
-      class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+        id="galaxySList"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
       ></div>
-      <carousel-mobile section='galaxy-s-product'></carousel-mobile>
+      <carousel-mobile section="galaxy-s-product"></carousel-mobile>
     </section>
     <section
       class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
@@ -157,9 +157,9 @@
       <h2 class="text-4xl font-bold">Galaxy Z Series</h2>
       <div
         id="galaxyZList"
-        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
       ></div>
-      <carousel-mobile section='galaxy-z-product'></carousel-mobile>
+      <carousel-mobile section="galaxy-z-product"></carousel-mobile>
     </section>
 
     <section
@@ -174,9 +174,9 @@
       </p>
       <div
         id="tabletList"
-        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden"
       ></div>
-      <carousel-mobile section='tablet-product'></carousel-mobile>
+      <carousel-mobile section="tablet-product"></carousel-mobile>
       <div class="flex flex-col gap-12">
         <p class="text-lg">Not sure what tablet to buy?</p>
         <a class="text-sm font-semibold underline underline-offset-4" href="#">
@@ -196,7 +196,7 @@
       </p>
       <div
         id="budList"
-        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden md:px-24"
+        class="hidden w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:flex md:overflow-hidden md:px-24"
       ></div>
       <carousel-mobile section="bud-product"></carousel-mobile>
     </section>
@@ -266,12 +266,20 @@
         trade-in terms and conditions that apply.
       </p>
     </section>
+    <section
+      class="flex w-full max-w-screen-2xl justify-start gap-2 border-b border-t px-6 py-4 text-lg md:border-none md:px-0 md:text-sm"
+    >
+      <a href="../../index.html"> Home </a>
+      <img src="../../assets/images/galaxy-ai/icon/chevron-right.svg" />
+      <a href="#">Galaxy AI </a>
+    </section>
+
+    <feedback-component></feedback-component>
     <footer-component></footer-component>
     <script src="./script/index.js" type="module"></script>
     <script src="../../script/index.js" type="module"></script>
     <script src="./script/components/faq.js"></script>
     <script src="./script/components/product-series.js"></script>
     <script src="./script/components/product-carousel.js"></script>
-
   </body>
 </html>
