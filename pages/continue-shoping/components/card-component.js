@@ -67,32 +67,38 @@ const cardData = [
         
     ];
 
-for (i of cardData) {
-    console.log(i);
-    console.log(i.title);
-}
+// for (i of cardData) {
+//     console.log(i);
+//     console.log(i.title);
+// }
 
-console.log(cardData[0].title);
+// console.log(cardData[0].title);
 
-class Card extends HTMLElement {
+class Featured extends HTMLElement {
     constructor() {
         super();
     }
 
     connectedCallback() {
-        
         this.innerHTML = `
-        <div class="card bg-gray-100 w-full sm:w-[350px] rounded-xl border-2  p-4 text-wrap flex flex-col gap-4  shadow-2xl flex-none items-center ">
-        <img class=" h-64"  src="${img}" alt="">
-        <div class="flex flex-col gap-2">
-
-            <p class="text-white bg-blue-500 w-2/3 text-lg p-2 rounded-xl font-bold text-center">${type}</p>
-            
-            <h2 class="font-bold">Save up to $900</h2>
-            <p class="w-2/3">Get up to $750 instant trade-in credit and $150 off. From $1,149.99 $1,299.99 before eligible trade-in.</p>
-            <button class="bg-blue-700  text-white py-4 px-6 rounded-3xl text-xs w-1/3 "><a href="#">${button}</a></button>
+        <section class="items max-w-screen-2xl ">
+        <h2 class="text-center text-5xl font-bold py-24">Featured Deals</h2>
+        <div class="card-container w-full flex flex-wrap px-2 gap-2">
+            ${cardData.map(items => `
+            <div class="card bg-gray-100 w-full sm:w-[350px] rounded-xl border-2  p-4 text-wrap flex flex-col gap-4  shadow-2xl flex-none items-center ">
+                <img class=" h-64"  src="${items.image}" alt="">
+                <div class="flex flex-col gap-2">
+                    <p class="text-white bg-blue-500 w-2/3 text-lg p-2 rounded-xl font-bold text-center">${items.title}</p>
+                    <h2 class="font-bold">Save up to $900</h2>
+                    <p class="w-2/3">Get up to $750 instant trade-in credit and $150 off. From $1,149.99 $1,299.99 before eligible trade-in.</p>
+                    <button class="bg-blue-700  text-white py-4 px-6 rounded-3xl text-xs w-1/3 "><a href="#">${items.button || 'Buy Now'}</a></button>
+                </div>
+            </div>
+            `).join('')}
         </div>
-    </div>
+    </section>
     `
     }
 }
+
+customElements.define('featured-components', Featured)

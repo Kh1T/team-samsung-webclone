@@ -6,76 +6,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body class="flex flex-col items-center">
+<body class="flex flex-col items-center gap-12">
     <navbar-component></navbar-component>
 
-    <!-- <section class="hero-section max-w-screen-2xl">
-        <div class="header">
-            <ul class="flex text-center text-xs font-semibold gap-8">
-                <li class="px-12">
-                    <img src="../../assets/images/continue-shoping/image/Featured_Black_80x50.webp" alt="">
-                    <p>Phones</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Phones_Black_80x50.webp" alt="">
-                    <p class="w-20">Phones</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/TV_Home_Theater_Black_80x50.webp" alt="">
-                    <p class="w-20">TV & Home Theater</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Appliances_Smart_Home_Black_80x50.webp" alt="">
-                    <p class="w-20">Appliances</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Watch_Audio&Accessories_Black_80x50.webp" alt="">
-                    <p class="w-20">Watches & Audio</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Tablets_Computing_Black_80x50.webp" alt="">
-                    <p class="w-20">Tablets & Computing</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Monitor-Memory-Storage-80x50.png" alt="">
-                    <p class="w-20">Monitors, Memory & Storage</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Icon_Bundle01.svg.png" alt="">
-                    <p class="w-20">Bundle</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Students_Educators_Black_80x50.webp" alt="">
-                    <p class="w-20">Student & Educators</p>
-                </li>
-                <li>
-                    <img src="../../assets/images/continue-shoping/image/Small_Businesses_Black_80x50.webp" alt="">
-                    <p class="w-20">Business</p>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="carousel">
-            <img src="../../assets/images/continue-shoping/image/hero-section/hero-1-big.jpeg" alt="">
 
-        </div>
-
-    </section> -->
-
-    <section class="items max-w-screen-2xl ">
-        <h2 class="text-center text-5xl font-bold py-24">Featured Deals</h2>
-        <div class="card-container w-full flex flex-wrap px-2 gap-2">
-            <div class="card bg-gray-100 w-full sm:w-[350px] rounded-xl border-2  p-4 text-wrap flex flex-col gap-4  shadow-2xl flex-none items-center ">
-                <img class=" h-64"  src="../../assets/images/continue-shoping/image/featured/image-1.png" alt="">
-                <div class="flex flex-col gap-2">
-                    <p class="text-white bg-blue-500 w-2/3 text-lg p-2 rounded-xl font-bold text-center">Select Galaxy S24 Ultra</p>
-                    <h2 class="font-bold">Save up to $900</h2>
-                    <p class="w-2/3">Get up to $750 instant trade-in credit and $150 off. From $1,149.99 $1,299.99 before eligible trade-in.</p>
-                    <button class="bg-blue-700  text-white py-4 px-6 rounded-3xl text-xs w-1/3 "><a href="#">Buy Now</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <featured-components></featured-components>
 
     <section class="sub-footer max-w-screen-2xl">
         <div>
@@ -92,7 +27,7 @@
     <footer-component></footer-component>
 
 
-    <script src="components/card-component.js"></script>
+    <script src="components/card-component.js" type="module"></script>
     <script src="../../script/index.js" type="module"></script>
 </body>
 </html>
