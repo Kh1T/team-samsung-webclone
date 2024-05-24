@@ -3,9 +3,10 @@ export class ItemContent extends HTMLElement{
         super()
     }
     connectedCallback(){
-        const chlidText = this.textContent
+        // const chlidText = this.textContent
         const desc = this.getAttribute("desc")
         const imgSrc = this.getAttribute("imgSrc")
+        const title = this.getAttribute('title')
         let textHTML = ''
         console.log(desc);
         if (!desc){
@@ -13,7 +14,7 @@ export class ItemContent extends HTMLElement{
             <div>
                 <img class="h-28" src="${imgSrc}" alt="" />
                 <div class="flex w-[200px] flex-col gap-2">
-                    <h3 class="mt-2 font-bold md:mt-4">Galaxy</h3>
+                    <h3 class="mt-2 font-bold md:mt-4">${title}</h3>
                 </div>
             </div>            
             `
@@ -22,9 +23,9 @@ export class ItemContent extends HTMLElement{
             <div class="md:flex">
                 <img class="h-28" src="${imgSrc}" alt="" />
                 <div class="flex w-32 flex-col gap-2">
-                    <h3 class="mt-2 font-bold md:mt-4">Galaxy</h3>
-                    <p class="hidden md:block">
-                        Open your world with our foldable phones
+                    <h3 class="mt-2 font-bold md:mt-4">${title}</h3>
+                    <p class="hidden md:block text-sm">
+                        ${desc}
                     </p>
                 </div>
             </div>

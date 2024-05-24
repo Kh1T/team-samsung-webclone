@@ -135,32 +135,32 @@ const subNavbarData = [
     {
         title: "Galaxy S",
         desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/sub-nav-1.png" 
+        imgSrc: "../../assets/images/smartphone/sub-nav-6.png" 
     },
     {
         title: "Galaxy Z",
-        desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        desc: "Open your world with our foldable phones",       
+        imgSrc: "../../assets/images/smartphone/sub-nav-1.png" 
     },
     {
         title: "Galaxy A",
-        desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        desc: "Samsung innovation",       
+        imgSrc: "../../assets/images/smartphone/sub-nav-2.png" 
     },
     {
         title: "Galaxy XCover6 Pro",
-        desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        desc: "Built to handle",       
+        imgSrc: "../../assets/images/smartphone/sub-nav-3.png" 
     },
     {
         title: "Compare",
-        desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        desc: "See smartphone",       
+        imgSrc: "../../assets/images/smartphone/sub-nav-4.png" 
     },
     {
         title: "Accessories",
-        desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        desc: "Protect deivce",       
+        imgSrc: "../../assets/images/smartphone/sub-nav-5.png" 
     },
 ]
 const discoverData = [
@@ -199,7 +199,7 @@ const subNavContent = document.getElementById('sub-nav-content');
 subNavbarData.forEach(({title, desc, imgSrc}) => {
     console.log(title, desc, imgSrc);
     subNavContent.innerHTML += `
-        <item-content imgSrc="${imgSrc}" desc="${desc}">${title}</item-content>
+        <item-content imgSrc="${imgSrc}" desc="${desc}" title="${title}"></item-content>
     `
     subNavContent.classList.add('flex', "gap-6", "flex-none")
 })
@@ -208,7 +208,7 @@ const discoverContent = document.getElementById('discover-content');
 discoverData.forEach(({title, desc, imgSrc}) => {
     console.log(title, desc, imgSrc);
     discoverContent.innerHTML += `
-        <item-content imgSrc="${imgSrc}" desc="${desc}">${title}</item-content>
+        <item-content imgSrc="${imgSrc}" desc="${desc}" title="${title}"></item-content>
     `
     discoverContent.classList.add('flex', "gap-6", "flex-none")
 })
