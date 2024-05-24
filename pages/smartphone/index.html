@@ -20,19 +20,36 @@
     />
   </head>
 
-  <body class="flex flex-col items-center">
+  <body class="">
+    <!-- <body class="flex flex-col items-center"> -->
     <navbar-component></navbar-component>
     <!-- sub nav -->
-    <main class="max-w-screen-2xl">
+    <main class="max-w-screen-2xl mx-auto">
       <section>
-        <div class="item text-center md:flex">
-          <img src="../../assets/images/smartphone/sub-nav-1.png" alt="" />
-          <div class="flex flex-col gap-2">
-            <h3 class="mt-2 font-bold md:mt-4">Galaxy</h3>
-            <p class="hidden sm:block">
-              Open your world with our foldable phones
-            </p>
+        <h1 class="mx-4 text-3xl font-bold">Smartphones</h1>
+        <!-- sub nav -->
+        <nav class="overflow-x-auto">
+          <div class="mt-4 flex">
+            <div
+              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold underline underline-offset-[20px]"
+            >
+              <a href="#">Feature Favorite</a>
+            </div>
+            <div
+              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold underline underline-offset-[20px]"
+            >
+              <a href="#">Design Inspiration</a>
+            </div>
+            <div
+              class="mx-4 h-fit w-[200px] flex-none py-8 text-xl font-bold underline underline-offset-[20px]"
+            >
+              <a href="#">Switch to Galaxy</a>
+            </div>
           </div>
+        </nav>
+        <div class="item mt-2 border-y bg-gray-50 py-6 text-center md:flex overflow-x-auto">
+          <!-- render subnav content -->
+          <div id="sub-nav-content"></div>
         </div>
       </section>
 
@@ -180,7 +197,7 @@
       <!-- feature faves -->
       <section>
         <!-- feature faves -->
-        <div class="explore w-screen max-w-screen-2xl space-y-14 py-12">
+        <div class="exploremax-w-screen-2xl space-y-14 py-12">
           <div
             class="header flex items-center justify-center text-4xl font-semibold sm:text-5xl"
           >
@@ -201,7 +218,7 @@
           </div>
 
           <!-- mobile screen -->
-          <div class="overflow-x-hidden carousel-container">
+          <div class="carousel-container overflow-x-hidden">
             <carousel-mobile></carousel-mobile>
             <!-- <div class="fav-container-mobile md:hidden flex translate-x-[-200%]">
               <div class="slide flex min-w-full flex-col items-center">
@@ -377,17 +394,18 @@
           >
         </div>
 
-
-        
-
-        <div class="flex flex-col  max-w-screen-2xl text-center bg-gray-100 px-[1.66vw] rounded-3xl my-5 md:py-4 mx-5 md:mx-[1.66vw]">
-          <h4 class="font-semibold  pt-2 my-6 md:my-0 text-[min(4.5vw,24px)]">Buy with confidence</h4>
+        <div
+          class="mx-5 my-5 flex max-w-screen-2xl flex-col rounded-3xl bg-gray-100 px-[1.66vw] text-center md:mx-[1.66vw] md:py-4"
+        >
+          <h4 class="my-6 pt-2 text-[min(4.5vw,24px)] font-semibold md:my-0">
+            Buy with confidence
+          </h4>
           <icon-desc></icon-desc>
         </div>
       </section>
     </main>
 
-    <footer-component></footer-component>
+    <footer-component class="max-w-screen-xl mx-auto"></footer-component>
 
     <!-- DO NOT REMOVE THIS SCRIPT TAG -->
     <script src="../../script/index.js" type="module"></script>

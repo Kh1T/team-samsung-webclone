@@ -130,6 +130,47 @@ function createButtonIndicator(indicatorContainer){
 }
 createButtonIndicator(indicatorContainer)
 
+// Sub navbar content
+const subNavbarData = [
+    {
+        title: "Galaxy S",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+    {
+        title: "Galaxy Z",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+    {
+        title: "Galaxy A",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+    {
+        title: "Galaxy XCover6 Pro",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+    {
+        title: "Compare",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+    {
+        title: "Accessories",
+        desc: "Epic, just like that",       
+        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+    },
+]
+const subNavContent = document.getElementById('sub-nav-content');
+subNavbarData.forEach(({title, desc, imgSrc}) => {
+    console.log(title, desc, imgSrc);
+    subNavContent.innerHTML += `
+        <item-content imgSrc="${imgSrc}" desc="${desc}">${title}</item-content>
+    `
+    subNavContent.classList.add('flex', "gap-6", "flex-none")
+})
 
 
 function windowResizeHandleer() {
