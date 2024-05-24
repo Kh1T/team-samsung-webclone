@@ -15,7 +15,7 @@ export class CustomButton extends HTMLElement{
         }
 
         this.innerHTML = `
-            <button class="${bgColor} ${textColor} border border-black text-base sm:text-3xl cursor-pointer px-8 py-4 md:py-2.5 md:text-sm font-semibold hover:opacity-80 rounded-full">
+            <button class="${bgColor} ${textColor} border border-black text-sm cursor-pointer px-8 py-4 md:py-2.5 font-semibold hover:opacity-80 rounded-full">
                 ${chlidText}
             </button>
         `

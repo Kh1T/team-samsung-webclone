@@ -104,38 +104,38 @@ const carouselContainer = document.querySelector('.carousel-container')
 const indicatorContainer = document.querySelector('.indicator-container')
 
 
-function createButtonIndicator(indicatorContainer){
-    const indicatorHandler = (i) => {
-        const btnIndicators = indicatorContainer.querySelectorAll('button')
-        favContainer.style.transform = `translateX(-${i * 100}%)`
-        btnIndicators.forEach(btnIndicator=>{
-            btnIndicator.classList.remove('bg-black')
-            btnIndicator.classList.add('bg-gray-500')            
-        })
-        btnIndicators[i].classList.remove('bg-gray-500')
-        btnIndicators[i].classList.add('bg-black')
-    }
-    const slideLength = favContainer.querySelectorAll('.slide').length
+// function createButtonIndicator(indicatorContainer){
+//     const indicatorHandler = (i) => {
+//         const btnIndicators = indicatorContainer.querySelectorAll('button')
+//         favContainer.style.transform = `translateX(-${i * 100}%)`
+//         btnIndicators.forEach(btnIndicator=>{
+//             btnIndicator.classList.remove('bg-black')
+//             btnIndicator.classList.add('bg-gray-500')            
+//         })
+//         btnIndicators[i].classList.remove('bg-gray-500')
+//         btnIndicators[i].classList.add('bg-black')
+//     }
+//     const slideLength = favContainer.querySelectorAll('.slide').length
     
-    for (let i = 0; i < slideLength; i++){
-        const btnIndicator = document.createElement('button')
-        btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full`
-        if (i === 0) btnIndicator.classList.add('bg-black')
-        else btnIndicator.classList.add('bg-gray-500')
-        indicatorContainer.append(btnIndicator)
-        btnIndicator.addEventListener('click', () => indicatorHandler(i) )
-    }
-    indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
+//     for (let i = 0; i < slideLength; i++){
+//         const btnIndicator = document.createElement('button')
+//         btnIndicator.classList += ` btn-slide mx-3 size-3 rounded-full`
+//         if (i === 0) btnIndicator.classList.add('bg-black')
+//         else btnIndicator.classList.add('bg-gray-500')
+//         indicatorContainer.append(btnIndicator)
+//         btnIndicator.addEventListener('click', () => indicatorHandler(i) )
+//     }
+//     indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
     
-}
-createButtonIndicator(indicatorContainer)
+// }
+// createButtonIndicator(indicatorContainer)
 
 // Sub navbar content
 const subNavbarData = [
     {
         title: "Galaxy S",
         desc: "Epic, just like that",       
-        imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
+        imgSrc: "../../assets/images/smartphone/sub-nav-1.png" 
     },
     {
         title: "Galaxy Z",
@@ -163,6 +163,38 @@ const subNavbarData = [
         imgSrc: "../../assets/images/smartphone/feat-1.jpg" 
     },
 ]
+const discoverData = [
+    {
+        title: "Galaxy S",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-1.png" 
+    },
+    {
+        title: "Galaxy Z",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-2.png" 
+    },
+    {
+        title: "Galaxy A",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-3.png" 
+    },
+    {
+        title: "Galaxy XCover6 Pro",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-4.png" 
+    },
+    {
+        title: "Compare",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-5.png" 
+    },
+    {
+        title: "Accessories",
+        desc: "",       
+        imgSrc: "../../assets/images/smartphone/discover-6.png" 
+    },
+]
 const subNavContent = document.getElementById('sub-nav-content');
 subNavbarData.forEach(({title, desc, imgSrc}) => {
     console.log(title, desc, imgSrc);
@@ -170,6 +202,15 @@ subNavbarData.forEach(({title, desc, imgSrc}) => {
         <item-content imgSrc="${imgSrc}" desc="${desc}">${title}</item-content>
     `
     subNavContent.classList.add('flex', "gap-6", "flex-none")
+})
+
+const discoverContent = document.getElementById('discover-content');
+discoverData.forEach(({title, desc, imgSrc}) => {
+    console.log(title, desc, imgSrc);
+    discoverContent.innerHTML += `
+        <item-content imgSrc="${imgSrc}" desc="${desc}">${title}</item-content>
+    `
+    discoverContent.classList.add('flex', "gap-6", "flex-none")
 })
 
 

@@ -1,10 +1,9 @@
-import { homepage } from './carouselHero-data.js';
+import { smartphone } from './hero-carousel-data.js';
 
-export class HeroCarousel extends HTMLElement {
+export class HeroCarousel1 extends HTMLElement {
     connectedCallback() {
-        const items = homepage.items;
+        const items = smartphone.items;
         console.log(items);
-
         this.innerHTML = `
         <section class="hero max-w-screen-2xl w-screen mb-12">
             <div class="hero-small-screen flex max-w-screen-sm sm:hidden">
@@ -121,4 +120,4 @@ export class HeroCarousel extends HTMLElement {
     }
 }
 
-customElements.define('hero-carousel-smart', HeroCarousel);
+customElements.define('hero-carousel-smart', HeroCarousel1);
