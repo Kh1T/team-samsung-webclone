@@ -18,7 +18,7 @@ export class NavBar extends HTMLElement {
             </a>
             <ul  class="hidden shrink-0 xl:flex text-sm font-bold items-center ">
                 <li onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Shop</a></li>
-                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">AI</a></li>
+                <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/galaxy-ai/index.html">AI</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Mobile</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">TV & Audio</a></li>
                 <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Appliances</a></li>
@@ -73,7 +73,7 @@ export class NavBar extends HTMLElement {
             <div class="space-y-6">
                 <h2 class="font-bold">Offers</h2>
                 <ul class="space-y-4 text-sm">
-                    <li><a href=".../../pages/continue-shopping/index.html" class="hover:font-medium">All Offers</a></li>
+                    <li><a href="../../pages/continue-shopping/index.html" class="hover:font-medium">All Offers</a></li>
                     <li><a href="#" class="hover:font-medium">Phones</a></li>
                     <li><a href="#" class="hover:font-medium">TV & Home Theater</a></li>
                     <li><a href="#" class="hover:font-medium">Appliances</a></li>
