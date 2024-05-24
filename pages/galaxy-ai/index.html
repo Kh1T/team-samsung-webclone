@@ -146,9 +146,10 @@
     >
       <h2 class="text-4xl font-bold">Galaxy S Series</h2>
       <div
-        id="galaxySList"
-        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+      id="galaxySList"
+      class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
+      <carousel-mobile section='galaxy-s-product'></carousel-mobile>
     </section>
     <section
       class="flex w-full max-w-screen-lg flex-col items-center gap-6 pt-12"
@@ -156,8 +157,9 @@
       <h2 class="text-4xl font-bold">Galaxy Z Series</h2>
       <div
         id="galaxyZList"
-        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
+      <carousel-mobile section='galaxy-z-product'></carousel-mobile>
     </section>
 
     <section
@@ -172,8 +174,9 @@
       </p>
       <div
         id="tabletList"
-        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
+        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden"
       ></div>
+      <carousel-mobile section='tablet-product'></carousel-mobile>
       <div class="flex flex-col gap-12">
         <p class="text-lg">Not sure what tablet to buy?</p>
         <a class="text-sm font-semibold underline underline-offset-4" href="#">
@@ -193,11 +196,12 @@
       </p>
       <div
         id="budList"
-        class="flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden md:px-24"
+        class="hidden md:flex w-full space-x-2 overflow-x-scroll py-6 text-center text-sm md:overflow-hidden md:px-24"
       ></div>
+      <carousel-mobile section="bud-product"></carousel-mobile>
     </section>
 
-    <section class="w-full max-w-screen-2xl">
+    <section class="w-full max-w-screen-2xl pt-12">
       <h2 class="py-2 text-center text-4xl font-bold">FAQS</h2>
       <div id="faqList"></div>
     </section>
@@ -262,32 +266,12 @@
         trade-in terms and conditions that apply.
       </p>
     </section>
-    <section
-      class="flex w-full max-w-screen-2xl justify-start gap-2 border-b border-t px-6 py-4 text-lg md:border-none md:px-0 md:text-sm"
-    >
-      <a href="#"> Home </a>
-      <img src="../../assets/images/galaxy-ai/icon/chevron-right.svg" />
-      <a href="#">Galaxy AI </a>
-    </section>
-    <section class="explore w-screen max-w-screen-2xl space-y-14 py-12">
-      <div
-        class="header flex items-center justify-center text-4xl font-semibold sm:text-5xl"
-      >
-        <a href="#">
-          <h1 class="hidden sm:block">Explore #DoWhatYouCant</h1>
-          <h1 class="text-center sm:hidden">Explore <br />#DoWhatYouCant</h1>
-        </a>
-      </div>
-    </section>
-    <product-carousel></product-carousel>
-
     <footer-component></footer-component>
-
     <script src="./script/index.js" type="module"></script>
     <script src="../../script/index.js" type="module"></script>
     <script src="./script/components/faq.js"></script>
     <script src="./script/components/product-series.js"></script>
     <script src="./script/components/product-carousel.js"></script>
-    <script src="../galaxy-ai/script/components/product-carousel-script.js"></script>
+
   </body>
 </html>
