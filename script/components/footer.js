@@ -4,7 +4,7 @@ export class Footer extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-        <section class="flex flex-col">
+        <section class="flex flex-col items-center bg-white">
         <div class="hidden md:block max-w-screen-2xl w-screen ">
             <hr>
             <section class="grid grid-cols-4">
