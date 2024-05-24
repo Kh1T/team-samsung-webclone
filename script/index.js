@@ -6,4 +6,4 @@ import { CarouselMobile } from './components/carousel-mobile.js';
 customElements.define("navbar-component", NavBar);
 customElements.define("footer-component", Footer);
 customElements.define("feedback-component", Feedback);
-customElements.define("carousel-mobile", CarouselMobile)
+customElements.define("carousel-mobile", CarouselMobile);
