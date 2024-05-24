@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Track-Order</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
+
 </head>
+
 <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
 
@@ -16,67 +20,72 @@
             <li>Search Orders</li>
         </ul>
     </section>
- <div class="w-full border-b mt-4"></div>
+    <div class="w-full border-b mt-4"></div>
 
 
-   <section class="max-w-screen w-screen">
-    <div class="text-center p-10 text-3xl font-semibold mt-3 ">
-        <h1 class="mb-5">Search Orders</h1>
-        <div class="text-sm font-extralight space-y-2">
-        <p>If you have a SAMSUNG account please sign in to track you order.</p>
-        <p>Guests user can view your orders using the form below.</p>
-        <p>Do you have questions about your order? Please visit our <span class="text-blue-900 font-semibold"> FAQs page</span> for answers.</p>
+    <section class="max-w-screen w-screen">
+        <div class="text-center p-10 text-3xl font-semibold mt-3 ">
+            <h1 class="mb-5">Search Orders</h1>
+            <div class="text-sm font-extralight space-y-2">
+                <p>If you have a SAMSUNG account please sign in to track you order.</p>
+                <p>Guests user can view your orders using the form below.</p>
+                <p>Do you have questions about your order? Please visit our <span class="text-blue-900 font-semibold">
+                        FAQs page</span> for answers.</p>
+            </div>
         </div>
-    </div> 
 
     </section>
-   
 
-<section class="max-w-screen-xl w-screen mx-auto">
+
+    <section class="max-w-screen-xl w-screen mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div>
                 <h2 class="font-bold md:text-2xl text-center text-lg">Sign in with Samsung account</h2>
                 <div class="flex justify-center">
                     <button class="bg-blue-800 rounded-full w-56 h-10 text-white mt-5">
-                      <div class="flex gap-3 justify-center items-center">
-                          <span class="text-xs font-thin">SIGN IN</span>
-                      </div>
-                  </button>
-              </div>
-                <div class="justify-between space-x-5 mr-6 ">
-                
-             
-                    <div class="xl:hidden md:hidden before:h-px before:flex-1  before:bg-gray-300 after:flex-1 after:bg-gray-300 after:h-px my-24 flex items-center ">
-                    <button type="button"
-                        class="flex items-center border border-gray-300 bg-gray-200 px-3 py-2 text-center text-sm font-medium text-gray-900">
-                        Or
+                        <div class="flex gap-3 justify-center items-center">
+                            <span class="text-xs font-thin">SIGN IN</span>
+                        </div>
                     </button>
+                </div>
+                <div class="justify-between space-x-5 mr-6 ">
+
+
+                    <div
+                        class="xl:hidden md:hidden before:h-px before:flex-1  before:bg-gray-300 after:flex-1 after:bg-gray-300 after:h-px my-24 flex items-center ">
+                        <button type="button"
+                            class="flex items-center border border-gray-300 bg-gray-200 px-3 py-2 text-center text-sm font-medium text-gray-900">
+                            Or
+                        </button>
                     </div>
                 </div>
-                
-            <div >
-             <div class="ml-96">
-                <div class="relative left-16 sm:hidden  md:flex rotate-90 before:h-px before:flex-1  before:bg-gray-300 after:flex-1 after:bg-gray-300 after:h-px items-center mx-10">
-                    <button type="button" class="relative -rotate-90 flex items-center border bg-gray-200 px-3 py-2 text-center text-sm font-medium text-gray-900">Or</button>
+
+                <div>
+                    <div class="ml-96">
+                        <div
+                            class="relative left-16 sm:hidden  md:flex rotate-90 before:h-px before:flex-1  before:bg-gray-300 after:flex-1 after:bg-gray-300 after:h-px items-center mx-10">
+                            <button type="button"
+                                class="relative -rotate-90 flex items-center border bg-gray-200 px-3 py-2 text-center text-sm font-medium text-gray-900">Or</button>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-        </div>
 
-        </div>
-        
-            
-            
-    
-        
 
-        
-          
-        <div class="mx-20">
-            <h2 class="flex md:justify-start justify-center mx-14 font-bold md:text-2xl text-lg">Find Order as Guest</h2>
+
+
+
+
+
+
+            <div class="mx-20">
+                <h2 class="flex md:justify-start justify-center mx-14 font-bold md:text-2xl text-lg">Find Order as Guest
+                </h2>
 
                 <div class="bg-white p-10 rounded">
                     <form>
-                        
+
                         <div class="flex md:gap-20 flex-col md:flex-row justify-start">
                             <div class="flex mb-5 gap-2 font-extralight my-2 mx-4">
                                 <input type="checkbox" class="w-10">Product Order
@@ -88,45 +97,50 @@
 
                         <div class="flex justify-between space-y-3 flex-col md:flex-row">
                             <label class="inline-block text-right mr-4 text-gray-500"></label>
-                            <input type="text" placeholder="Order ID" class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none ">
+                            <input type="text" placeholder="Order ID"
+                                class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none ">
                             <label class="inline-block text-right mr-4 text-gray-500"></label>
-                            <input type="text" placeholder="Email ID" class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
+                            <input type="text" placeholder="Email ID"
+                                class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
                         </div>
 
                         <p class="font-extralight my-7 md:mx-4 mx-0">Enter one of the following</p>
-                        
+
                         <div class="flex mb-5  flex-col space-y-3 md:flex-row">
                             <label class=" inline-block text-right mr-4 text-gray-500"></label>
-                            <input type="text" placeholder="Shipping Zip Code" class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
+                            <input type="text" placeholder="Shipping Zip Code"
+                                class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
                             <label class="inline-block text-right mr-4 text-gray-500"></label>
-                            <input type="text" placeholder="Billing Zip Code" class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
+                            <input type="text" placeholder="Billing Zip Code"
+                                class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
                         </div>
 
-                        <div class="flex md:ml-4  flex-col md:flex-row"> 
-                            <input type="text" placeholder="Phone number" type="text" class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none" >
+                        <div class="flex md:ml-4  flex-col md:flex-row">
+                            <input type="text" placeholder="Phone number" type="text"
+                                class="border-b-2 w-96 border-gray-400 flex-1 py-2 outline-none">
                         </div>
 
                     </form>
                     <div class="flex md:justify-center">
                         <button class="bg-gray-400 rounded-full md:w-52 w-96 h-12 text-white mt-5">
-                          <div class="flex gap-3 justify-center items-center">
-                              <span class="text-xs font-thin">View Your Order</span>
-                          </div>
-                      </button>
-                  </div>
+                            <div class="flex gap-3 justify-center items-center">
+                                <span class="text-xs font-thin">View Your Order</span>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
-     
     </section>
 
- 
-        <footer-component></footer-component>
+
+    <footer-component></footer-component>
 
 
-   
-   
+
+
     <script src="../../script/index.js" type="module"></script>
 </body>
+
 </html>
