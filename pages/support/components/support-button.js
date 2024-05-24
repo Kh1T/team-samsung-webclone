@@ -1,4 +1,4 @@
-class SupportButton extends HTMLElement {
+export class SupportButton extends HTMLElement {
     constructor() {
         super();
     }
@@ -7,7 +7,7 @@ class SupportButton extends HTMLElement {
         const color = this.dataset.color;
 
         this.innerHTML = `
-            <button class="bg-${color} py-1 px-2 md:py-2 md:px-3 rounded-full text-xs font-medium md:text-sm">
+            <button class="bg-${color} py-1.5 px-2 md:px-3 rounded-full text-xs font-medium md:text-sm">
                 ${text}
             </button>
         `
