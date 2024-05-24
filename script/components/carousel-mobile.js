@@ -47,7 +47,6 @@ export class CarouselMobile extends HTMLElement {
 
             favMobileContainer.innerHTML += cardHTML;
         })
-
         carouselContainer.append(favMobileContainer)
         this.append(carouselContainer)
         favMobileContainer.classList.add("fav-container-mobile", "flex", "md:hidden", "flex", "transition-transform", "duration-500")
