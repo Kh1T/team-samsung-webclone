@@ -31,7 +31,7 @@ export class NavBar extends HTMLElement {
             <div class="xl:flex gap-12 items-center">
                 <ul class="xl:flex hidden shrink-0  justify-center  text-sm font-bold">
                     <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Explore</a></li>
-                    <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">Support</a></li>
+                    <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="../../pages/support/index.html">Support</a></li>
                     <li class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="#">For Business</a></li>
                 </ul>
                 <div class="flex gap-4 items-center">
