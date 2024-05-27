@@ -4,8 +4,9 @@ export class NavBar extends HTMLElement {
     }
 
     connectedCallback() {
+        this.classList.add("w-full")
         this.innerHTML = `
-        <section class="flex justify-center w-screen">
+        <section class="flex justify-center">
         <section class="flex max-w-screen-2xl w-screen justify-between py-6 px-4 items-center">
             <a href="../../index.html">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 120 32"
@@ -67,7 +68,7 @@ export class NavBar extends HTMLElement {
         </section>
     </section>
 
-    <section class="nav-link bg-black/50 delay-300 z-50 hidden shrink-0 xl:flex absolute justify-end xl:justify-center transition-trasnform duration-300 text-center  h-0 overflow-hidden w-screen">
+    <section class="nav-link bg-black/50 delay-300 z-50 hidden shrink-0 xl:flex absolute justify-end xl:justify-center transition-trasnform duration-300 text-center  h-0 overflow-hidden w-[100%]">
         <div
             class="sub-nav-link flex justify-between z-50 bg-white rounded-bl-2xl rounded-br-2xl max-w-screen-2xl w-screen h-fit border-t text-left pt-6 pb-12 px-12" >
             <div class="space-y-6">
