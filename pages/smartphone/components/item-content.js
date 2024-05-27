@@ -8,7 +8,6 @@ export class ItemContent extends HTMLElement{
         const imgSrc = this.getAttribute("imgSrc")
         const title = this.getAttribute('title')
         let textHTML = ''
-        console.log(desc);
         if (!desc){
             textHTML = `
             <div>
@@ -31,7 +30,6 @@ export class ItemContent extends HTMLElement{
             </div>
             `
         }
-        console.log('item-content');
         this.innerHTML = textHTML
         this.classList.add("block")
     }
