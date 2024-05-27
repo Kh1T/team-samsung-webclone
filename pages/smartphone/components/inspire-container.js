@@ -122,35 +122,7 @@ export class InspiredContainer extends HTMLElement{
             >
             `
             this.innerHTML +=innerHTML
-            console.log('hello');
         })
-        // this.innerHTML = `
-
-        //     <card-inspired 
-        //         title="Go viral with Galaxy"
-        //         img-small="../../assets/images/smartphone/creator-1-small.jpg"
-        //         img-big="../../assets/images/smartphone/creator-1.jpg"
-        //         desc="Make crave-worthy content with powerful creative tools"
-        //     >
-        //     </card-inspired>
-            
-        //     <card-inspired 
-        //         title="Go viral with Galaxy"
-        //         img-small="../../assets/images/smartphone/creator-2-small.jpg"
-        //         img-big="../../assets/images/smartphone/creator-2.jpg"
-        //         desc="Make crave-worthy content with powerful creative tools"
-        //     >
-        //     </card-inspired>
-            
-        //     <card-inspired 
-        //         title="Go viral with Galaxy"
-        //         img-small="../../assets/images/smartphone/creator-3-small.jpg"
-        //         img-big="../../assets/images/smartphone/creator-3.jpg"
-        //         desc="Make crave-worthy content with powerful creative tools"
-        //     >
-        //     </card-inspired>
-            
-        // `
         this.classList.add("block")
         this.classList += " flex min-w-full w-full flex-col gap-4 px-4 md:flex-row md:flex-none"
         
