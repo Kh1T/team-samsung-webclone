@@ -1,23 +1,24 @@
 class MyElement extends HTMLElement {
     constructor() {
         super();
-        this.carouselItems = null; // Initialize carouselItems as null
-        this.button = null; // Initialize button as null
+        this.carouselItems = null; 
+        this.button = null; 
     }
 
     connectedCallback() {
         const dataArray = JSON.parse(this.getAttribute('data-array'));
 
-        this.className = 'carousel relative overflow-hidden left-[33.3%] md:left-0 flex w-full flex-col md:flex-row items-center md:max-w-[1440px] border-transparent';
+        this.className = 'carousel relative overflow-hidden  md:left-0 flex w-screen flex-col md:flex-row items-center md:max-w-[1440px] border-transparent';
 
-        this.carouselItems = document.createElement('div'); // Assign created element to this.carouselItems
-        this.carouselItems.className = 'carouselItems flex transition-transform  duration-500';
+        this.carouselItems = document.createElement('div'); 
+        this.carouselItems.className =
+          "carouselItems flex transition-transform translate-x-0 duration-500";
 
         dataArray.forEach(data => {
             const element = document.createElement('div');
             element.classList.add('carousel__item', 'flex', 'flex-col', 'w-screen', 'md:w-[60%]', 'md:border-l-[24px]', 'border-transparent', 'justify-center', 'items-center', 'p-10', 'space-y-2');
             element.innerHTML = `
-                <img class="image w-80 md:w-[250px] my-20" src="${data.src}" alt="Dynamic Image">
+                <img class="image w-80 md:w-[250px] my-24" src="${data.src}" alt="Dynamic Image">
                 <h3 class="title text-3xl font-medium ">${data.title}</h3>
                 <p class="text-[18px] font-light text-center mb-10 pb-11 pt-5">${data.text}</p>
                     
@@ -29,11 +30,14 @@ class MyElement extends HTMLElement {
         this.appendChild(this.carouselItems);
 
         const nav = document.createElement('div');
-        nav.className = 'carousel__nav w-full p-5 absolute bottom-[33.3%] -left-[33.3%] text-center';
+        nav.className = 'carousel__nav w-full p-5 absolute bottom-[37%] text-center';
         dataArray.forEach((_, index) => {
             const button = document.createElement('span');
             button.classList.add('carousel__button', 'md:hidden', 'w-2.5', 'h-2.5', 'inline-block', 'bg-black', 'bg-opacity-20', 'rounded-full', 'mx-3', 'cursor-pointer');
             button.dataset.slide = index;
+            if (index === 0) {
+                button.classList.add("bg-opacity-50"); 
+            }
             nav.appendChild(button);
         });
         this.appendChild(nav);
@@ -41,11 +45,10 @@ class MyElement extends HTMLElement {
         window.addEventListener('resize', () => {
             const screenWidth = window.innerWidth;
             if (screenWidth >= 768) {
-                console.log('catch')
                 this.carouselItems.style.transform = 'translateX(0)';
                 
                 buttons.forEach(btn => btn.classList.remove('bg-opacity-50'));
-                const indexZeroButton = document.querySelector('.carousel__button[data-slide="0"]');
+                const indexZeroButton = document.querySelector('.carousel__button[data-slide="0"]')
                 if (indexZeroButton) {
                     indexZeroButton.classList.add('bg-opacity-50');
                 }
@@ -56,20 +59,28 @@ class MyElement extends HTMLElement {
         buttons.forEach(button => {
             button.addEventListener('click', () => {
                 const slideIndex = parseInt(button.dataset.slide);
-                const offset = -(slideIndex * 100); // Assuming each slide is 100% wide
-                this.carouselItems.style.transform = `translateX(${offset / 3}%)`;
+                const offset = -(slideIndex * 100);
+                this.carouselItems.style.transform = `translateX(${offset / 3 + 33.3}%)`;
 
                 buttons.forEach(btn => btn.classList.remove('bg-opacity-50'));
                 button.classList.add('bg-opacity-50');
-                console.log(offset);
-                console.log(slideIndex);
             });
         });
 
-        const initialOffset = 0; // Start from the first slide
+        
+        window.addEventListener("resize", () => {
+            const screenWidth = window.innerWidth;
+            const initialOffset = screenWidth <= 768 ? 33.3 : 0;
+            const activeButton = document.querySelector('.carousel__button.bg-opacity-50');
+            const slideIndex = activeButton ? parseInt(activeButton.dataset.slide) : 0;
+            const offset = -(slideIndex * 100);
+            this.carouselItems.style.transform = `translateX(${offset / 3 + initialOffset}%)`;
+        });
+
+        // Set initial offset based on screen size
+        const screenWidth = window.innerWidth;
+        const initialOffset = screenWidth <= 768 ? 33.3 : 0;
         this.carouselItems.style.transform = `translateX(${initialOffset}%)`;
-        console.log(initialOffset);
-        // this.button.classList.add('bg-opacity-50');
     }
 }
 
@@ -95,7 +106,7 @@ customElements.define('benefit-app', MyElement);
     
     const createAndAppendElement = (data, containerId) => {
         const element = document.createElement('benefit-app');
-        element.setAttribute('data-array', JSON.stringify(data)); // Set the data array as an attribute
+        element.setAttribute('data-array', JSON.stringify(data)); 
         document.getElementById(containerId).appendChild(element);
     };
     
