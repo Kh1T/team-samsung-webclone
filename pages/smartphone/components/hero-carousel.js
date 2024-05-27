@@ -3,21 +3,20 @@ import { smartphone } from './hero-carousel-data.js';
 export class HeroCarousel1 extends HTMLElement {
     connectedCallback() {
         const items = smartphone.items;
-        console.log(items);
         this.innerHTML = `
-        <section class="hero max-w-screen-2xl w-screen mb-12">
-            <div class="hero-small-screen flex max-w-screen-sm sm:hidden">
+        <section class="hero max-w-screen-2xl w-full mb-12">
+            <div class="hero-small-screen flex max-w-screen-md md:hidden">
                 <div class="card-container flex overflow-hidden relative">
                     <div class="flex">
                         <ul id="hero-container" class="flex transition-transform duration-300">
                             ${items.map(item => `
-                            <li class="object-cover w-screen relative">
-                                <img class="rounded-2xl object-cover w-[640px]" src="${item.smallImage}" alt="">
-                                <div class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 items-center text-center">
-                                    <p class="text-[1.5vw] font-semibold">${item.par}</p>
+                            <li class="object-cover w-full min-w-full relative">
+                                <img class="rounded-2xl object-cover w-[768px]" src="${item.smallImage}" alt="">
+                                <div class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 gap-4 items-center text-center">
+                                    <p class="text-xl font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>
                                     <p>${item.description}</p>
-                                    <button class="btn bg-black p-2 w-32 rounded-full text-white font-semibold sm:text-[1vw]">Buy Now</button>
+                                    <custom-button theme="bg-black" class="">Buy Now</custom-button>
                                 </div>
                             </li>
                             `).join('')}
@@ -44,12 +43,12 @@ export class HeroCarousel1 extends HTMLElement {
                     </div>
                 </div>
             </div>
-            <div class="hero-big-screen hidden sm:block">
+            <div class="hero-big-screen hidden md:block">
                 <div class="card-container flex overflow-hidden relative">
                     <div class="flex">
                         <ul id="hero-big-container" class="img-container flex transition-transform duration-500">
                             ${items.map(item => `
-                            <li class="object-cover w-screen relative">
+                            <li class="object-cover w-full min-w-full relative">
                                 <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="">
                                 <div class="absolute top-[25%] flex flex-col left-[10%] gap-4">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
@@ -89,13 +88,21 @@ export class HeroCarousel1 extends HTMLElement {
         const heroBtnRight = this.querySelector('#right');
 
         const transitionHeroPage = (condition) => {
-            heroImgContainer.classList.remove(`translate-x-[${position}%]`);
-            if (condition == 'right' && position > -80) {
-                position -= 20;
-            } else if (condition == 'left' && position < 0) {
-                position += 20;
+            // heroImgContainer.classList.remove(`translate-x-[${position}%]`);
+            if (condition === 'right' && position <= 4){
+
+                position += 1
+            }else if(condition === 'left' && position >=0){
+                position -= 1
             }
-            heroImgContainer.classList.add(`translate-x-[${position}%]`);
+            heroImgContainer.style.transform = `translateX(-${position * 100}%)`;
+
+            // if (condition == 'right' && position > -80) {
+            //     position -= 20;
+            // } else if (condition == 'left' && position < 0) {
+            //     position += 20;
+            // }
+            // heroImgContainer.classList.add(`translate-x-[${position}%]`);
         };
 
         heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'));
@@ -106,16 +113,23 @@ export class HeroCarousel1 extends HTMLElement {
         const heroContainer = this.querySelector('#hero-container');
         const heroBtn = this.querySelectorAll('.hero-btn');
         const heroBtnContainer = this.querySelectorAll('#hero-btn-container button');
-        console.log(heroBtn);
 
         function carouselTab(container, btn) {
             btn.forEach((button, i) => {
                 button.addEventListener('click', () => {
-                    container.style.transform = `translateX(-${i * 20}%)`;  // Adjust the transformation value
+                    container.style.transform = `translateX(-${i * 100}%)`;  // Adjust the transformation value
+                    heroBtn.forEach(btn=>{
+                        btn.classList.add('bg-gray-500')
+                        btn.classList.remove('bg-black')            
+                    })
+
+                    heroBtn[i].classList.add('bg-black')
+                    heroBtn[i].classList.remove('bg-gray-500')            
                 });
             });
         }
-
+        heroBtn[0].classList.add('bg-black')
+        heroBtn[0].classList.remove('bg-gray-500')
         carouselTab(heroContainer, heroBtnContainer);
     }
 }

@@ -197,7 +197,6 @@ const discoverData = [
 ]
 const subNavContent = document.getElementById('sub-nav-content');
 subNavbarData.forEach(({title, desc, imgSrc}) => {
-    console.log(title, desc, imgSrc);
     subNavContent.innerHTML += `
         <item-content imgSrc="${imgSrc}" desc="${desc}" title="${title}"></item-content>
     `
@@ -206,7 +205,6 @@ subNavbarData.forEach(({title, desc, imgSrc}) => {
 
 const discoverContent = document.getElementById('discover-content');
 discoverData.forEach(({title, desc, imgSrc}) => {
-    console.log(title, desc, imgSrc);
     discoverContent.innerHTML += `
         <item-content imgSrc="${imgSrc}" desc="${desc}" title="${title}"></item-content>
     `
@@ -223,3 +221,23 @@ function windowResizeHandleer() {
 }
 
 window.onresize = windowResizeHandleer;
+
+
+// Inspired Section
+
+// TabHandler
+const tabHandler = (i) =>{
+    const percent = i * 100
+    inspiredTabContainer.style.transform = `translateX(-${percent}%)`
+    btnInspireds.forEach(btn=> btn.classList.remove('underline'))
+    btnInspireds[i].classList.add('underline')
+}
+
+// Variable
+const btnInspireds = document.querySelectorAll('.btn-inspired');
+const inspiredTabContainer = document.getElementById('inspired-tab');
+btnInspireds[0].classList.add('underline')
+
+btnInspireds.forEach((btn, i)=>{
+    btn.addEventListener('click', ()=> tabHandler(i))
+})
