@@ -29,7 +29,7 @@ export class GalaxyAiTablet extends HTMLElement {
         }; // Unpacking Data
 
         this.innerHTML = `
-    <section class="carousel max-w-screen-2xl w-screen">
+    <section class="carousel max-w-screen-2xl">
         <div class="carousel-container relative">
             <div class="flex overflow-hidden gap-4">
                 <div id="carousel-inner-container" class="flex transition-transform duration-500">
