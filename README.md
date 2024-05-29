@@ -1,3 +1,184 @@
+# Samsung Web Clone
+
+This project is designed to help alphabeez team in learning fundamentals of web development and collaboration from sketching, design and development. This project cannot work without the help of the right tool such HTML, CSS, Javascript and CSS Framework like tailwind
+
+> 🎯 Samsung Web Clone <a href="https://samsungalphabeez.netlify.app/index.html">Click Here</a>.
+
+## Table of Contents
+
+- [Technology Used](#technology-used)
+- [Folder Structure](#folder-structure)
+- [Pages Included](#pages-included)
+- [Contributors](#contributors)
+- [Usage](#usage)
+- [Git Strategy](#git-strategy)
+- [Acknowledgement](#acknowledgement)
+
+
+## Technology Used
+| **Technologies** |
+|------------------|
+| HTML             |
+| CSS              |
+| JavaScript       |
+| Tailwind         |
+
+
+## Folder Structure
+We use folder structure to organize our project and it is essential for maintaining clarity, scalability, and maintainability in software project.
+```
+project-name/
+│
+├───assets/              
+│   ├───images/          
+│   │   ├───home
+│   │   │   ├───hero-carousel-1.jpg
+│   │   ├───product-detail
+│   │   │   ├───gallery-1.jpg
+│   │   ├───cart     
+│   │   └───...
+│   │
+│   ├───videos/          
+│   │   ├───promo.mp4  
+│   │   └───...
+├───css/
+│   ├───style.css       
+│   └───...
+├───pages/               
+│   ├───product-detail
+│   │   ├───component
+│   │   │   ├───index.js
+│   │   ├───css
+│   │   │   ├───style.css
+│   │   ├───index.html
+│   ├───cart
+│   │   ├───component
+│   │   │   ├───index.js
+│   │   ├───css
+│   │   │   ├───style.css
+│   │   ├───index.html
+│   └───...
+├───script/
+│   │   ├───components
+│   │   │   ├───footer.js
+│   │   │   ├───navbar.js
+│   └───index.js        
+│
+└───README.md     
+
+```
+
+### Description of Folders and Files
+
+## Folder Structure
+
+| **Directory**                    | **Description**                                    |
+|----------------------------------|----------------------------------------------------|
+| **project-name/**                | All files and folders in the project               |
+| **assets/**                      | Project assets such as images and videos           |
+| **assets/images/**               | Folder for images used on each page                |
+| **assets/images/home/**          | Images for use on the home page                    |
+| **assets/images/product-detail/**| Images for use on the product-detail page          |
+| **assets/videos/**               | Video files                                        |
+| **css/**                         | Global CSS files                                   |
+| **pages/**                       | Folder containing HTML pages and their components  |
+| **pages/product-detail/**        | HTML file and component folder for the product-detail page |
+| **pages/product-detail/component/**| JavaScript files for the product-detail page      |
+| **pages/product-detail/css/**    | CSS files for the product-detail page              |
+| **script/**                      | Global JavaScript files                            |
+| **script/components/**           | Global component JavaScript files                  |
+
+
+- **project-name/**
+  - All file and folder in project
+- **assets/**
+  - Project assets such as images and videos
+- **assets/images**
+  - Folder images used for each page
+- **assets/images/home**
+  - Images for use in home page
+- **assets/images/product-detail**
+  - Images for use in product-detail
+- **assets/videos**
+  - Videos files
+- **css/**
+  - Global css file
+- **pages/**
+  - Folder of each HTML page and component of that page
+- **pages/product-detail**
+  - HTML file of that page and component folder
+- **pages/product-detail/component**
+  - Javascript file of that page
+- **pages/product-detail/css**
+  - CSS file of that page
+- **script/**
+  - Global javascript file
+- **script/components**
+  - Global component javascript file
+
+
+
+## Pages Included
+
+| Page Names |
+|------------|
+| Home |
+| Product Detail |
+| Nearby Store |
+| Cart |
+| Checkout |
+| Login |
+| All Offers |
+| Smartphone |
+| Galaxy AI |
+| Support |
+| Privacy |
+| Account Benefit |
+| Track Orders |
+
+
+## Contributors
+
+| **Contributor**     | **Responsibilities**                 |
+|---------------------|--------------------------------------|
+| **Bet Sela**        | Galaxy AI, Checkout                  |
+| **Pav Munyphalla**  | Smartphones, Product Detail, Login   |
+| **Song Seyla**      | Home, All Offers                     |
+| **Khom Khit**       | Account Benefit, Product Detail      |
+| **Panha Phosda**    | Privacy, Product Detail              |
+| **Chiv Sovanchitra**| Support, Cart                        |
+| **Sarath Vechyeny** | Track Orders, Nearby Store           |
+
+- **Bet Sela**
+  - Galaxy AI + Checkout
+- **Pav Munyphalla**
+  - Smartphones + Product Detail + Login
+- **Song Seyla**
+  - Home + All Offers
+- **Khom Khit**
+  - Account Benefit + Product Detail
+- **Panha Phosda**
+  - Privacy + Product Detail
+- **Chiv Sovanchitra**
+  - Support + Cart
+- **Sarath Vechyeny**
+  - Track Orders + Nearby Store
+
+
+
+## Usage
+
+To start working on this project, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://git.clp.kr/anbschool/2nd/alphabeez/team-projects/samsung-web-clone.git
+
+```
+
+
+## Git Strategy & Scenario
+
 ![GIT_FLOW_STRATEGY](/uploads/2929687cea7fa1505e0c8eed3de9e7cb/GIT_FLOW_STRATEGY.png)
 
 In order to collaborate with team members effectively and give each member a separated 
@@ -162,8 +343,5 @@ To start fixing the bug in the main branch the team members will follow the step
 - Write commit message for merging hotfix to develop
 - Reflect main, develop and push tag to remote
 
-
-
-
-
-
+## Acknowledgement
+Thank you to the team members of AlphaBeez for their invaluable contributions to code review, which have greatly enhanced the quality and fulfillment of this project.
