@@ -97,19 +97,19 @@ project-name/
 
 | Page Names |
 |------------|
-| <a href="https://samsungalphabeez.netlify.app/index.html">Home</a>        |
-| <a href="https://samsungalphabeez.netlify.app/pages/product-detail/">Product Detail</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/nearby-store/index.html">Nearby Store</a>         |
-| <a href="https://samsungalphabeez.netlify.app/pages/cart/index.html">Cart</a>         |
-| <a href="https://samsungalphabeez.netlify.app/pages/checkout/">Checkout</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/login/index.html">Login</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/continue-shopping/index.html">All Offers</a>      |
-| <a href="https://samsungalphabeez.netlify.app/pages/smartphone/index.html">Smartphone</a>         |
-| <a href="https://samsungalphabeez.netlify.app/pages/galaxy-ai/index.html">Galaxy AI</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/support/index.html">Support</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/privacy-page/index.html">Privacy</a>      |
-| <a href="https://samsungalphabeez.netlify.app/pages/account-benefit/index.html">Account Benefit</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/track-order/index.html">Track Orders</a>      |
+| <a href="https://samsungalphabeez.netlify.app/index.html">🏡 Home</a>        |
+| <a href="https://samsungalphabeez.netlify.app/pages/product-detail/">🛍️ Product Detail</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/nearby-store/index.html">📍 Nearby Store</a>         |
+| <a href="https://samsungalphabeez.netlify.app/pages/cart/index.html">🛒 Cart</a>         |
+| <a href="https://samsungalphabeez.netlify.app/pages/checkout/">📊 Checkout</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/login/index.html">👩‍💻 Login</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/continue-shopping/index.html">💎 All Offers</a>      |
+| <a href="https://samsungalphabeez.netlify.app/pages/smartphone/index.html">📱 Smartphone</a>         |
+| <a href="https://samsungalphabeez.netlify.app/pages/galaxy-ai/index.html">🤖 Galaxy AI</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/support/index.html">🥷 Support</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/privacy-page/index.html">🔑 Privacy</a>      |
+| <a href="https://samsungalphabeez.netlify.app/pages/account-benefit/index.html">🎁 Account Benefit</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/track-order/index.html">📦 Track Orders</a>      |
 
 
 ## Contributors
