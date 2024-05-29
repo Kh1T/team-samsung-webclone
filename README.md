@@ -4,6 +4,8 @@ This project is designed to help alphabeez team in learning fundamentals of web 
 
 > 🎯 Samsung Web Clone <a href="https://samsungalphabeez.netlify.app/index.html">Click Here</a>.
 
+
+
 ## Table of Contents
 
 - [Technology Used](#technology-used)
@@ -13,6 +15,7 @@ This project is designed to help alphabeez team in learning fundamentals of web 
 - [Usage](#usage)
 - [Git Strategy](#git-strategy)
 - [Acknowledgement](#acknowledgement)
+
 
 
 ## Technology Used
@@ -68,6 +71,7 @@ project-name/
 
 ```
 
+
 ### Description of Folders and Files
 
 ## Folder Structure
@@ -87,35 +91,6 @@ project-name/
 | **pages/product-detail/css/**    | CSS files for the product-detail page              |
 | **script/**                      | Global JavaScript files                            |
 | **script/components/**           | Global component JavaScript files                  |
-
-
-- **project-name/**
-  - All file and folder in project
-- **assets/**
-  - Project assets such as images and videos
-- **assets/images**
-  - Folder images used for each page
-- **assets/images/home**
-  - Images for use in home page
-- **assets/images/product-detail**
-  - Images for use in product-detail
-- **assets/videos**
-  - Videos files
-- **css/**
-  - Global css file
-- **pages/**
-  - Folder of each HTML page and component of that page
-- **pages/product-detail**
-  - HTML file of that page and component folder
-- **pages/product-detail/component**
-  - Javascript file of that page
-- **pages/product-detail/css**
-  - CSS file of that page
-- **script/**
-  - Global javascript file
-- **script/components**
-  - Global component javascript file
-
 
 
 ## Pages Included
@@ -148,22 +123,6 @@ project-name/
 | **Panha Phosda**    | Privacy, Product Detail              |
 | **Chiv Sovanchitra**| Support, Cart                        |
 | **Sarath Vechyeny** | Track Orders, Nearby Store           |
-
-- **Bet Sela**
-  - Galaxy AI + Checkout
-- **Pav Munyphalla**
-  - Smartphones + Product Detail + Login
-- **Song Seyla**
-  - Home + All Offers
-- **Khom Khit**
-  - Account Benefit + Product Detail
-- **Panha Phosda**
-  - Privacy + Product Detail
-- **Chiv Sovanchitra**
-  - Support + Cart
-- **Sarath Vechyeny**
-  - Track Orders + Nearby Store
-
 
 
 ## Usage
