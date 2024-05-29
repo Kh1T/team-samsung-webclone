@@ -97,7 +97,7 @@ project-name/
 
 | Page Names |
 |------------|
-| Home |
+| <a href="">Home</a> |
 | Product Detail |
 | Nearby Store |
 | Cart |
