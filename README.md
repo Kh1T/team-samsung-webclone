@@ -102,7 +102,7 @@ project-name/
 | <a href="https://samsungalphabeez.netlify.app/pages/nearby-store/index.html">📍 Nearby Store</a>         |
 | <a href="https://samsungalphabeez.netlify.app/pages/cart/index.html">🛒 Cart</a>         |
 | <a href="https://samsungalphabeez.netlify.app/pages/checkout/">📊 Checkout</a>       |
-| <a href="https://samsungalphabeez.netlify.app/pages/login/index.html">👩‍💻 Login</a>       |
+| <a href="https://samsungalphabeez.netlify.app/pages/login/index.html">🔒 Login</a>       |
 | <a href="https://samsungalphabeez.netlify.app/pages/continue-shopping/index.html">💎 All Offers</a>      |
 | <a href="https://samsungalphabeez.netlify.app/pages/smartphone/index.html">📱 Smartphone</a>         |
 | <a href="https://samsungalphabeez.netlify.app/pages/galaxy-ai/index.html">🤖 Galaxy AI</a>       |
