@@ -19,12 +19,12 @@ This project is designed to help alphabeez team in learning fundamentals of web 
 
 
 ## Technology Used
-| **Technologies** |
-|------------------|
-| HTML             |
-| CSS              |
-| JavaScript       |
-| Tailwind         |
+| **Technologies** | **Purpose** |
+|------------------|------------------|
+| HTML             | Structure and content of a webpage |
+| CSS              | Styling HTML elements and layout |
+| JavaScript       | Define website behaviour |
+| Tailwind         | Styling standard |
 
 
 ## Folder Structure
