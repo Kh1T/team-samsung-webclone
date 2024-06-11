@@ -1,5 +1,5 @@
 REVIEWBOARD_URL = "https://review.clp.kr"
 REPOSITORY = "AlphaBeez/Team-Projects/Sumsung-Clone"
 REPOSITORY_TYPE = "git"
-BRANCH = "feature/tailwind-refractor"
-LAND_DEST_BRANCH = "feature/tailwind-refractor"
+BRANCH = "feature/product-detail-page"
+LAND_DEST_BRANCH = "feature/product-detail-page"
