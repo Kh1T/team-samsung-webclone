@@ -19,7 +19,7 @@ export class Footer extends HTMLElement {
                 </section>
                 <hr>
                 </div>
-          <div class=" w-[100%] p-6 text-xl font-semibold md:hidden">                
+          <div class=" w-full p-6 text-xl font-semibold md:hidden">                
                 <footer-category data-title="SHOP" data-category="shop" data-size="small"></footer-category>
                 <footer-category data-title="SUPPORT" data-category="support" data-size="small"></footer-category>
                 <footer-category data-title="OFFERS" data-category="offers" data-size="small"></footer-category>
