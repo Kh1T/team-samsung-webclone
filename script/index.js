@@ -9,6 +9,7 @@ import { DrawerItem } from './components/drawer-item.js';
 import { DrawerCategory } from './components/drawer-category.js';
 import { FooterCategory } from './components/footer-category.js';
 import { FooterItem } from './components/footer-item.js';
+import { FooterSocial } from './components/footer-social.js';
 
 customElements.define("navbar-component", NavBar);
 customElements.define("footer-component", Footer);
