@@ -18,7 +18,7 @@ export class DashBar extends HTMLElement{
         let percent = parseFloat(rate) - parseInt(rate)
         let intRate = parseInt(rate)
         percent = parseInt(percent * 100)
-        for (let i = 1; i <= 5; i++){            
+        for (let i = 1; i <= intRate; i++){            
             let contentHtml = `
                 <div class="bar-inner h-2.5 w-14 md:w-8 relative ">
                     <div class="h-2.5 w-full bg-orange-400"></div>
