@@ -184,7 +184,7 @@ const resourceContent = [
 const findResourceBox = document.getElementById('find-resource-box');
 
 findResourceBox.innerHTML = resourceContent.map(item => `
-    <div class="flex flex-col justify-between p-4 col-span-12 md:col-span-4 border rounded-xl gap-10 h-fit md:h-60 md:gap-0 w-96 md:w-full">
+    <div class="flex flex-col justify-between p-4 col-span-12 md:col-span-4 border rounded-xl gap-10 h-fit md:h-60 md:gap-0 max-w-96 md:w-full">
         <div class="space-y-2">
             <p class="text-xl font-semibold">${item.heading}</p>
             <p class="text-sm leading-4">${item.paragraph}</p>
