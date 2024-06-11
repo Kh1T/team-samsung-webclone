@@ -4,9 +4,10 @@ export class FooterSocial extends HTMLElement {
         super()
     }
     connectedCallback() {
+        this.classList.add("w-full", "max-w-screen-2xl")
         this.innerHTML = `
         <section
-        class="flex flex-col-reverse md:flex-row max-w-screen-2xl w-full justify-center md:justify-between items-center md:text-xs text-base">
+        class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center md:text-xs text-base">
         <footer-privacy class="flex flex-wrap md:flex-row gap-3 md:gap-6  w-fit md:justify-start justify-center px-6 py-6"></footer-privacy>
         <div class="flex flex-col md:flex-row gap-4 w-1/10 items-center py-6">
             <a href="#">STAY IN THE LOOP?</a>
