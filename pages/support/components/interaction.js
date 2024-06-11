@@ -21,7 +21,7 @@ heroButtonLargeScreen.innerHTML = buttonLabels.map(label => `
 const heroButtonSmallScreen = document.querySelector('#hero-button-sm');
 const fourButtonLabels = buttonLabels.slice(0, 4);
 heroButtonSmallScreen.innerHTML = fourButtonLabels.map(label => `
-    <button class=" rounded-full border border-gray-300 px-2 py-1.5 text-sm font-light">
+    <button class="rounded-full bg-white border border-gray-300 px-2 py-1.5 text-sm font-light">
         ${label}
     </button>
 `).join('');
@@ -184,14 +184,14 @@ const resourceContent = [
 const findResourceBox = document.getElementById('find-resource-box');
 
 findResourceBox.innerHTML = resourceContent.map(item => `
-    <div class="flex flex-col justify-between p-4 col-span-12 md:col-span-4 border rounded-xl h-56 w-96 md:w-full">
+    <div class="flex flex-col justify-between p-4 col-span-12 md:col-span-4 border rounded-xl gap-10 h-fit md:h-60 md:gap-0 w-96 md:w-full">
         <div class="space-y-2">
             <p class="text-xl font-semibold">${item.heading}</p>
             <p class="text-sm leading-4">${item.paragraph}</p>
         </div>
         <div class="flex flex-col pt-2 gap-1">
-            <a class="underline font-bold text-xs" href="#">${item.link1}</a>
-            <a class="underline font-bold text-xs" href="#">${item.link2}</a>
+            <a class="underline underline-offset-4 font-bold text-xs" href="#">${item.link1}</a>
+            <a class="underline underline-offset-4 font-bold text-xs" href="#">${item.link2}</a>
         </div>
     </div>
 `).join('')
