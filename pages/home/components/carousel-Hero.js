@@ -1,6 +1,6 @@
-import { homepage } from './carouselHero-data.js';
+import { homepage } from './carousel-Hero-data.js';
 
-export class Hero extends HTMLElement {
+class Hero extends HTMLElement {
     connectedCallback() {
         const items = homepage.items;
         console.log(items);

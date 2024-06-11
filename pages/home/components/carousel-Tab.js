@@ -1,4 +1,4 @@
-import { mobileData, tvData, homeData, susData } from './carouselTab-data.js';
+import { mobileData, tvData, homeData, susData } from './carousel-Tab-data.js';
 
 
 
