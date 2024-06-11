@@ -9,5 +9,3 @@ customElements.define("footer-component", Footer);
 customElements.define("feedback-component", Feedback);
 customElements.define("carousel-mobile", CarouselMobile);
 customElements.define('carousel-tab', CarouselTab);
-
-// console.log('test')
