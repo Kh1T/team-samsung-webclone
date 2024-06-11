@@ -1,14 +1,21 @@
-export class ItemContent extends HTMLElement{
-    constructor(){
+/**
+ * Custom HTML element representing Item Content
+ *
+ * @export
+ * @class ItemContent
+ * @extends {HTMLElement}
+ */
+export class ItemContent extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         // const chlidText = this.textContent
         const desc = this.getAttribute("desc")
         const imgSrc = this.getAttribute("imgSrc")
         const title = this.getAttribute('title')
         let textHTML = ''
-        if (!desc){
+        if (!desc) {
             textHTML = `
             <div>
                 <img class="h-28" src="${imgSrc}" alt="" />
@@ -17,7 +24,7 @@ export class ItemContent extends HTMLElement{
                 </div>
             </div>            
             `
-        }else{
+        } else {
             textHTML = `
             <div class="md:flex">
                 <img class="h-28" src="${imgSrc}" alt="" />
@@ -33,5 +40,5 @@ export class ItemContent extends HTMLElement{
         this.innerHTML = textHTML
         this.classList.add("block")
     }
-}    
-customElements.define('item-content' , ItemContent);
+}
+customElements.define('item-content', ItemContent);

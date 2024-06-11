@@ -1,9 +1,15 @@
-
-export class CardSwitch extends HTMLElement{
-    constructor(){
+/**
+ *
+ *
+ * @export
+ * @class CardSwitch
+ * @extends {HTMLElement}
+ */
+export class CardSwitch extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         const childText = this.textContent
         const imgSrc = this.getAttribute('img')
         const desc = this.getAttribute('desc')
@@ -19,6 +25,6 @@ export class CardSwitch extends HTMLElement{
             </div>
         `
         this.classList.add("block")
-        
+
     }
 }

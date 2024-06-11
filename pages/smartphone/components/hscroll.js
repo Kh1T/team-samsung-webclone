@@ -7,6 +7,12 @@ const categoryInfo = [
     
 ];
 
+/**
+ * Custom HTML element representing Galaxy Beyond
+ *
+ * @class GalaxyBeyond
+ * @extends {HTMLElement}
+ */
 class GalaxyBeyond extends HTMLElement {
     constructor() {
         super();
@@ -32,7 +38,6 @@ customElements.define('catergory-hscroll' , GalaxyBeyond);
 
 // script.js
 let hscrollContainer = document.getElementById('hscroll-container');
-console.log(hscrollContainer)
 
 // script.js
 

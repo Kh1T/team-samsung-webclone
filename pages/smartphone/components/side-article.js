@@ -1,8 +1,15 @@
-export class SideArticle extends HTMLElement{
-    constructor(){
+/**
+ * Custom HTML element representing Side article Feature Fave
+ *
+ * @export
+ * @class SideArticle
+ * @extends {HTMLElement}
+ */
+export class SideArticle extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         // const childText = this.textContent
         const title = this.title
         const listNumber = this.getAttribute('listNumber')
@@ -22,10 +29,9 @@ export class SideArticle extends HTMLElement{
             </div>
             
         `
-        this.classList.add("block","border-t-black")
-        
+        this.classList.add("block", "border-t-black")
+
     }
 }
 
 
-customElements.define("side-article", SideArticle);

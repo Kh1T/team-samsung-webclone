@@ -1,5 +1,12 @@
 import { smartphone } from './hero-carousel-data.js';
 
+/**
+ * Custom HTML element representing HeroCarousel
+ *
+ * @export
+ * @class HeroCarousel1
+ * @extends {HTMLElement}
+ */
 export class HeroCarousel1 extends HTMLElement {
     connectedCallback() {
         const items = smartphone.items;
@@ -88,21 +95,13 @@ export class HeroCarousel1 extends HTMLElement {
         const heroBtnRight = this.querySelector('#right');
 
         const transitionHeroPage = (condition) => {
-            // heroImgContainer.classList.remove(`translate-x-[${position}%]`);
             if (condition === 'right' && position <= 4){
 
                 position += 1
             }else if(condition === 'left' && position >=0){
                 position -= 1
             }
-            heroImgContainer.style.transform = `translateX(-${position * 100}%)`;
-
-            // if (condition == 'right' && position > -80) {
-            //     position -= 20;
-            // } else if (condition == 'left' && position < 0) {
-            //     position += 20;
-            // }
-            // heroImgContainer.classList.add(`translate-x-[${position}%]`);
+            heroImgContainer.style.transform = `translateX(-${position * 100}%)`; 
         };
 
         heroBtnLeft.addEventListener('click', () => transitionHeroPage('left'));

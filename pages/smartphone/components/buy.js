@@ -7,13 +7,19 @@ const iconInfo = [
 
 ];
 
+/**
+ * Custom HTML element representing buy With confidence
+ *
+ * @class BuyWithConfidence
+ * @extends {HTMLElement}
+ */
 class BuyWithConfidence extends HTMLElement {
     constructor() {
         super();
-        }
+    }
 
     connectedCallback() {
-        
+
         this.className = 'flex flex-col md:flex-row  space-y-8 md:space-y-0 pb-[8.88vw] md:py-[1.22vw]  justisy-evenly items-start justify-start mb-5';
 
         this.iconItems = document.createElement('div'); // Assign created element to this.carouselItems
@@ -32,11 +38,8 @@ class BuyWithConfidence extends HTMLElement {
                 
             `;
             this.append(element)
-            // this.iconDesc.appendChild(element);
         });
     };
 }
-customElements.define('icon-desc' , BuyWithConfidence);
-
-// createAndAppendElement(iconInfo, 'icon-description');
+customElements.define('icon-desc', BuyWithConfidence);
 

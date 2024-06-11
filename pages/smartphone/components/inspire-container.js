@@ -61,11 +61,17 @@ const multiTasker = [
     },
 ]
 
-class CardInspired extends HTMLElement{
-    constructor(){
+/**
+ * Custom HTML element representing CardInspired
+ *
+ * @class CardInspired
+ * @extends {HTMLElement}
+ */
+class CardInspired extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         const title = this.getAttribute('title')
         const imgSrcSmall = this.getAttribute('img-small')
         const imgSrcBig = this.getAttribute('img-big')
@@ -96,23 +102,22 @@ class CardInspired extends HTMLElement{
 
 customElements.define('card-inspired', CardInspired)
 
-export class InspiredContainer extends HTMLElement{
-    constructor(){
+export class InspiredContainer extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         const content = this.getAttribute('content')
         let inspiredData = []
-        if (content === 'streamer'){
+        if (content === 'streamer') {
             inspiredData = creatorStreamer
-        } else if(content === 'multi'){
+        } else if (content === 'multi') {
             inspiredData = multiTasker
         }
-        else{
+        else {
             inspiredData = creator
         }
-        console.log(content);
-        inspiredData.forEach(data=>{
+        inspiredData.forEach(data => {
             const innerHTML = `
             <card-inspired 
                 title="${data.title}"
@@ -121,11 +126,11 @@ export class InspiredContainer extends HTMLElement{
                 desc="${data.desc}"
             >
             `
-            this.innerHTML +=innerHTML
+            this.innerHTML += innerHTML
         })
         this.classList.add("block")
         this.classList += " flex min-w-full w-full flex-col gap-4 px-4 md:flex-row md:flex-none"
-        
+
     }
 }
 

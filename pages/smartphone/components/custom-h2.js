@@ -1,4 +1,10 @@
-
+/**
+ * Custom HTML element representing Custom H2
+ *
+ * @export
+ * @class CustomH2
+ * @extends {HTMLElement}
+ */
 export class CustomH2 extends HTMLElement{
     constructor(){
         super()

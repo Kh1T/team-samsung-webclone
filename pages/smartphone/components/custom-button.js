@@ -1,15 +1,21 @@
-
-export class CustomButton extends HTMLElement{
-    constructor(){
+/**
+ * Custom HTML element representing Custom Button
+ *
+ * @export
+ * @class CustomButton
+ * @extends {HTMLElement}
+ */
+export class CustomButton extends HTMLElement {
+    constructor() {
         super()
     }
-    connectedCallback(){
+    connectedCallback() {
         const chlidText = this.textContent
 
         let bgColor = "bg-black"
         let textColor = "text-white"
         const bgTheme = this.getAttribute("theme")
-        if (bgTheme === "bg-white"){
+        if (bgTheme === "bg-white") {
             bgColor = bgTheme
             textColor = "text-black"
         }
@@ -20,6 +26,6 @@ export class CustomButton extends HTMLElement{
             </button>
         `
         this.classList.add("block")
-        
+
     }
 }

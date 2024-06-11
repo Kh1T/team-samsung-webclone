@@ -1,4 +1,10 @@
-
+/**
+ * Custom HTML element representing a Action Image
+ *
+ * @export
+ * @class ActionImage
+ * @extends {HTMLElement}
+ */
 export class ActionImage extends HTMLElement{
     constructor(){
         super()

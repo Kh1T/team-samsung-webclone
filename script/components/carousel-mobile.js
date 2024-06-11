@@ -1,4 +1,10 @@
-
+/**
+ * Custom HTML element representing a mobile carousel.
+ *
+ * @export
+ * @class CarouselMobile
+ * @extends {HTMLElement}
+ */
 export class CarouselMobile extends HTMLElement {
     constructor() {
         super()
@@ -6,6 +12,8 @@ export class CarouselMobile extends HTMLElement {
     connectedCallback() {
         const section = this.getAttribute('section')
         let carosuelData = []
+
+        // Determine the data set to use based on the section attribute
         if (section === 'connected') {
             carosuelData = this.connectedData
         } else if (section === 'bud-product') {
@@ -27,7 +35,7 @@ export class CarouselMobile extends HTMLElement {
         const carouselContainer = document.createElement('div')
         carouselContainer.classList += ' carousel-container overflow-x-hidden'
 
-
+        // Create the carousel slides
         carosuelData.forEach(data => {
             const cardHTML = `
             <div class="slide flex min-w-full flex-col items-center mb-6">
@@ -47,13 +55,14 @@ export class CarouselMobile extends HTMLElement {
 
             favMobileContainer.innerHTML += cardHTML;
         })
+
+        // Append the slides to the carousel container
         carouselContainer.append(favMobileContainer)
         this.append(carouselContainer)
         favMobileContainer.classList.add("fav-container-mobile", "flex", "md:hidden", "flex", "transition-transform", "duration-500")
 
 
-        // indicator
-
+        // Create and set up the carousel indicators
         const indicatorHandler = (i) => {
             const btnIndicators = indicatorContainer.querySelectorAll('button')
             favMobileContainer.style.transform = `translateX(-${i * 100}%)`
@@ -172,32 +181,37 @@ export class CarouselMobile extends HTMLElement {
         {
             title: "Galaxy S24 Ultra",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-01.png",
-     
+
         },
         {
             title: "Galaxy S24 | S24+",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-02.png",
-    
+
         },
         {
             title: "Galaxy S23 Ultra",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-03.png",
-    
+
         },
         {
             title: "Galaxy S23 | S23+",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-04.png",
-       
+
         },
         {
             title: "Galaxy S23 | FE",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-05.png",
-    
+
         }
     ]
 
 }
-
+/**
+ * Create and append button indicators for the carousel.
+ * 
+ * @param {HTMLElement} indicatorContainer - The container to append the indicators to.
+ * @returns {void}
+ */
 function createButtonIndicator(indicatorContainer) {
     const slideLength = favContainer.querySelectorAll('.slide').length
 
