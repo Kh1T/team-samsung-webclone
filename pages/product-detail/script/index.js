@@ -72,8 +72,6 @@ const nextSlideReviewHandler = () =>{
             btnNextSlideReview.classList.add('invisible')
         }
     }
-    // reviewImageContainer.classList.toggle('translate-x-[-50%]')
-    // btnNextSlideReview.classList.toggle('invisible')
 }
 const preSlideReviewHandler = () =>{
     if (currentX > 0){
@@ -97,7 +95,6 @@ seeAllSpec.addEventListener("click",seeAllSpecHandler)
 hideAllSpec.addEventListener("click",hideAllSpecHandler)
 
 function seeAllSpecHandler (){
-    // specContainer.style.maxHeight = '2000px'
     specContainer.classList.toggle('max-h-[2000px]')
     
 }
