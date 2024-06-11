@@ -10,8 +10,10 @@ import { DrawerCategory } from "./components/drawer-category.js";
 import { FooterCategory } from "./components/footer-category.js";
 import { FooterItem } from "./components/footer-item.js";
 import { FooterSocial } from "./components/footer-social.js";
+import { CarouselTab } from '../pages/home/components/carousel-tab.js';
 
 customElements.define("navbar-component", NavBar);
 customElements.define("footer-component", Footer);
 customElements.define("feedback-component", Feedback);
 customElements.define("carousel-mobile", CarouselMobile);
+customElements.define('carousel-tab', CarouselTab);
