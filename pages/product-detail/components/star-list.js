@@ -10,8 +10,7 @@ export class StarList extends HTMLElement {
         const rate = this.dataset.rate
 
         let halfStar = parseFloat(rate) - parseInt(rate) // 0.5
-        let intRate = parseInt(rate)
-        console.log('intRate', intRate)
+        let intRate = parseInt(rate) 
         for (let i = 1; i <= 5; i++) {
             let contentHtml
             // check how many rate
@@ -25,13 +24,9 @@ export class StarList extends HTMLElement {
             }
             else if (i > intRate){
                 contentHtml = `<img src="/assets/images/product-detail/star-no-fill.svg" alt="star" />`
-            }
-            //if (i == intRate && halfStar > 0) 
-            
-            console.log(contentHtml);
+            }  
             this.innerHTML += contentHtml
-        }
-        console.log(this.innerHTML);
+        } 
         this.classList.add('block')
         this.classList += " my-2 flex gap-0.5 pt-1"
     }
