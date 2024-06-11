@@ -1,3 +1,26 @@
+/**
+ * Footer social icons and privacy links.
+ * 
+ * This script defines custom HTML elements for footer social icons and privacy links.
+ * It also includes data arrays for social icons and privacy links.
+ * 
+ * FooterSocial class:
+ * - Extends HTMLElement.
+ * - Sets up the structure of the footer section containing social icons and privacy links.
+ * 
+ * FooterSocialIcon class:
+ * - Extends HTMLElement.
+ * - Dynamically generates and inserts social icons based on the provided data array.
+ * 
+ * FooterPrivacy class:
+ * - Extends HTMLElement.
+ * - Dynamically generates and inserts privacy links based on the provided data array.
+ * 
+ * Data arrays:
+ * - social: Array containing social icons with their corresponding links.
+ * - privacy: Array containing privacy links with their corresponding labels and links.
+ */
+
 export class FooterSocial extends HTMLElement {
   constructor() {
     super();
