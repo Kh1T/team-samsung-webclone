@@ -1,7 +1,7 @@
-import { CustomButton  } from "./custombutton.js"
+import { CustomButton  } from "./custom-button.js"
 import { ButtonUpclose } from "./button-upclose.js";
-import { CustomH2 } from "./customh2.js"
-import { CardSwitch } from "./cardswitch.js";
+import { CustomH2 } from "./custom-h2.js"
+import { CardSwitch } from "./card-switch.js";
 import { SideArticle } from "./sidearticle.js";
 import { ActionImage } from "./action-image.js";
 import { ItemContent } from "./item-content.js";
