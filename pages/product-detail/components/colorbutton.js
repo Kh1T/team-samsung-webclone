@@ -1,4 +1,12 @@
-// Color Component
+ 
+
+/**
+ * Custom HTML element representing a color button
+ *
+ * @export
+ * @class ColorButton
+ * @extends {HTMLElement}
+ */
 export class ColorButton extends HTMLElement{
     constructor(){
         super()

@@ -1,6 +1,10 @@
-// Component StarBox
-
-// using <star-box></star-box>
+/**
+ * Custom HTML element representing Component StarBox
+ * <star-box></star-box>
+ * @export
+ * @class StarBox
+ * @extends {HTMLElement}
+ */
 export class StarBox extends HTMLElement{
     constructor(){
         super()

@@ -1,7 +1,11 @@
-// Star List Component 
-
-// Using 
-// <review-star data-rate="4.5"></review-star>
+/**
+ * Custom HTML element representing a Star List Component 
+ * 
+ * <review-star data-rate="4.5"></review-star>
+ * @export
+ * @class StarList
+ * @extends {HTMLElement}
+ */
 export class StarList extends HTMLElement {
     constructor() {
         super()

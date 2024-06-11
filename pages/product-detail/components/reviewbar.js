@@ -1,4 +1,10 @@
-// Review Bar Component
+/**
+ * Custom HTML element representing a Review Bar Component
+ *
+ * @export
+ * @class ReviewBar
+ * @extends {HTMLElement}
+ */
 export class ReviewBar extends HTMLElement{
     constructor(){
         super()

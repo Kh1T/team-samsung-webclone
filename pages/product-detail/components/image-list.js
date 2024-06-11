@@ -15,6 +15,13 @@ const imgReviews = [
 // Using 
 // <image-list></image-list>
 // render image already define data in this component
+/**
+ * Custom HTML element representing a Image List in Review Section
+ *
+ * @export
+ * @class ImageList
+ * @extends {HTMLElement}
+ */
 export class ImageList extends HTMLElement {
     constructor() {
         super()

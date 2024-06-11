@@ -1,7 +1,11 @@
-// Review Dash Bar Compoinent
 
-// using <dash-bar data-rate="4.2"></dash-bar>
-// change data in the attribue
+/**
+ * Custom HTML element representing a Dash Bar.
+ *
+ * @export
+ * @class DashBar
+ * @extends {HTMLElement}
+ */
 export class DashBar extends HTMLElement{
     constructor(){
         super()
@@ -22,12 +26,15 @@ export class DashBar extends HTMLElement{
         let percent = parseFloat(rate) - parseInt(rate)
         let intRate = parseInt(rate)
         percent = parseInt(percent * 100)
+        
+        // Render orange bars based on the rate
         for (let i = 1; i <= intRate; i++){            
             let contentHtml = `
                 <div class="bar-inner h-2.5 w-8 relative ">
                     <div class="h-2.5 w-full bg-orange-400"></div>
                 </div>
             `
+            // If at the last bar and there is a remaining percentage, render the partial bar            
             if (i == intRate  && percent > 0 ){
                 contentHtml += `<div class="bar-inner h-2.5 w-8 relative ">
                     <div class="h-2.5 w-[${percent}%] bg-orange-400"></div>
@@ -38,6 +45,7 @@ export class DashBar extends HTMLElement{
         }
         this.classList += " flex gap-0.5 relative item-center justify-center"
        
+        // Append the orange bars container to the main element
         this.append(barInner) 
     }
 }

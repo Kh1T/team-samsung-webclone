@@ -26,14 +26,19 @@ const breadCrumbData = [
     },
 ]
 
-// Component BreadCrumb 
+// Component BreadCrumb
 
-// using <bread-crumb></bread-crumb>
+/**
+ * Custom HTML element representing a breadcrumb navigation.
+ * @class
+ * @extends {HTMLElement}
+ */
 export class BreadCrumb extends HTMLElement{
     constructor(){
         super()
     }
     connectedCallback(){
+
         const breadList = breadCrumbData.map(data => {
             return `
                 <div><a href="${data.link}">${data.label}</a></div>
