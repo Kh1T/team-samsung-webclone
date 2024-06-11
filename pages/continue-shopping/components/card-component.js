@@ -67,12 +67,6 @@ const cardData = [
         
     ];
 
-// for (i of cardData) {
-//     console.log(i);
-//     console.log(i.title);
-// }
-
-// console.log(cardData[0].title);
 
 class Featured extends HTMLElement {
     constructor() {
