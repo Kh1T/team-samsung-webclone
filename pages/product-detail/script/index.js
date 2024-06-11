@@ -283,10 +283,6 @@ function sectionExpandHandler() {
         });
     });
 }
-<<<<<<< HEAD
-window.addEventListener('DOMContentLoaded', sectionExpandHandler);
-
-=======
 
 // Prodect-detail
 // Related Products carousel
@@ -344,6 +340,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCarousel();
 });
->>>>>>> develop
 
 
