@@ -13,7 +13,7 @@ class Hero extends HTMLElement {
                         <ul id="hero-container" class="flex transition-transform duration-300">
                             ${items.map(item => `
                             <li class="object-cover w-screen relative">
-                                <img class="rounded-2xl object-cover w-[640px]" src="${item.smallImage}" alt="">
+                                <img class="rounded-2xl object-cover w-[640px]" src="${item.smallImage}" alt="product-img">
                                 <div class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 items-center text-center">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>
@@ -51,7 +51,7 @@ class Hero extends HTMLElement {
                         <ul id="hero-big-container" class="img-container flex transition-transform duration-500">
                             ${items.map(item => `
                             <li class="object-cover w-screen relative">
-                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="">
+                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="product-img">
                                 <div class="absolute top-[25%] flex flex-col left-[10%] gap-4">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>

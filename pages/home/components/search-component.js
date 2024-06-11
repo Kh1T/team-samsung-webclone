@@ -13,7 +13,7 @@ const buttonLabels = [
 const heroButtonLargeScreen = document.querySelector('#hero-button-lg');
 
 heroButtonLargeScreen.innerHTML = buttonLabels.map(label => `
-    <button class=" rounded-2xl border border-gray-300  px-6  py-3">
+    <button class=" rounded-full border border-gray-300  px-6  py-3">
         ${label}
     </button>
 `).join('');
