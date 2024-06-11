@@ -1,3 +1,9 @@
+/**
+ * Custom HTML element for displaying a hero component.
+ * This element provides a responsive hero section with dynamic content for Galaxy AI.
+ * @extends HTMLElement
+ */
+
 export class HeroComponent extends HTMLElement {
     constructor() {
         super()
