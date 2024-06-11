@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>privacy-page</title>
     <link rel="icon" type="image/x-icon" href="../../assets/images/logo/fav-icon.ico">
+    <script src="../privacy-page/script/index.js"></script>
 
 </head>
 
@@ -51,7 +52,7 @@
 
             <div class="flex justify-center  ">
 
-                <div class="carousel-slide  text-center  justify-center ">
+                <div class="carousel-slide  text-center  justify-center">
                     <h3 class="text-3xl font-bold text-center mb-8"> Access</h3>
                     <p class=" text-gray-700">You can request access to the personal information
                         that Samsung has collected about you.</p>
@@ -273,63 +274,4 @@
     <footer-component></footer-component>
 </body>
 <script src="../../script/index.js" type="module"></script>
-<!-- Your privacy script -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carouselInner = document.querySelector('#carouselInner');
-        const slides = document.querySelectorAll('.slide');
-        const indicators = document.querySelectorAll('.indicator');
-        const totalSlides = slides.length;
-        let currentSlide = 0;
-
-        function updateCarousel() {
-            const transformValue = -currentSlide * 100;
-            carouselInner.style.transform = `translateX(${transformValue}%)`;
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('bg-gray-400', index === currentSlide);
-
-            });
-        }
-
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = index;
-                updateCarousel();
-            });
-        });
-
-        updateCarousel();
-    });
-</script>
-
-<!-- Make a request script -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carouselInner1 = document.querySelector('#carouselInner1');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const indicators = document.querySelectorAll('.indicator1');
-        const totalSlides = slides.length;
-        let currentSlide = 0;
-
-        function updateCarousel() {
-            const transformValue = -currentSlide * 100;
-            carouselInner1.style.transform = `translateX(${transformValue}%)`;
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('bg-gray-400', index === currentSlide);
-                indicator.classList.toggle('bg-transparent', index !== currentSlide);
-            });
-        }
-
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                currentSlide = index;
-                updateCarousel();
-            });
-        });
-
-        updateCarousel();
-    });
-</script>
-
 </html>
