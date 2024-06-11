@@ -1,3 +1,25 @@
+/**
+ * Navigation data and SubNavItem custom HTML element.
+ * 
+ * This script defines various data arrays for navigation items and a custom HTML element class for sub-navigation items.
+ * The SubNavItem class dynamically generates list items based on the category specified in its data attributes.
+ * 
+ * Data arrays:
+ * - offers: Array of offer items.
+ * - offersPrograms: Array of offer programs.
+ * - buyingIdeas: Array of buying guide ideas.
+ * - giftIdeas: Array of gift ideas.
+ * - tradeUpgrade: Array of trade and upgrade options.
+ * - gaming: Array containing gaming portal link.
+ * - additionalOffers: Array of additional offer items.
+ * - samsungOutlet: Array of Samsung outlet items.
+ * 
+ * SubNavItem class:
+ * - Extends HTMLElement.
+ * - Dynamically generates and inserts list items based on the specified category.
+ * - handleNavItem method creates and appends list items to the element.
+ */
+
 const offers = [
   {
     label: "All Offers",
