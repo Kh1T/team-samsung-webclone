@@ -3,7 +3,6 @@ import { homepage } from './carousel-hero-data.js';
 class Hero extends HTMLElement {
     connectedCallback() {
         const items = homepage.items;
-        
 
         this.innerHTML = `
         <section class="hero max-w-screen-2xl w-screen mb-12">
