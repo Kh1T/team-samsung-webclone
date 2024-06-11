@@ -1,3 +1,37 @@
+/**
+ * Represents a reference to the HTML element with the id 'paymentOption'.
+ * @type {HTMLElement}
+ */
+ 
+/**
+ * The default payment section HTML content.
+ * @type {string}
+ */
+ 
+/**
+ * Sets the default payment section content.
+ */
+ 
+/**
+ * Changes the content to Samsung payment detail.
+ */
+ 
+/**
+ * Changes the content to card payment detail.
+ */
+ 
+/**
+ * Changes the content to Klarna payment detail.
+ */
+ 
+/**
+ * Changes the content to Affirm payment detail.
+ */
+ 
+/**
+ * The HTML content to be appended to the 'paymentOption' div.
+ * @type {string}
+ */
 
 const div = document.getElementById('paymentOption')
 

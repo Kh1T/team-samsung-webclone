@@ -1,3 +1,29 @@
+/**
+ * Represents a custom HTML element for payment details.
+ * @extends HTMLElement
+ */
+
+/**
+ * Constructor for the PaymentDetail class.
+ * @constructor
+ */
+
+/**
+ * Called when the element is inserted into a document, including when the element is first created.
+ * It is invoked after connectedCallback.
+ */
+
+/**
+ * The category of the payment detail (e.g., "card", "klarna").
+ * @type {string}
+ */
+
+/**
+ * The URL of the image associated with the payment detail.
+ * @type {string}
+ */
+
+
 export class PaymentDetail extends HTMLElement {
   constructor() {
     super();
