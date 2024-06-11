@@ -1,3 +1,8 @@
+/**
+ * Custom HTML element for displaying influencer cards.
+ * This element allows for the dynamic creation of influencer cards with an image and a link to watch content.
+ * @extends HTMLElement
+ */
 export class InfluencerCard extends HTMLElement{
     constructor(){
         super()
