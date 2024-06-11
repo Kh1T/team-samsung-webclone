@@ -1,39 +1,37 @@
 const mainItems = [
-    { label: "Shop", link: "#" },
-    { label: "AI", link: "../../pages/galaxy-ai/index.html" },
-    { label: "Mobile", link: "#" },
-    { label: "TV & Audio", link: "#" },
-    { label: "Appliances", link: "#" },
-    { label: "Computing", link: "#" },
-    { label: "Displays", link: "#" },
-    { label: "Accessories", link: "#" },
-    { label: "SmartThings", link: "#" }
-]
+  { label: "Shop", link: "#" },
+  { label: "AI", link: "../../pages/galaxy-ai/index.html" },
+  { label: "Mobile", link: "#" },
+  { label: "TV & Audio", link: "#" },
+  { label: "Appliances", link: "#" },
+  { label: "Computing", link: "#" },
+  { label: "Displays", link: "#" },
+  { label: "Accessories", link: "#" },
+  { label: "SmartThings", link: "#" },
+];
 
 const secondaryItems = [
-    { label: "Explore", link: "#" },
-    { label: "Support", link: "../../pages/support/index.html" },
-    { label: "For Business", link: "#" }
-]
-
+  { label: "Explore", link: "#" },
+  { label: "Support", link: "../../pages/support/index.html" },
+  { label: "For Business", link: "#" },
+];
 
 export class TopNavItem extends HTMLElement {
-
-    constructor() {
-        super()
-    }
-    connectedCallback() {
-        const category = this.dataset.category
-        switch (category) {
-            case 'mainItems':
-                this.handleNavItem(mainItems)
-                console.log('work')
-                break;
-            case 'secondaryItems':
-                this.handleNavItem(secondaryItems)
-                break
-            case 'shortcut':
-                this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    const category = this.dataset.category;
+    switch (category) {
+      case "mainItems":
+        this.handleNavItem(mainItems);
+        console.log("work");
+        break;
+      case "secondaryItems":
+        this.handleNavItem(secondaryItems);
+        break;
+      case "shortcut":
+        this.innerHTML = `
                 <div class="flex gap-4 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                     class="bi bi-search" viewBox="0 0 16 16">
@@ -62,18 +60,17 @@ export class TopNavItem extends HTMLElement {
                 </svg>
                 </a>
         
-            </div>`
-                break
-        }
+            </div>`;
+        break;
     }
-    handleNavItem(data) {
-        data.forEach(item => {
-            const navItem = document.createElement('div')
-            navItem.innerHTML = `<div onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="${item.link}">${item.label}</a></div>`
-            this.appendChild(navItem)
-        })
-    }
-
+  }
+  handleNavItem(data) {
+    data.forEach((item) => {
+      const navItem = document.createElement("div");
+      navItem.innerHTML = `<div onmouseenter="onNavItemOver(this)" onmouseleave="onNavItemLeave(this)" class="hover:bg-black hover:text-white px-2 py-2 rounded-full"><a href="${item.link}">${item.label}</a></div>`;
+      this.appendChild(navItem);
+    });
+  }
 }
 
-customElements.define('top-nav-item', TopNavItem)
+customElements.define("top-nav-item", TopNavItem);

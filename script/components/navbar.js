@@ -1,13 +1,11 @@
 export class NavBar extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-
-
-        this.classList.add("w-full")
-        this.innerHTML = `
+  connectedCallback() {
+    this.classList.add("w-full");
+    this.innerHTML = `
 
             <section>
                 <section class="flex justify-center">
@@ -70,13 +68,11 @@ export class NavBar extends HTMLElement {
                 </div>
             </section>
         </section>
-        `
-        const html = `<script src="../../script/components/navbar-behaviour.js"></script>`
-        const scriptEl = document.createRange().createContextualFragment(html);
-        this.append(scriptEl);
-
-    }
-
+        `;
+    const html = `<script src="../../script/components/navbar-behaviour.js"></script>`;
+    const scriptEl = document.createRange().createContextualFragment(html);
+    this.append(scriptEl);
+  }
 }
 
 customElements.define("navbar-component", NavBar);

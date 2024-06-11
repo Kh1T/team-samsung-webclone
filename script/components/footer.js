@@ -1,10 +1,10 @@
 export class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.classList.add("w-full")
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.classList.add("w-full");
+    this.innerHTML = `
         <section class="flex flex-col items-center bg-white">
         <div class="hidden md:block max-w-screen-2xl w-full">
             <hr>
@@ -35,8 +35,8 @@ export class Footer extends HTMLElement {
         <hr>
         <footer-social></footer-social>
     </section>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define("footer-component", Footer);
