@@ -7,7 +7,6 @@ export class DashBar extends HTMLElement{
     connectedCallback(){
         const rate = this.dataset.rate
         // const dashContainer = document.getElementById('dash-container')
-        // console.log(dashContainer);
         for (let i = 0; i <=4 ; i++){
             const contentHtml = `
                 <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400"></div>
@@ -20,13 +19,12 @@ export class DashBar extends HTMLElement{
         let intRate = parseInt(rate)
         percent = parseInt(percent * 100)
         console.log('intRate',intRate)
-        for (let i = 1; i <= intRate; i++){            
+        for (let i = 1; i <= 5; i++){            
             let contentHtml = `
                 <div class="bar-inner h-2.5 w-14 md:w-8 relative ">
                     <div class="h-2.5 w-full bg-orange-400"></div>
                 </div>
             `
-            console.log(i,percent);
             if (i == intRate  && percent > 0 ){
                 contentHtml += `<div class="bar-inner h-2.5 w-14 md:w-8 relative ">
                     <div class="h-2.5 w-[${percent}%] bg-orange-400"></div>
