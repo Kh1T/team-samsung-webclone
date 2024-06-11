@@ -9,215 +9,22 @@ export class Footer extends HTMLElement {
         <div class="hidden md:block max-w-screen-2xl w-full">
             <hr>
             <section class="grid grid-cols-4">
-                <div class="flex flex-col gap-4 p-6 border-r">
-                    <h3 class="font-bold text-lg">SHOP</h3>
-                    <ul class="flex flex-col text-sm gap-2">
-                        <li><a href="#">Phones</a></li>
-                        <li><a href="#">Tablets</a></li>
-                        <li><a href="#">Watches</a></li>
-                        <li><a href="#">Mobile Accessories</a></li>
-                        <li><a href="#">Mobile Audio</a></li>
-                        <li><a href="#">TV & Home Theater</a></li>
-                        <li><a href="#">Computing</a></li>
-                        <li><a href="#">Monitors</a></li>
-                        <li><a href="#">Memory & Storage</a></li>
-                        <li><a href="#">Home Appliances</a></li>
-                        <li><a href="#">Smart Home</a></li>
-                        <li><a href="#">Samsung Experience Stores</a></li>
-                        <li><a href="#">Apps & Services</a></li>
-                        <li><a href="#">Shop Certified Re-Newed</a></li>
-                        <li><a href="#">Samsung Authorized Reseller Program</a></li>
-                    </ul>
+                <footer-category class="border-r" data-title="SHOP" data-category="shop"></footer-category>
+                <footer-category class="border-r" data-title="SUPPORT" data-category="support"></footer-category>
+                <footer-category class="border-r" data-title="OFFERS" data-category="offers"></footer-category>
+                <div class="grid grid-rows-2">
+                <footer-category data-title="SUSTAINABILITY" data-category="sustainability"></footer-category>
+                <footer-category data-title="ABOUT US" data-category="aboutUs"></footer-category>
                 </div>
-                <div class="flex flex-col gap-4 p-6 border-r">
-                    <h3 class="font-bold text-lg">SUPPORT</h3>
-                    <ul class="flex flex-col text-sm gap-2">
-                        <li><a href="../../pages/track-order/index.html">Track Order</a></li>
-                        <li><a href="../../pages/account-benefit/index.html">Why Create Account?</a></li>
-                        <li><a href="#">Order Support</a></li>
-                        <li><a href="#">Your Account</a></li>
-                        <li><a href="#">Register Your Product</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Samsung Community</a></li>
-                        <li><a href="#">Note7 Recall</a></li>
-                        <li><a href="#">Give Feedback</a></li>
-                    </ul>
+                </section>
+                <hr>
                 </div>
-                <div class="flex flex-col gap-4 p-6 border-r">
-                    <h3 class="font-bold text-lg">OFFERS</h3>
-                    <ul class="flex flex-col text-sm gap-2">
-                        <li><a href="#">Offers</a></li>
-                        <li><a href="#">Samsung Rewards</a></li>
-                        <li><a href="#">Referral Program</a></li>
-                        <li><a href="#">Education Offers Program</a></li>
-                        <li><a href="#">Government Offers Program</a></li>
-                        <li><a href="#">Military Offers Program</a></li>
-                        <li><a href="#">Employee Offers Program</a></li>
-                        <li><a href="#">First Responders Offers Program</a></li>
-                        <li><a href="#">Business Offers Program</a></li>
-                    </ul>
-                </div>
-                <div class="grid grid-rows-2 gap-6 p-6">
-                    <div class="flex flex-col gap-4">
-                        <h3 class="font-bold text-lg">SUSTAINABILITY</h3>
-                        <ul class="flex flex-col text-sm gap-2">
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Digital Responsibility</a></li>
-                            <li><a href="#">Security and Privacy</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                            <li><a href="#">Labor & Human Rights</a></li>
-                            <li><a href="#">Diversity ∙ Equity ∙ Inclusion</a></li>
-                            <li><a href="#">Sustainable Supply Chain</a></li>
-                            <li><a href="#">Corporate Citizenship</a></li>
-                            <li><a href="#">Corporate Sustainability</a></li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col gap-4">
-                        <h3 class="font-bold text-lg">ABOUT US</h3>
-                        <ul class="flex flex-col text-sm gap-2">
-                            <li><a href="#">Leadership & Mission</a></li>
-                            <li><a href="#">Our Business</a></li>
-                            <li><a href="#">Brand Identity</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Investor Relations</a></li>
-                            <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">Ethics</a></li>
-                            <li><a href="#">Samsung Design</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <hr>
-        </div>
-        <div class=" w-[100%] p-6 text-xl font-semibold md:hidden">
-            <details class="py-6 px-4 border-b">
-                <summary class="flex justify-between items-center">
-                    <p>SHOP</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </summary>
-                <div class="text-lg font-normal px-4">
-                    <ul class="space-y-4 mt-4">
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Phones</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Tablets</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Watches</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Mobile Accessories</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Mobile Audio</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">TV & Home Theater</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Computing</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Monitors</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Memory & Storage</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Home Appliances</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Smart Home</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Samsung Experience Stores</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Apps & Services</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Shop Certified Re-Newed</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Samsung Authorized Reseller
-                                Program</a></li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="py-6 px-4 border-b">
-                <summary class="flex justify-between items-center">
-                    <p>SUPPORT</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </summary>
-                <div class="text-lg font-normal px-4">
-                    <ul class="space-y-4 mt-4">
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Chat with Us</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Product Support</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Order Support</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Your Account</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Register Your Product</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Samsung Community</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Note7 Recall</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Give Feedback</a></li>
-                    </ul>
-                </div>
-            </details>
-
-            <details class="py-6 px-4 border-b">
-                <summary class="flex justify-between items-center">
-                    <p>OFFERS</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </summary>
-                <div class="text-lg font-normal px-4">
-                    <ul class="space-y-4 mt-4">
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Offers</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Samsung Rewards</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Referral Program</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Education Offers Program</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Government Offers Program</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Military Offers Program</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Employee Offers Program</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">First Responders Offers Program</a>
-                        </li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Business Offers Program</a></li>
-
-                    </ul>
-                </div>
-            </details>
-            <details class="py-6 px-4 border-b">
-                <summary class="flex justify-between items-center">
-                    <p>SUSTAINABILITY</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </summary>
-                <div class="text-lg font-normal px-4">
-                    <ul class="space-y-4 mt-4">
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Overview</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Environment</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Digital Responsibility</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Security and Privacy</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Accessibility</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Labor & Human Rights</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Diversity ∙ Equity ∙ Inclusion</a>
-                        </li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Sustainable Supply Chain</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Corporate Citizenship</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Corporate Sustainability</a></li>
-                    </ul>
-                </div>
-            </details>
-            <details class="py-6 px-4 border-b">
-                <summary class="flex justify-between items-center">
-                    <p>ABOUT US</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
-                        class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
-                </summary>
-                <div class="text-lg font-normal px-4">
-                    <ul class="space-y-4 mt-4">
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Leadership & Mission</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Our Business</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Brand Identity</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Careers</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Investor Relations</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Newsroom</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Ethics</a></li>
-                        <li><a href="#" class="hover:text-blue-500 hover:underline">Samsung Design</a></li>
-                    </ul>
-                </div>
-            </details>
+          <div class=" w-[100%] p-6 text-xl font-semibold md:hidden">                
+                <footer-category data-title="SHOP" data-category="shop" data-size="small"></footer-category>
+                <footer-category data-title="SUPPORT" data-category="support" data-size="small"></footer-category>
+                <footer-category data-title="OFFERS" data-category="offers" data-size="small"></footer-category>
+                <footer-category data-title="SUSTAINABILITY" data-category="sustainability" data-size="small"></footer-category>
+                <footer-category data-title="ABOUT US" data-category="aboutUs" data-size="small"></footer-category>
         </div>
         <section
             class="md:flex md:flex-row items-center justify-between max-w-screen-2xl w-full py-2 px-6 space-y-4">
