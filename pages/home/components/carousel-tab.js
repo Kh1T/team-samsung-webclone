@@ -1,29 +1,30 @@
 import { mobileData, tvData, homeData, susData } from './carousel-tab-data.js';
 
-
-
+/**
+ * Class representing a Carousel Tab component.
+ * @extends HTMLElement
+ */
 export class CarouselTab extends HTMLElement {
+    /**
+     * Called when the element is inserted into the DOM.
+     * Sets up the carousel's HTML structure and initializes the carousel functionality.
+     */
     connectedCallback() {
-
-        // get attribute from html
-        
+        // Get the data-type attribute from the HTML
         const dataType = this.getAttribute('data-type');
-        let data;
         
-        // Checking Which Data to use
-        if (dataType === 'mobile') {
-                data = mobileData;
-            } else if (dataType === 'tv'){
-                data = tvData;
-            } else if (dataType === 'home') {
-                data = homeData;
-            } else if (dataType === 'sus') {
-                data = susData;
-            }
+        // Determine which data to use based on the data-type attribute using short-circuiting
+        const data = 
+            (dataType === 'mobile' && mobileData) ||
+            (dataType === 'tv' && tvData) ||
+            (dataType === 'home' && homeData) ||
+            (dataType === 'sus' && susData) ||
+            { items: [], headerText: '', buttons: [] };
         
+        // Unpack data into individual variables
+        const { items, headerText, buttons } = data;
         
-        const { items, headerText, buttons } = data; // Unpacking Data
-        
+        // Set the innerHTML of the carousel
         this.innerHTML = `
         <section class="carousel max-w-screen-2xl w-screen">
             <div class="carousel-container relative">
@@ -58,17 +59,19 @@ export class CarouselTab extends HTMLElement {
         </section>
     `;
 
-    const container = this.querySelector('#carousel-inner-container');
-    const btns = this.querySelectorAll('.carousel-btn');
-    carouselTab(container, btns);
+        const container = this.querySelector('#carousel-inner-container');
+        const btns = this.querySelectorAll('.carousel-btn');
+        carouselTab(container, btns);
     }
 }
 
 customElements.define('carousel-tab', CarouselTab);
 
-
-// For carousel
-
+/**
+ * Sets up the carousel tab functionality by adding event listeners to the buttons.
+ * @param {HTMLElement} container - The container element to transform.
+ * @param {NodeListOf<Element>} btns - The buttons that trigger the transformation.
+ */
 function carouselTab(container, btns) {
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -76,5 +79,4 @@ function carouselTab(container, btns) {
             container.style.transform = `translateX(-${index}00%)`;
         });
     });
-    
 }

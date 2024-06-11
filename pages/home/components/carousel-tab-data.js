@@ -1,3 +1,4 @@
+// 
 export const mobileData = {
     headerText: "Mobile & Computing",
     items: [

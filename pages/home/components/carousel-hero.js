@@ -1,6 +1,14 @@
 import { homepage } from './carousel-hero-data.js';
 
+/**
+ * Class representing a Hero Carousel component.
+ * @extends HTMLElement
+ */
 class Hero extends HTMLElement {
+    /**
+     * Called when the element is inserted into the DOM.
+     * Sets up the hero carousel's HTML structure and initializes the carousels.
+     */
     connectedCallback() {
         const items = homepage.items;
 
@@ -82,17 +90,25 @@ class Hero extends HTMLElement {
         this.carouselSmall();  // Call the carouselSmall method here
     }
 
+    /**
+     * Initializes the big screen carousel functionality.
+     * Sets up event listeners for the left and right navigation buttons.
+     */
     initCarousel() {
         let position = 0;
         const heroImgContainer = this.querySelector('#hero-big-container');
         const heroBtnLeft = this.querySelector('#left');
         const heroBtnRight = this.querySelector('#right');
 
+        /**
+         * Transitions the hero page by adjusting the position based on the condition.
+         * @param {string} condition - Direction to transition ('left' or 'right').
+         */
         const transitionHeroPage = (condition) => {
             heroImgContainer.classList.remove(`translate-x-[${position}%]`);
-            if (condition == 'right' && position > -80) {
+            if (condition === 'right' && position > -80) {
                 position -= 20;
-            } else if (condition == 'left' && position < 0) {
+            } else if (condition === 'left' && position < 0) {
                 position += 20;
             }
             heroImgContainer.classList.add(`translate-x-[${position}%]`);
@@ -102,12 +118,19 @@ class Hero extends HTMLElement {
         heroBtnRight.addEventListener('click', () => transitionHeroPage('right'));
     }
 
+    /**
+     * Initializes the small screen carousel functionality.
+     * Sets up event listeners for the carousel buttons.
+     */
     carouselSmall() {
         const heroContainer = this.querySelector('#hero-container');
-        const heroBtn = this.querySelectorAll('.hero-btn');
         const heroBtnContainer = this.querySelectorAll('#hero-btn-container button');
-   
 
+        /**
+         * Handles the carousel tab functionality by adjusting the container's transform property.
+         * @param {HTMLElement} container - The container element to transform.
+         * @param {NodeListOf<Element>} btn - The buttons that trigger the transformation.
+         */
         function carouselTab(container, btn) {
             btn.forEach((button, i) => {
                 button.addEventListener('click', () => {
@@ -120,5 +143,8 @@ class Hero extends HTMLElement {
     }
 }
 
+/**
+ * Defines the 'hero-carousel' custom element.
+ */
 
-customElements.define('hero-carousel', Hero);
+customElements.define('hero-carousel', Hero)

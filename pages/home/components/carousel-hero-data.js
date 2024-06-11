@@ -1,3 +1,4 @@
+// homepage data
 export const homepage = {
     items: [
         {
