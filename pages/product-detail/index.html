@@ -754,96 +754,28 @@
     </section>
 
     <!-- Spec Feature Section -->
-    <section class="w-screen max-w-screen-2xl">
+    <section class="max-w-screen-2xl">
       <div id="first-component-overview"></div>
 
       <div id="second-component-overview"></div>
 
       <div id="third-component-overview"></div>
-
+    
       <!-- 2 * 2 table for short Specs -->
-      <section class="flex-col bg-zinc-100 md:grid">
+      <section class="flex-col bg-zinc-100 md:grid relative">
         <div
-          class="flex-cols mx-auto flex justify-center pr-6 pt-[55px] md:pr-0"
+          class="flex-cols mx-auto flex justify-center pr-6 pt-12 md:pr-0"
         >
           <!-- First row -->
-          <div
-            class="mx-4 grid grid-cols-2 grid-rows-2 items-center justify-center space-y-5 md:mr-6 md:space-y-0"
-          >
-            <!-- First Spec -->
-            <div
-              class="ml-auto grid h-44 w-full justify-center border-s-0 border-slate-100 px-[10%] py-10 md:flex md:flex-col md:px-0"
-            >
-              <div class="mb-5 grid justify-center">
-                <img
-                  class="h-[50px]"
-                  src="/assets/images/product-detail/s1-buds2-pro.png"
-                />
-              </div>
-              <h6 class="flex justify-center text-xs font-medium md:text-base">
-                Live Translate
-              </h6>
-            </div>
+            <shortspec data-spec="Live Translate , Intelligent Active Noise Cancellation, Enhanced 360-Degree Audio, Comfortable fit"></shortspec>
 
-            <!-- Second Spec -->
-            <div
-              class="grid h-44 w-full justify-center border-l-2 border-s-2 border-slate-100 border-l-zinc-300 py-10 pl-[15%] text-center md:flex md:flex-col md:pl-0"
-            >
-              <div class="mb-5 grid justify-center px-8 md:px-0 md:pr-0">
-                <img
-                  class="h-[50px]"
-                  src="/assets/images/product-detail/s2-buds2-pro.svg"
-                />
-              </div>
-              <h6
-                class="flex self-center pl-0 text-xs font-medium md:w-auto md:pl-2 md:text-base"
-              >
-                Intelligent Active Noise Cancellation
-              </h6>
-              <!-- row contain words -->
-            </div>
-
-            <!-- Third spec -->
-            <div
-              class="ml-auto grid h-44 w-full justify-center border-s-0 border-slate-100 px-[12%] py-10 md:flex md:flex-col md:border-s-[4px] md:px-0"
-            >
-              <div class="mb-5 grid justify-center">
-                <img
-                  class="h-[50px]"
-                  src="/assets/images/product-detail/s3-buds2-pro.svg"
-                />
-              </div>
-              <h6
-                class="flex justify-center text-center text-xs font-medium md:text-base"
-              >
-                Enhanced 360-Degree Audio
-              </h6>
-              <!-- row contain words -->
-            </div>
-
-            <!-- Fourth Spec -->
-            <div
-              class="grid h-44 w-full justify-center border-l-2 border-transparent border-l-zinc-300 py-10 pl-6 md:flex md:w-[400px] md:flex-col md:pl-0"
-            >
-              <div class="mb-5 grid justify-center">
-                <img
-                  class="h-[50px]"
-                  src="/assets/images/product-detail/s4-buds2-pro.svg"
-                />
-              </div>
-              <h6 class="flex justify-center text-xs font-medium md:text-base">
-                Comfortable fit
-              </h6>
-              <!-- row contain words -->
-            </div>
-          </div>
         </div>
 
         <!-- Second row -->
 
         <section class="accordion-container">
           <div class="bg-zinc-100">
-            <label class="my-[3.16%] flex flex-col justify-center text-black">
+            <label class="my-10 flex flex-col justify-center text-black">
               <section class="flex h-auto items-center self-center text-center">
                 <button
                   class="change-text text-sm font-medium"
@@ -854,7 +786,7 @@
                 <img
                   class="mx-1 my-2 h-5 origin-center"
                   id="rotate-svg"
-                  src="/assets/images/product-detail/chevron-down-svgrepo-com.svg"
+                  src="/assets/images/product-detail/chevron-down-svgrepo-com.svg" alt="down chevron"
                 />
               </section>
             </label>
@@ -863,185 +795,17 @@
             class="max-h-0 overflow-hidden transition-all duration-[2000ms]"
             id="spec-container"
           >
-            <div class="h-[860px] border-zinc-100 bg-zinc-200 px-5 pt-5">
-              <div
-                class="ml-0 mr-[9.9] flex flex-initial flex-col space-y-2 md:ml-[113px]"
-              >
-                <!-- row-1 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 font-extralight"
-                  >Connectivity</span
-                >
-                <div
-                  class="grid-rows-auto grid grid-cols-2 justify-start md:columns-[319px] md:grid-cols-4 md:grid-rows-1"
-                >
-                  =
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">
-                      Bluetooth<sup>®</sup> Version
-                    </div>
-                    <div class="text-xs font-extralight">Bluetooth v5.3</div>
-                  </div>
-
-                  <!-- col-2 -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Bluetooth Profiles</div>
-                    <div class="text-xs font-extralight">A2DP,AVRCP,HFP</div>
-                  </div>
-                </div>
-
-                <!-- row-2 -->
-                <div
-                  class="mr-28 border-x-[24px] border-zinc-200 font-extralight"
-                >
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <span class="text-base font-extralight"
-                      >Physical specification</span
-                    >
-                    <div
-                      class="grid-rows-auto grid grid-cols-2 justify-start md:columns-[319px] md:grid-cols-4 md:grid-rows-1"
-                    >
-                      <div class="text-xs font-semibold">Weight</div>
-                      <div class="text-xs font-extralight">1.92 oz</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- row-3 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 font-extralight"
-                  >Battery</span
-                >
-                <div
-                  class="grid-rows-auto grid grid-cols-2 justify-start md:columns-[319px] md:grid-cols-4 md:grid-rows-2"
-                >
-                  <!-- col-1  -->
-
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4 pr-3"
-                  >
-                    <div class="text-xs font-semibold">
-                      Battery Capacity (Earbud)
-                    </div>
-                    <div class="text-xs font-extralight">61</div>
-                  </div>
-
-                  <!-- col-2 -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">
-                      Battery Capacity (Case)
-                    </div>
-                    <div class="text-xs font-extralight">515</div>
-                  </div>
-
-                  <!-- col-3 -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Playtime</div>
-                    <div class="text-xs font-extralight">
-                      5/20Hr (ANC On), 8/30Hr (ANC Off)
-                    </div>
-                  </div>
-
-                  <!-- col-4 -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4 md:col-span-4"
-                  >
-                    <div class="text-xs font-semibold">Talk time</div>
-                    <div class="text-xs font-extralight">
-                      3.5/14Hr (ANC ON), 4/15Hr (ANC OFF)
-                    </div>
-                  </div>
-                </div>
-                <!-- row-4 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 font-extralight"
-                  >Audio and Video</span
-                >
-                <div class="flex justify-start">
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Ambient Sound</div>
-                    <div class="text-xs font-extralight">Yes</div>
-                  </div>
-                </div>
-                <!-- row-5 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 text-base font-extralight"
-                  >Services and Applications</span
-                >
-                <div class="flex justify-start">
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">
-                      ANC/Bixby Voice Wake-up
-                    </div>
-                    <div class="text-xs font-extralight">
-                      (– 35dB, Latency 10us, up to 1kHz)
-                    </div>
-                  </div>
-                </div>
-                <!-- row-6 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 text-base font-extralight"
-                  >Key Category Features</span
-                >
-                <div class="grid grid-cols-4">
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Water Resistant</div>
-                    <div class="text-xs font-extralight">IPX7</div>
-                  </div>
-                </div>
-                <!-- row-7 -->
-                <span
-                  class="mr-28 border-x-[24px] border-zinc-200 text-base font-extralight"
-                  >General Feature</span
-                >
-                <div
-                  class="grid-rows-auto grid grid-cols-2 justify-start md:columns-[319px] md:grid-cols-4 md:grid-rows-2"
-                >
-                  <!-- col-1  -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Microphone</div>
-                    <div class="text-xs font-extralight">
-                      3 High-SNR Mics + VPU + Personalized DNN**
-                    </div>
-                  </div>
-
-                  <!-- col-2 -->
-                  <div
-                    class="mr-28 w-52 space-y-2 border-x-[24px] border-transparent border-zinc-200 pb-4"
-                  >
-                    <div class="text-xs font-semibold">Bluetooth Profiles</div>
-                    <div class="text-xs font-extralight">
-                      2 Way (10mm woofer + 5.3mm tweeter)
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="h-fit border-zinc-100 bg-zinc-200 px-5 pt-5">
+              <div id="connective-container"></div>
+                <div id="battery-container"></div>
+                <div id="physical-spec-container"></div>
+                <div id="audio-and-video-container"></div>
+                <div id="service-and-app-container"></div>
+                <div id="key-category-container"></div>
+                <div id="general-feat-container"></div>
             </div>
 
-            <div class="label flex flex-col bg-zinc-200 pb-7">
+            <div class="label flex flex-col bg-zinc-200 p-10">
               <section
                 class="flex h-full items-center justify-center self-center text-center"
               >
@@ -1061,6 +825,7 @@
           </section>
         </section>
       </section>
+
     </section>
 
     <!-- Product Review Section -->
@@ -2176,5 +1941,7 @@
     <script src="../../script/index.js" type="module"></script>
     <script src="./script/index.js" defer></script>
     <script src="/pages/product-detail/components/overview.js"></script>
+    <script src="../product-detail/components/shortspec.js"></script>
+    <script src="../product-detail/components/specgroup.js"></script>
   </body>
 </html>

@@ -259,27 +259,42 @@ budBora.addEventListener('click', changeBudColorsHandler)
 // function rotateSVG(duration) 
 
 function sectionExpandHandler() {
-    // Get all elements with the class "change-text"
-    const btnChangeTexts = document.querySelectorAll('.change-text');
+  // Get all elements with the class "change-text"
+  const btnChangeTexts = document.querySelectorAll(".change-text");
 
-    // Loop through each button and add click event listener
-    btnChangeTexts.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Toggle text content of all buttons with the class "change-text"
-            const newText = button.textContent === 'SEE ALL SPECS' ? 'HIDE ALL SPECS' : 'SEE ALL SPECS';
-            btnChangeTexts.forEach(function(btn) {
-                btn.textContent = newText;
-            });
-            console.log('Letgo')
-            // Select SVG elements with the ID "rotate-svg"
-            const svgElements = document.querySelectorAll('#rotate-svg');
-            svgElements.forEach(function(svgElement) {
-                svgElement.classList.add('transition-transform', 'duration-[1800ms]');
-                svgElement.classList.toggle('rotate-180');
-            });
-        });
+  // Loop through each button and add click event listener
+  btnChangeTexts.forEach(function (button) {
+    button.addEventListener("click", function () {
+      // Log the current text content of the button for debugging
+      console.log("Current button text:", button.textContent);
+
+      // Determine new text content based on the current text, trimming any whitespace
+      const newText =
+        button.textContent.trim() === "SEE ALL SPECS"
+          ? "HIDE ALL SPECS"
+          : "SEE ALL SPECS";
+
+      // Toggle text content of all buttons with the class "change-text"
+      btnChangeTexts.forEach(function (btn) {
+        btn.textContent = newText;
+      });
+
+      // Log for debugging purposes
+      console.log("Letgo");
+
+      // Select SVG elements with the class "rotate-svg"
+      const svgElements = document.querySelectorAll("#rotate-svg");
+      svgElements.forEach(function (svgElement) {
+        svgElement.classList.add("transition-transform", "duration-[1800ms]");
+        svgElement.classList.toggle("rotate-180");
+      });
     });
+  });
 }
+
+// Call the function to attach the event handlers
+sectionExpandHandler();
+
 
 // Prodect-detail
 // Related Products carousel
