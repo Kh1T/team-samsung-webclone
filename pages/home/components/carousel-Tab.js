@@ -76,4 +76,5 @@ function carouselTab(container, btns) {
             container.style.transform = `translateX(-${index}00%)`;
         });
     });
+    
 }

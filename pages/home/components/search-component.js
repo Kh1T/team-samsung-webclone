@@ -16,4 +16,5 @@ heroButtonLargeScreen.innerHTML = buttonLabels.map(label => `
     <button class=" rounded-full border border-gray-300  px-6  py-3">
         ${label}
     </button>
+    
 `).join('');

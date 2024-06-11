@@ -39,6 +39,7 @@ export const mobileData = {
         "Galaxy Tab S9 Series",
         "Galaxy Watch6 Series"
     ]
+    
 };
 
 

@@ -120,4 +120,5 @@ class Hero extends HTMLElement {
     }
 }
 
+
 customElements.define('hero-carousel', Hero);
