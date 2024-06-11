@@ -1,3 +1,19 @@
+/**
+ * Navigation data and TopNavItem custom HTML element.
+ * 
+ * This script defines various data arrays for top navigation items and a custom HTML element class for top navigation items.
+ * The TopNavItem class dynamically generates navigation items based on the specified category in its data attributes.
+ * 
+ * Data arrays:
+ * - mainItems: Array of main navigation items.
+ * - secondaryItems: Array of secondary navigation items.
+ * 
+ * TopNavItem class:
+ * - Extends HTMLElement.
+ * - Dynamically generates and inserts navigation items based on the specified category.
+ * - handleNavItem method creates and appends navigation items to the element.
+ */
+
 const mainItems = [
   { label: "Shop", link: "#" },
   { label: "AI", link: "../../pages/galaxy-ai/index.html" },
