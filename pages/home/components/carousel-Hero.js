@@ -1,9 +1,9 @@
-import { homepage } from './carousel-Hero-data.js';
+import { homepage } from './carousel-hero-data.js';
 
 class Hero extends HTMLElement {
     connectedCallback() {
         const items = homepage.items;
-        console.log(items);
+        
 
         this.innerHTML = `
         <section class="hero max-w-screen-2xl w-screen mb-12">
@@ -107,7 +107,7 @@ class Hero extends HTMLElement {
         const heroContainer = this.querySelector('#hero-container');
         const heroBtn = this.querySelectorAll('.hero-btn');
         const heroBtnContainer = this.querySelectorAll('#hero-btn-container button');
-        console.log(heroBtn);
+   
 
         function carouselTab(container, btn) {
             btn.forEach((button, i) => {

@@ -1,34 +1,15 @@
 const foryouContainer = document.getElementById('foryou-card-container')
 
-const heroContainer = document.getElementById('hero-container')
 const imgExplor = document.getElementById('img-explore')
 
 
-const heroBtn = document.querySelectorAll('.hero-btn');
-const heroBtnContainer = document.querySelectorAll('#hero-btn-container button')
-console.log(heroBtnContainer);
 const btnExploreContainer = document.querySelectorAll('.explore-btn-container button')
-const heroBtnLeft = document.querySelector('#left')
-const heroBtnRight = document.querySelector('#right')
-const heroImgContainer = document.querySelector('.img-container')
-const exploreContainer = document.querySelector('#explore-container')
 
+const exploreContainer = document.querySelector('#explore-container')
 const btnForYou = document.querySelectorAll('.btn-forYou')
 
 
 let positonExplore = 0
-let postionHero = 0
-
-let btnTab;
-
-
-function tabCarousel(e) {
-    console.log('sa');
-    btnTab = e
-}
-
-
-console.log(btnTab);
 
 
 function btnStyle(btn,color, border) {
@@ -48,14 +29,8 @@ btnExploreContainer.forEach((e, i) => {
     positonExplore+=90
 })
 
-heroBtnContainer.forEach((e, i) => {
-    
-    btnMoving(e, postionHero, heroContainer)
-    postionHero += 20
-})
 
 
-// console.log(heroBtnContainer);
 
 
 const imgExplorPath = [
