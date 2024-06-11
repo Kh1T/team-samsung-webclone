@@ -1,4 +1,4 @@
-import { homepage } from './carousel-o-data.js';
+import { homepage } from './carousel-hero-data.js';
 
 class Hero extends HTMLElement {
     connectedCallback() {
