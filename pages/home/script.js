@@ -50,7 +50,7 @@ const imgExplorPath = [
     
 
         function caroselTab(container, btn) {
-            console.log('hi');
+      
             btn.forEach((btn, i) => {
                 btn.addEventListener('click', () => {
                     container.style.transform = `translateX(-${i}00%)`
