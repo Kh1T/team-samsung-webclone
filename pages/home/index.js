@@ -2,31 +2,33 @@
  * Represents the container for 'foryou' cards.
  * @type {HTMLElement}
  */
-const foryouContainer = document.getElementById('foryou-card-container');
+const foryouContainer = document.getElementById("foryou-card-container");
 
 /**
  * Represents the image element for exploration.
  * @type {HTMLElement}
  */
-const imgExplor = document.getElementById('img-explore');
+const imgExplor = document.getElementById("img-explore");
 
 /**
  * Represents the container for 'Explore' buttons.
  * @type {NodeList}
  */
-const btnExploreContainer = document.querySelectorAll('.explore-btn-container button');
+const btnExploreContainer = document.querySelectorAll(
+  ".explore-btn-container button",
+);
 
 /**
  * Represents the container for exploration.
  * @type {HTMLElement}
  */
-const exploreContainer = document.querySelector('#explore-container');
+const exploreContainer = document.querySelector("#explore-container");
 
 /**
  * Represents the 'For You' buttons.
  * @type {NodeList}
  */
-const btnForYou = document.querySelectorAll('.btn-forYou');
+const btnForYou = document.querySelectorAll(".btn-forYou");
 
 /**
  * Represents the position for exploration.
@@ -41,8 +43,8 @@ let positonExplore = 0;
  * @param {string} border - The border of the button.
  */
 function btnStyle(btn, color, border) {
-    btn.style.backgroundColor = `${color}`;
-    btn.style.border = `${border}`;
+  btn.style.backgroundColor = `${color}`;
+  btn.style.border = `${border}`;
 }
 
 /**
@@ -52,14 +54,14 @@ function btnStyle(btn, color, border) {
  * @param {HTMLElement} container - The container to be moved.
  */
 function btnMoving(btn, pos, container) {
-    btn.addEventListener("click", () => {
-        container.style.transform = `translateX(-${pos}%)`;
-    });
+  btn.addEventListener("click", () => {
+    container.style.transform = `translateX(-${pos}%)`;
+  });
 }
 
 btnExploreContainer.forEach((e, i) => {
-    btnMoving(e, positonExplore, exploreContainer);
-    positonExplore += 90;
+  btnMoving(e, positonExplore, exploreContainer);
+  positonExplore += 90;
 });
 
 /**
@@ -67,11 +69,11 @@ btnExploreContainer.forEach((e, i) => {
  * @type {string[]}
  */
 const imgExplorPath = [
-    'assets/images/home/explore/explore.png',
-    'assets/images/home/explore/img-1.jpg',
-    'assets/images/home/explore/img-2.jpg',
-    'assets/images/home/explore/img-3.jpg',
-    'assets/images/home/explore/img-4.jpg',
+  "assets/images/home/explore/explore.png",
+  "assets/images/home/explore/img-1.jpg",
+  "assets/images/home/explore/img-2.jpg",
+  "assets/images/home/explore/img-3.jpg",
+  "assets/images/home/explore/img-4.jpg",
 ];
 
 /**
@@ -79,20 +81,20 @@ const imgExplorPath = [
  * @param {number} i - The index of the explore item.
  */
 function onItemHover(i) {
-    imgExplor.src = imgExplorPath[i];
-    exploreItemLinks[i].classList.toggle("border-t-4");
-    const element = exploreItemLinks[i].lastElementChild.lastElementChild;
-    if (element.hasAttribute('hidden')) {
-        element.removeAttribute('hidden');
-    } else {
-        element.setAttribute('hidden', '');
-    }
+  imgExplor.src = imgExplorPath[i];
+  exploreItemLinks[i].classList.toggle("border-t-4");
+  const element = exploreItemLinks[i].lastElementChild.lastElementChild;
+  if (element.hasAttribute("hidden")) {
+    element.removeAttribute("hidden");
+  } else {
+    element.setAttribute("hidden", "");
+  }
 }
 
 const exploreItemLinks = document.querySelectorAll(".explore-item-link");
 exploreItemLinks.forEach((link, i) => {
-    link.addEventListener('mouseenter', () => onItemHover(i));
-    link.addEventListener('mouseleave', () => onItemHover(i));
+  link.addEventListener("mouseenter", () => onItemHover(i));
+  link.addEventListener("mouseleave", () => onItemHover(i));
 });
 
 /**
@@ -101,11 +103,11 @@ exploreItemLinks.forEach((link, i) => {
  * @param {NodeList} btn - The buttons controlling the carousel.
  */
 function caroselTab(container, btn) {
-    btn.forEach((btn, i) => {
-        btn.addEventListener('click', () => {
-            container.style.transform = `translateX(-${i}00%)`;
-        });
+  btn.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      container.style.transform = `translateX(-${i}00%)`;
     });
+  });
 }
 
 /**
@@ -114,11 +116,11 @@ function caroselTab(container, btn) {
  * @param {NodeList} btn - The buttons controlling the carousel.
  */
 function caroselSmall(container, btn) {
-    btn.forEach((btn, i) => {
-        btn.addEventListener('click', () => {
-            container.style.transform = `translateX(-${i + 8}0%)`;
-        });
+  btn.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      container.style.transform = `translateX(-${i + 8}0%)`;
     });
+  });
 }
 
 // Initialize carousel for 'For You' section
