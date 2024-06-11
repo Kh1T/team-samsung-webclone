@@ -12,8 +12,6 @@ export class CarouselMobile extends HTMLElement {
     connectedCallback() {
         const section = this.getAttribute('section')
         let carosuelData = []
-
-        // Determine the data set to use based on the section attribute
         if (section === 'connected') {
             carosuelData = this.connectedData
         } else if (section === 'bud-product') {
@@ -35,7 +33,7 @@ export class CarouselMobile extends HTMLElement {
         const carouselContainer = document.createElement('div')
         carouselContainer.classList += ' carousel-container overflow-x-hidden'
 
-        // Create the carousel slides
+
         carosuelData.forEach(data => {
             const cardHTML = `
             <div class="slide flex min-w-full flex-col items-center mb-6">
@@ -47,7 +45,7 @@ export class CarouselMobile extends HTMLElement {
                 
                 <div class="flex flex-col gap-4 items-center mt-8">
                   <h3 class="text-xl font-bold">${data.title}</h3>
-                  ${data.desc != undefined ? `<p class="w-10/12 mx-auto text-center">${data.desc}</p>` : ''}
+                  ${data.desc != undefined ? `<p class="w-10/12 mx-auto text-center">${data.desc}</p>` : ""}
                   <button class="border-b-2 border-black font-bold">Learn more</button>
                 </div>
             </div>
@@ -55,14 +53,13 @@ export class CarouselMobile extends HTMLElement {
 
             favMobileContainer.innerHTML += cardHTML;
         })
-
-        // Append the slides to the carousel container
         carouselContainer.append(favMobileContainer)
         this.append(carouselContainer)
         favMobileContainer.classList.add("fav-container-mobile", "flex", "md:hidden", "flex", "transition-transform", "duration-500")
 
 
-        // Create and set up the carousel indicators
+        // indicator
+
         const indicatorHandler = (i) => {
             const btnIndicators = indicatorContainer.querySelectorAll('button')
             favMobileContainer.style.transform = `translateX(-${i * 100}%)`
@@ -181,27 +178,27 @@ export class CarouselMobile extends HTMLElement {
         {
             title: "Galaxy S24 Ultra",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-01.png",
-
+     
         },
         {
             title: "Galaxy S24 | S24+",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-02.png",
-
+    
         },
         {
             title: "Galaxy S23 Ultra",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-03.png",
-
+    
         },
         {
             title: "Galaxy S23 | S23+",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-04.png",
-
+       
         },
         {
             title: "Galaxy S23 | FE",
             imgSrc: "../../assets/images/galaxy-ai/galaxy-s-series-05.png",
-
+    
         }
     ]
 
@@ -213,15 +210,15 @@ export class CarouselMobile extends HTMLElement {
  * @returns {void}
  */
 function createButtonIndicator(indicatorContainer) {
-    const slideLength = favContainer.querySelectorAll('.slide').length
+  const slideLength = favContainer.querySelectorAll(".slide").length;
 
-    for (let i = 0; i < slideLength; i++) {
-        const btnIndicator = document.createElement('button')
-        btnIndicator.classList += `btn-slide mx-3 size-3 rounded-full bg-gray-500`
-        indicatorContainer.append(btnIndicator)
-    }
-    indicatorContainer.classList += " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2"
-
+  for (let i = 0; i < slideLength; i++) {
+    const btnIndicator = document.createElement("button");
+    btnIndicator.classList += `btn-slide mx-3 size-3 rounded-full bg-gray-500`;
+    indicatorContainer.append(btnIndicator);
+  }
+  indicatorContainer.classList +=
+    " w-fit mx-auto flex rounded-full border border-gray-300 bg-white opacity-80 py-2";
 }
 
 customElements.define("carousel-mobile", CarouselMobile);
