@@ -20,8 +20,6 @@ export class ImageList extends HTMLElement {
         super()
     }
     connectedCallback() {
-        // let imgSrc = '/assets/images/product-detail/review-image-1.jpeg'
-        console.log(imgReviews);
         for (const imgSrc of imgReviews) {
             const imageHTML = `
                 <img
@@ -32,7 +30,6 @@ export class ImageList extends HTMLElement {
                 `
             this.innerHTML += imageHTML    
         }
-        console.log(this.innerHTML);
         this.classList.add('block')
         this.classList += " flex flex-nowrap gap-3 transition-transform duration-500"
     }
