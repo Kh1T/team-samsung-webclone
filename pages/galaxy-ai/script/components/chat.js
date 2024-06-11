@@ -1,3 +1,9 @@
+/**
+ * Custom chat component for displaying a chat interface.
+ * This component creates a fixed chat interface positioned at the bottom left of the screen.
+ * It includes an avatar image and a notification indicator.
+ */
+
 export class Chat extends HTMLElement {
     constructor() {
         super();

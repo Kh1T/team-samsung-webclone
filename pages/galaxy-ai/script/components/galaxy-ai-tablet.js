@@ -1,3 +1,9 @@
+/**
+ * Custom HTML element for displaying Galaxy AI features optimized for tablets.
+ * This element includes a carousel of items with dynamic content and tabbed navigation.
+ * @extends HTMLElement
+ */
+
 export class GalaxyAiTablet extends HTMLElement {
     connectedCallback() {
         const { items, headerText, tabs } = {
