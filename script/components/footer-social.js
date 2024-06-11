@@ -7,16 +7,7 @@ export class FooterSocial extends HTMLElement {
         this.innerHTML = `
         <section
         class="flex flex-col-reverse md:flex-row max-w-screen-2xl w-full justify-center md:justify-between items-center md:text-xs text-base">
-        <ul class="flex flex-wrap md:flex-row gap-3 md:gap-6  w-fit md:justify-start justify-center px-6 py-6">
-            <li><a href="#" class="font-bold">USA/ENGLISH</a></li>
-            <li>|</li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Do Not Sell Or Share My Personal Information</a></li>
-            <li><a href="#">Washington Privacy Notice</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Accessibility Help</a></li>
-            <li><a href="#">Sitemap</a></li>
-        </ul>
+        <footer-privacy class="flex flex-wrap md:flex-row gap-3 md:gap-6  w-fit md:justify-start justify-center px-6 py-6"></footer-privacy>
         <div class="flex flex-col md:flex-row gap-4 w-1/10 items-center py-6">
             <a href="#">STAY IN THE LOOP?</a>
             <footer-social-icon class="flex gap-4"></footer-social-icon>
@@ -50,6 +41,18 @@ const social = [
     },
 ]
 
+const privacy = [
+    { label: "USA/ENGLISH", link: "#" },
+    { label: "|", link: "" },
+    { label: "Privacy", link: "#" },
+    { label: "Do Not Sell Or Share My Personal Information", link: "#" },
+    { label: "Washington Privacy Notice", link: "#" },
+    { label: "Legal", link: "#" },
+    { label: "Accessibility Help", link: "#" },
+    { label: "Sitemap", link: "#" }
+]
+
+
 export class FooterSocialIcon extends HTMLElement {
     constructor() {
         super()
@@ -62,5 +65,20 @@ export class FooterSocialIcon extends HTMLElement {
         })
     }
 }
+
+export class FooterPrivacy extends HTMLElement {
+    constructor() {
+        super()
+    }
+    connectedCallback() {
+        privacy.forEach(item => {
+            const privacyItem = document.createElement('div')
+            privacyItem.innerHTML = `<a href="${item.link}">${item.label}</a>`
+            this.appendChild(privacyItem)
+        })
+    }
+}
+
+customElements.define('footer-privacy', FooterPrivacy)
 customElements.define('footer-social-icon', FooterSocialIcon)
 customElements.define('footer-social', FooterSocial)
