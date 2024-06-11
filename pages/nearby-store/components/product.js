@@ -15,7 +15,7 @@ function createProductComponent({
             Buy Direct From Samsung
         </p>
         <div class="flex flex-col md:flex-row items-center justify-center mt-4">
-            <div class="w-80 h-48 mx-16">
+            <div class="w-full h-full mx-16">
                 <img class="object-contain w-full h-full" src="${productImage}" alt="${productName}" />
             </div>
             <div class="flex flex-col justify-evenly w-full">
