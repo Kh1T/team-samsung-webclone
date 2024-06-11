@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCarousel();
 });
 
-
-
 /* Make a request script */
 document.addEventListener('DOMContentLoaded', function () {
     const carouselInner1 = document.querySelector('#carouselInner1');
