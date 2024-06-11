@@ -1,18 +1,22 @@
 // Review Dash Bar Compoinent
 
+// using <dash-bar data-rate="4.2"></dash-bar>
+// change data in the attribue
 export class DashBar extends HTMLElement{
     constructor(){
         super()
     }
     connectedCallback(){
         const rate = this.dataset.rate
-        // const dashContainer = document.getElementById('dash-container')
+        // render all 5 gray bar
         for (let i = 0; i <=4 ; i++){
             const contentHtml = `
                 <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400"></div>
             `
             this.innerHTML += contentHtml
         }
+
+        // render orange bar check condition to give percent to bar
         const barInner = document.createElement('div')
         barInner.classList = "flex absolute gap-0.5 left-0 top-0"
         let percent = parseFloat(rate) - parseInt(rate)

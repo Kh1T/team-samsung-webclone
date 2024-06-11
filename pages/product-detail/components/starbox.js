@@ -1,3 +1,6 @@
+// Component StarBox
+
+// using <star-box></star-box>
 export class StarBox extends HTMLElement{
     constructor(){
         super()

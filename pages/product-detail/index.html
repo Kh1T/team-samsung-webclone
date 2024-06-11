@@ -23,9 +23,10 @@
 
   <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
-    <!-- Product Detail Section -->
+    
     <!-- modal -->
     <div id="modal-container" class="modal-container"></div>
+    <!-- Product Detail Section -->
     <section class="w-screen max-w-screen-2xl">
       <ul class="bread-crumb mb-4 hidden gap-3 pl-4 text-slate-400 md:flex">
         <a href="#">
@@ -1002,97 +1003,9 @@
         <div
           class="review-image-container scroll-bar-hidden relative flex gap-1 overflow-x-auto overflow-y-hidden scroll-smooth"
         >
-          <div
-            id="review-image"
-            class="flex flex-nowrap gap-2 transition-transform duration-500"
-          >
-            <img
-              class="size-44 min-w-40 object-cover transition-all hover:scale-105"
-              src="/assets/images/product-detail/review-image-1.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-2.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-3.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-4.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-5.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-6.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-7.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-8.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-5.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-6.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-7.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-8.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-2.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-3.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-4.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-5.jpeg"
-              alt="image-review"
-            />
-            <img
-              class="size-44 min-w-40 object-cover hover:scale-105"
-              src="/assets/images/product-detail/review-image-6.jpeg"
-              alt="image-review"
-            />
-          </div>
+        <image-list></image-list>
         </div>
+        
         <div class="absolute left-0 top-1/2 flex w-full justify-between">
           <button
             id="pre-slide-review"
