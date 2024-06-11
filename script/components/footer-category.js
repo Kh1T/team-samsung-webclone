@@ -1,3 +1,20 @@
+/**
+ * Footer category section.
+ * 
+ * This script defines a custom HTML element for footer category sections.
+ * It includes a FooterCategory class that extends HTMLElement and dynamically generates footer categories based on provided data attributes.
+ * 
+ * FooterCategory class:
+ * - Extends HTMLElement.
+ * - Handles the creation of footer category sections based on provided data attributes such as title, category, and size.
+ * - Inserts footer items within each category using the footer-item custom element.
+ * 
+ * Data attributes:
+ * - title: Title of the footer category.
+ * - category: Category identifier for footer items.
+ * - size: Size identifier for the category section (small or large).
+ */
+
 export class FooterCategory extends HTMLElement {
   constructor() {
     super();
