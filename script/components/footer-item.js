@@ -1,3 +1,21 @@
+/**
+ * Footer items for different categories.
+ * 
+ * This script defines a custom HTML element for footer items in various categories.
+ * It includes data arrays for each category, such as shop, support, offers, sustainability, and about us.
+ * 
+ * FooterItem class:
+ * - Extends HTMLElement.
+ * - Dynamically generates and inserts footer items based on the provided data array for each category.
+ * 
+ * Data arrays:
+ * - shop: Array containing shop-related items with their corresponding labels and links.
+ * - support: Array containing support-related items with their corresponding labels and links.
+ * - offers: Array containing offers-related items with their corresponding labels and links.
+ * - sustainability: Array containing sustainability-related items with their corresponding labels and links.
+ * - aboutUs: Array containing about us-related items with their corresponding labels and links.
+ */
+
 const shop = [
   { label: "Phones", link: "#" },
   { label: "Tablets", link: "#" },
