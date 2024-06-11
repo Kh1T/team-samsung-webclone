@@ -1,3 +1,11 @@
+/**
+ * NavBar custom HTML element.
+ * 
+ * This class defines a custom HTML element for the navigation bar of a web page,
+ * including sections for main and secondary items, shortcut items, and responsive design for small screens.
+ * It also handles interactions for expanding and collapsing navigation items.
+ */
+
 export class NavBar extends HTMLElement {
   constructor() {
     super();
