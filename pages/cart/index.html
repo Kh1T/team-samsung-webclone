@@ -11,7 +11,8 @@
     <body class="flex flex-col items-center">
         <navbar-component></navbar-component>
 
-        <div id="navbar" class="w-full fixed sm:block bg-white z-10 hidden duration-300">
+        <!-- drop down checkout -->
+        <section id="navbar" class="w-full fixed sm:block bg-white z-10 hidden duration-300">
             <div class="flex justify-between px-3 drop-shadow-lg bg-white py-4">
                 <span class="font-medium text-lg">Cart</span>
                 <div class="flex gap-3 items-center">
@@ -27,8 +28,9 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- cart summary -->
         <section class="max-w-screen-xl w-full mt-7">
 
             <!-- summary -->
@@ -203,7 +205,7 @@
                             ></cart-button>
                         </div>
                         
-                        <img src="../../assets/images/cart/DSE-BannerCard-1200x690.webp" alt="">
+                        <img src="../../assets/images/cart/DSE-BannerCard-1200x690.webp" alt="banner card image">
                     </div>
                 </div>
             </section>
@@ -343,11 +345,12 @@
             </div>
         </section>
 
+        <!-- add component to file -->
         <feedback-component></feedback-component>
         <chat-component></chat-component>
         <footer-component></footer-component>
-    
 
+        <!-- import script -->
         <script src="../../script/index.js" type="module"></script>
         <script src="../cart/components/cart-button.js"></script>
         <script src="../cart/script/index.js" type="module"></script>
