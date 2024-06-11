@@ -1,3 +1,18 @@
+/**
+ * Chat component.
+ * 
+ * This script defines a custom HTML element for a chat component.
+ * The Chat class extends HTMLElement and creates a chat icon with an optional notification indicator.
+ * 
+ * Chat class:
+ * - Extends HTMLElement.
+ * - Generates a chat icon with an optional notification indicator in the connectedCallback method.
+ * 
+ * Usage:
+ * The custom element is defined as "chat-component" using customElements.define.
+ * It can be included in HTML documents to display a chat icon with an optional notification indicator.
+ */
+
 export class Chat extends HTMLElement {
   constructor() {
     super();
