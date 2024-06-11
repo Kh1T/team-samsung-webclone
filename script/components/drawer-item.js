@@ -42,6 +42,7 @@ export class DrawerItem extends HTMLElement {
         break;
       case "account":
         this.handleNavItem(account);
+        break;
     }
   }
   handleNavItem(data) {
