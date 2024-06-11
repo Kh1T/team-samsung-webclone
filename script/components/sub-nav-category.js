@@ -1,3 +1,13 @@
+/**
+ * SubNavCategory custom HTML element.
+ * 
+ * This class defines a custom HTML element for a sub-navigation category in the navigation bar.
+ * It uses data attributes for the title and category to dynamically generate the inner HTML content.
+ * 
+ * @class
+ * @extends {HTMLElement}
+ */
+
 export class SubNavCategory extends HTMLElement {
   constructor() {
     super();
