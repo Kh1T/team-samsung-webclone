@@ -10,11 +10,6 @@ const imgReviews = [
     '/assets/images/product-detail/review-image-8.jpeg',
 ]
 
-// Image List Component 
-
-// Using 
-// <image-list></image-list>
-// render image already define data in this component
 /**
  * Custom HTML element representing a Image List in Review Section
  *

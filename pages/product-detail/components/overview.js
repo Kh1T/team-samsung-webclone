@@ -19,7 +19,13 @@ class OverviewImageSideComponent extends HTMLElement {
 
 customElements.define('overview-imageside-component', OverviewImageSideComponent);
 
-//Image-bottom
+
+/**
+ * Custom HTML element representing a Image List in OverviewImageBottomComponent Section 
+ *
+ * @class OverviewImageBottomComponent
+ * @extends {HTMLElement}
+ */
 class OverviewImageBottomComponent extends HTMLElement {
     constructor(imgSrc, imgSrcset, title, description, additionalInfo) {
         super();
