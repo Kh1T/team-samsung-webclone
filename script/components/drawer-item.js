@@ -1,3 +1,24 @@
+/**
+ * DrawerItem component.
+ * 
+ * This script defines a custom HTML element for a drawer item component.
+ * The DrawerItem class extends HTMLElement and creates a list of navigation items based on the provided data.
+ * 
+ * DrawerItem class:
+ * - Extends HTMLElement.
+ * - Retrieves the category attribute from the dataset and generates navigation items accordingly in the connectedCallback method.
+ * 
+ * handleNavItem method:
+ * - Accepts an array of objects representing navigation items.
+ * - Creates a div element for each navigation item.
+ * - Sets the href attribute and innerHTML of the div element based on the provided data.
+ * - Appends each div element to the DrawerItem component.
+ * 
+ * Usage:
+ * The custom element is defined as "drawer-item" using customElements.define.
+ * It can be included in HTML documents to create a drawer menu with navigation items based on the specified category.
+ */
+
 const signin = [
   { label: "Sign in Create Account", link: "../../pages/login/index.html" },
 ];
