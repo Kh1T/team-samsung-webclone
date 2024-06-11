@@ -1,3 +1,17 @@
+/**
+ * Creates a product component as an HTML section element.
+ * 
+ * @param {Object} product - The product details.
+ * @param {string} product.productId - The product ID.
+ * @param {string} product.productName - The name of the product.
+ * @param {string} product.productImage - The URL of the product image.
+ * @param {number} product.rating - The rating of the product out of 5.
+ * @param {number} product.reviewCount - The number of reviews for the product.
+ * @param {number} product.price - The price of the product.
+ * @param {string} product.link - The URL link to the product page.
+ * 
+ * @returns {HTMLElement} The HTML section element representing the product.
+ */
 function createProductComponent({
     productId,
     productName,
@@ -52,6 +66,10 @@ function createProductComponent({
     return section;
 }
 
+/**
+ * Example product object.
+ * @type {Object}
+ */
 const product = {
     productId: 'SM-R510NZAAXAR',
     productName: 'Samsung Galaxy Buds2 Pro Graphite',
@@ -62,4 +80,5 @@ const product = {
     link: '../cart/index.html'
 };
 
+// Append the product component to the element with ID 'product-detail'
 document.getElementById('product-detail').appendChild(createProductComponent(product));
