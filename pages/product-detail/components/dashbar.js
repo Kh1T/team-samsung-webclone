@@ -11,7 +11,7 @@ export class DashBar extends HTMLElement{
         // render all 5 gray bar
         for (let i = 0; i <=4 ; i++){
             const contentHtml = `
-                <div class="bar-present h-2.5 w-14 md:w-8 bg-gray-400"></div>
+                <div class="bar-present h-2.5 w-8 bg-gray-400"></div>
             `
             this.innerHTML += contentHtml
         }
@@ -24,12 +24,12 @@ export class DashBar extends HTMLElement{
         percent = parseInt(percent * 100)
         for (let i = 1; i <= intRate; i++){            
             let contentHtml = `
-                <div class="bar-inner h-2.5 w-14 md:w-8 relative ">
+                <div class="bar-inner h-2.5 w-8 relative ">
                     <div class="h-2.5 w-full bg-orange-400"></div>
                 </div>
             `
             if (i == intRate  && percent > 0 ){
-                contentHtml += `<div class="bar-inner h-2.5 w-14 md:w-8 relative ">
+                contentHtml += `<div class="bar-inner h-2.5 w-8 relative ">
                     <div class="h-2.5 w-[${percent}%] bg-orange-400"></div>
                 </div>
                 `
