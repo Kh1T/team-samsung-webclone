@@ -1,5 +1,3 @@
- 
-
 /**
  * Custom HTML element representing a Modal Component
  *
@@ -7,15 +5,15 @@
  * @class Modal
  * @extends {HTMLElement}
  */
-export class Modal extends HTMLElement{
-    constructor(){
-        super()
-    }
-    connectedCallback(){
-        const title = this.dataset.title
-        const textColor = this.dataset.color
+export class Modal extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    const title = this.dataset.title;
+    const textColor = this.dataset.color;
 
-        this.innerHTML = `
+    this.innerHTML = `
         <div class="modal-container">
             <div
             id="backdrop"
@@ -43,7 +41,7 @@ export class Modal extends HTMLElement{
             </div>
             </div>
         </div>
-        `
-        this.classList.add('block')
-    }
+        `;
+    this.classList.add("block");
+  }
 }

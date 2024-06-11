@@ -23,7 +23,7 @@
 
   <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
-    
+
     <!-- Modal Component -->
     <modal-component></modal-component>
     <!-- Product Detail Section -->
@@ -429,13 +429,13 @@
               </div>
               <div class="my-4 flex flex-col gap-3 md:flex-row">
                 <div
-                  class="card-plan flex h-16 w-full items-center justify-between rounded-md border  px-4"
+                  class="card-plan flex h-16 w-full items-center justify-between rounded-md border px-4"
                 >
                   <p class="text-base font-bold">2 Year Plan</p>
                   <p class="text-sm">$39.00</p>
                 </div>
                 <div
-                  class="card-plan flex h-16 w-full items-center justify-between rounded-md border  px-4"
+                  class="card-plan flex h-16 w-full items-center justify-between rounded-md border px-4"
                 >
                   <p class="text-base font-bold">2 Year Plan - Essentail</p>
                   <p class="text-sm">$19.00</p>
@@ -451,7 +451,7 @@
                 >
               </div>
               <div
-                class="purchase-container cursor-pointer snap-x overflow-y-hidden scroll-smooth scroll-bar-hidden"
+                class="purchase-container scroll-bar-hidden cursor-pointer snap-x overflow-y-hidden scroll-smooth"
               >
                 <div class="mb-6 flex w-[600px] flex-nowrap gap-5 text-sm">
                   <div
@@ -463,14 +463,14 @@
                   </div>
                   <div
                     id="btn-monthly"
-                    class="card-purchase flex h-[150px] w-[164px] cursor-pointer flex-col justify-between rounded-md border  px-4 py-3 font-bold tracking-tight delay-200"
+                    class="card-purchase flex h-[150px] w-[164px] cursor-pointer flex-col justify-between rounded-md border px-4 py-3 font-bold tracking-tight delay-200"
                   >
                     <p>Pay Monthly</p>
                     <p>$7.92/mo<br /><span>for 24 mos</span></p>
                   </div>
                   <div
                     id="btn-installment"
-                    class="card-purchase flex h-[150px] w-[164px] cursor-pointer flex-col justify-between rounded-md border  px-4 py-3 font-bold tracking-tight delay-200"
+                    class="card-purchase flex h-[150px] w-[164px] cursor-pointer flex-col justify-between rounded-md border px-4 py-3 font-bold tracking-tight delay-200"
                   >
                     <p>Pay in 4 Installments</p>
                     <p>$47.50<br /><span>every two weeks</span></p>
@@ -522,7 +522,7 @@
                 <!-- it hidden so it can't flex -->
                 <div class="card-desc hidden w-full flex-col gap-3" id="">
                   <div
-                    class="installment-container w-full snap-x overflow-y-hidden scroll-smooth scroll-bar-hidden"
+                    class="installment-container scroll-bar-hidden w-full snap-x overflow-y-hidden scroll-smooth"
                   >
                     <div class="flex w-fit flex-nowrap gap-4 text-xs">
                       <div
@@ -730,15 +730,14 @@
       <div id="second-component-overview"></div>
 
       <div id="third-component-overview"></div>
-    
-      <!-- 2 * 2 table for short Specs -->
-      <section class="flex-col bg-zinc-100 md:grid relative">
-        <div
-          class="flex-cols mx-auto flex justify-center pr-6 pt-12 md:pr-0"
-        >
-          <!-- First row -->
-            <shortspec data-spec="Live Translate , Intelligent Active Noise Cancellation, Enhanced 360-Degree Audio, Comfortable fit"></shortspec>
 
+      <!-- 2 * 2 table for short Specs -->
+      <section class="relative flex-col bg-zinc-100 md:grid">
+        <div class="flex-cols mx-auto flex justify-center pr-6 pt-12 md:pr-0">
+          <!-- First row -->
+          <shortspec
+            data-spec="Live Translate , Intelligent Active Noise Cancellation, Enhanced 360-Degree Audio, Comfortable fit"
+          ></shortspec>
         </div>
 
         <!-- Second row -->
@@ -756,7 +755,8 @@
                 <img
                   class="mx-1 my-2 h-5 origin-center"
                   id="rotate-svg"
-                  src="/assets/images/product-detail/chevron-down-svgrepo-com.svg" alt="down chevron"
+                  src="/assets/images/product-detail/chevron-down-svgrepo-com.svg"
+                  alt="down chevron"
                 />
               </section>
             </label>
@@ -767,12 +767,12 @@
           >
             <div class="h-fit border-zinc-100 bg-zinc-200 px-5 pt-5">
               <div id="connective-container"></div>
-                <div id="battery-container"></div>
-                <div id="physical-spec-container"></div>
-                <div id="audio-and-video-container"></div>
-                <div id="service-and-app-container"></div>
-                <div id="key-category-container"></div>
-                <div id="general-feat-container"></div>
+              <div id="battery-container"></div>
+              <div id="physical-spec-container"></div>
+              <div id="audio-and-video-container"></div>
+              <div id="service-and-app-container"></div>
+              <div id="key-category-container"></div>
+              <div id="general-feat-container"></div>
             </div>
 
             <div class="label flex flex-col bg-zinc-200 p-10">
@@ -795,7 +795,6 @@
           </section>
         </section>
       </section>
-
     </section>
 
     <!-- Product Review Section -->
@@ -925,7 +924,10 @@
           </p>
           <a class="text-blue-500" href="#">Show Full Review</a>
           <div class="mt-8 flex text-sm font-bold">
-            <img src="../../assets/images/product-detail/thum-up-fill.svg" alt="">
+            <img
+              src="../../assets/images/product-detail/thum-up-fill.svg"
+              alt=""
+            />
             <p>255 PEOPLE FOUND THIS HELPFUL</p>
           </div>
 
@@ -935,9 +937,15 @@
               class="flex items-center gap-1 rounded-lg border border-blue-700 px-2 py-1"
             >
               5
-              <img src="/assets/images/product-detail/star-icon.svg" alt="star" />
+              <img
+                src="/assets/images/product-detail/star-icon.svg"
+                alt="star"
+              />
               and 4
-              <img src="/assets/images/product-detail/star-icon.svg" alt="star" />
+              <img
+                src="/assets/images/product-detail/star-icon.svg"
+                alt="star"
+              />
             </button>
           </div>
         </div>
@@ -956,7 +964,10 @@
           </p>
           <a class="text-blue-500" href="#">Show Full Review</a>
           <div class="mt-8 flex text-sm font-bold">
-            <img src="../../assets/images/product-detail/thum-up-fill.svg" alt="">
+            <img
+              src="../../assets/images/product-detail/thum-up-fill.svg"
+              alt=""
+            />
             <p>417 PEOPLE FOUND THIS HELPFUL</p>
           </div>
 
@@ -966,11 +977,20 @@
               class="flex items-center gap-1 rounded-lg border border-blue-700 px-2 py-1"
             >
               3
-              <img src="/assets/images/product-detail/star-icon.svg" alt="star" />
+              <img
+                src="/assets/images/product-detail/star-icon.svg"
+                alt="star"
+              />
               2
-              <img src="/assets/images/product-detail/star-icon.svg" alt="star" />
+              <img
+                src="/assets/images/product-detail/star-icon.svg"
+                alt="star"
+              />
               and 1
-              <img src="/assets/images/product-detail/star-icon.svg" alt="star" />
+              <img
+                src="/assets/images/product-detail/star-icon.svg"
+                alt="star"
+              />
             </button>
           </div>
         </div>
@@ -982,9 +1002,9 @@
         <div
           class="review-image-container scroll-bar-hidden relative flex gap-1 overflow-x-auto overflow-y-hidden scroll-smooth"
         >
-        <image-list></image-list>
+          <image-list></image-list>
         </div>
-        
+
         <div class="absolute left-0 top-1/2 flex w-full justify-between">
           <button
             id="pre-slide-review"
@@ -1144,8 +1164,11 @@
 
         <!-- Response From Samsung -->
         <div class="mx-0 w-full border border-gray-100 pb-6">
-          <div class="flex rounded-t bg-gray-100 py-2 pl-2 gap-2">
-            <img src="../../assets/images/product-detail/respond-icon.svg" alt="respond">            
+          <div class="flex gap-2 rounded-t bg-gray-100 py-2 pl-2">
+            <img
+              src="../../assets/images/product-detail/respond-icon.svg"
+              alt="respond"
+            />
             <p>Response from SAMSUNG:</p>
           </div>
           <div class="mt-4 px-6">
