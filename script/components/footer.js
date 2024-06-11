@@ -1,3 +1,11 @@
+/**
+ * Footer custom HTML element.
+ * 
+ * This class defines a custom HTML element for the footer section of a web page,
+ * including sections for shop, support, offers, sustainability, and about us,
+ * as well as a copyright notice, an image, and social media links.
+ */
+
 export class Footer extends HTMLElement {
   constructor() {
     super();
