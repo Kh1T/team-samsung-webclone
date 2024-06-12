@@ -18,7 +18,7 @@ export class ItemContent extends HTMLElement {
     if (!desc) {
       textHTML = `
             <div>
-                <img class="h-28" src="${imgSrc}" alt="" />
+                <img class="h-28" src="${imgSrc}" alt="Item Image 1" />
                 <div class="flex w-[200px] flex-col gap-2">
                     <h3 class="mt-2 font-bold md:mt-4">${title}</h3>
                 </div>
@@ -27,7 +27,7 @@ export class ItemContent extends HTMLElement {
     } else {
       textHTML = `
             <div class="md:flex">
-                <img class="h-28" src="${imgSrc}" alt="" />
+                <img class="h-28" src="${imgSrc}" alt="Item Image 2" />
                 <div class="flex w-32 flex-col gap-2">
                     <h3 class="mt-2 font-bold md:mt-4">${title}</h3>
                     <p class="hidden md:block text-sm">

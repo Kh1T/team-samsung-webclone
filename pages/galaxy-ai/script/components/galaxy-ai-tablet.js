@@ -43,8 +43,8 @@ export class GalaxyAiTablet extends HTMLElement {
                 .map(
                     (item) => `
                         <div class="item w-full h-full relative flex-none text-white">
-                            <img class="hidden sm:block flex-none w-full" src="${item.largeImage}" alt="">
-                            <img class="sm:hidden w-full object-contain" src="${item.smallImage}" alt="">
+                            <img class="hidden sm:block flex-none w-full" src="${item.largeImage}" alt="Tablet">
+                            <img class="sm:hidden w-full object-contain" src="${item.smallImage}" alt="Tablet">
                             <div class="flex flex-col sm:gap-2 text-center items-center w-full justify-start h-1/4 px-12 absolute bottom-0 sm:bottom-0 ">
                                 <div class="max-w-2xl">
                                   <h1 class="text-3xl md:text-4xl font-bold pb-2">${item.title}</h1>

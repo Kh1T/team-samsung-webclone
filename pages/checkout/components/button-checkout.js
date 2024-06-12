@@ -51,7 +51,7 @@ class ButtonCheckout extends HTMLElement {
         class="w-full py-4 px-8 h-fit flex justify-center items-center ${color} text-center text-white rounded-md">
         <img class="h-6 object-contain"
             src="${image}"
-            alt="">
+            alt="Button Checkout Image">
         </button>
         </div>
         `

@@ -90,7 +90,7 @@ const defaultPayment = `
         </div>
         <img data-v-daed2594=""
             src="../../assets/images/checkout/images/card-payment-option.webp"
-            alt="" class="ml10">
+            alt="Checkout Image" class="ml10">
     </button>
 </section>
 <section class="flex flex-col gap-4 py-6">

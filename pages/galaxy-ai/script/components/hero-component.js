@@ -16,7 +16,7 @@ export class HeroComponent extends HTMLElement {
           <img
             class="object-cover w-full"
             src="../../assets/images/galaxy-ai/sm-galaxy-ai-welcome.png"
-            alt=""
+            alt="Hero Image"
           />
         </div>
         <div class="relative flex w-full max-w-screen-2xl justify-center">
@@ -37,7 +37,7 @@ export class HeroComponent extends HTMLElement {
           <img
             class="w-full h-fit"
             src="../../assets/images/galaxy-ai/sm-hero-bg-image.png"
-            alt=""
+            alt="Hero Image"
           />
         </div>
       </section>
@@ -47,7 +47,7 @@ export class HeroComponent extends HTMLElement {
             <img
                 class="w-full"
                 src="../../assets/images/galaxy-ai/welcome-to-galaxy-ai.png"
-                alt=""
+                alt="Hero Image"
             />
             </section>
             <section class="relative flex w-full max-w-screen-2xl justify-center">
@@ -68,7 +68,7 @@ export class HeroComponent extends HTMLElement {
             <img
                 class="w-full"
                 src="../../assets/images/galaxy-ai/galaxy-ai-hero-bg.png"
-                alt=""
+                alt="Hero Image"
             />
             </section> 
         </section>

@@ -20,7 +20,7 @@ export class HeroCarousel1 extends HTMLElement {
                               .map(
                                 (item) => `
                             <li class="object-cover w-full min-w-full relative">
-                                <img class="rounded-2xl object-cover w-[768px]" src="${item.smallImage}" alt="">
+                                <img class="rounded-2xl object-cover w-[768px]" src="${item.smallImage}" alt="Hero image small">
                                 <div class="absolute top-[15%] flex flex-col left-1/2 transform -translate-x-1/2 gap-4 items-center text-center">
                                     <p class="text-xl font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>
@@ -62,7 +62,7 @@ export class HeroCarousel1 extends HTMLElement {
                               .map(
                                 (item) => `
                             <li class="object-cover w-full min-w-full relative">
-                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="">
+                                <img class="object-cover w-[1540px]" src="${item.largeImage}" alt="Hero Image Large">
                                 <div class="absolute top-[25%] flex flex-col left-[10%] gap-4">
                                     <p class="text-[1.5vw] font-semibold">${item.par}</p>
                                     <h2 class="text-[2.5vw] font-bold">${item.title}</h2>

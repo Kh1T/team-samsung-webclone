@@ -47,7 +47,7 @@ export class PaymentDetail extends HTMLElement {
                 <p class="text-sm font-medium">Credit / debit card</p>
                 <img class="h-6 w-fit"
                     src="${image}"
-                    alt="">
+                    alt="Payment Detail Image">
             </div>
         </div>
         <div class="space-y-2">
@@ -92,7 +92,7 @@ export class PaymentDetail extends HTMLElement {
             <div class="flex pt-6 gap-4 items-center">
                 <img class="h-4 w-fit"
                     src="${image}"
-                    alt="">
+                    alt="Payment Detail Image">
                 <p class="text-sm">Pay in 4 with Klarna
                     <br>$51.71 every two weeks <sup>π</sup>
                     <br>$206.85 total

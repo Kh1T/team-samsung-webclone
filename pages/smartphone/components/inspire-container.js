@@ -86,12 +86,12 @@ class CardInspired extends HTMLElement {
             <img
             class="hidden w-full object-cover md:block"
             src="${imgSrcBig}"
-            alt=""
+            alt="Inspired Image 1"
             />
             <img
             class="w-full object-cover md:hidden"
             src="${imgSrcSmall}"
-            alt=""
+            alt="Inspired Image 2"
             />
         `;
     this.classList.add("block");
