@@ -88,7 +88,6 @@ function carouselTab(container, btns) {
     btns.forEach((btn) => {
         btn.addEventListener("click", () => {
             const index = btn.getAttribute("data-index");
-            console.log(index);
             container.style.transform = `translateX(-${index}00%)`;
         });
     });

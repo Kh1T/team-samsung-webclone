@@ -21,7 +21,5 @@ email.addEventListener("input", () => {
 });
 
 const emailOnchangeHandle = () => {
-  console.log("aaa", btnSubmit);
   btnSubmit.disabled = false;
-  console.log(email.value);
 };

@@ -41,7 +41,6 @@ export class TopNavItem extends HTMLElement {
     switch (category) {
       case "mainItems":
         this.handleNavItem(mainItems);
-        console.log("work");
         break;
       case "secondaryItems":
         this.handleNavItem(secondaryItems);

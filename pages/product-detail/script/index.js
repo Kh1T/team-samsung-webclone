@@ -256,8 +256,6 @@ function sectionExpandHandler() {
   // Loop through each button and add click event listener
   btnChangeTexts.forEach(function (button) {
     button.addEventListener("click", function () {
-      // Log the current text content of the button for debugging
-      console.log("Current button text:", button.textContent);
 
       // Determine new text content based on the current text, trimming any whitespace
       const newText =
@@ -269,9 +267,6 @@ function sectionExpandHandler() {
       btnChangeTexts.forEach(function (btn) {
         btn.textContent = newText;
       });
-
-      // Log for debugging purposes
-      console.log("Letgo");
 
       // Select SVG elements with the class "rotate-svg"
       const svgElements = document.querySelectorAll("#rotate-svg");
